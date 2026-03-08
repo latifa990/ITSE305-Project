@@ -3,18 +3,27 @@ package business;
 import data.UserRepository;
 
 /**
- * This class contains the login business logic.
+ * The LoginService class represents the Business Layer.
+ * It contains the business logic required for processing
+ * login requests and communicates with the Data Layer.
  */
 public class LoginService {
 
     private UserRepository userRepository;
 
-    // Constructor
+    /**
+     * Constructor that initializes the UserRepository object.
+     */
     public LoginService() {
         userRepository = new UserRepository();
     }
 
-    // Login method
+    /**
+     * Handles the login process by verifying user credentials.
+     *  the username entered by the user
+     *  the password entered by the user
+     * @return true if login is successful, otherwise false
+     */
     public boolean login(String username, String password) {
         return userRepository.validateUser(username, password);
     }
