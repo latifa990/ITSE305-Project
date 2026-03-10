@@ -4,6 +4,7 @@ import data.UserRepository;
 
 /**
  * The LoginService class represents the Business Layer.
+ * *
  * It contains the business logic required for processing
  * login requests and communicates with the Data Layer.
  */

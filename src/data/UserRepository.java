@@ -4,6 +4,7 @@ import model.user;
 
 /**
  * The UserRepository class represents the Data Layer of the application.
+ * *
  * Its main responsibility is to manage user data and validate
  * user credentials during the login process.
  */

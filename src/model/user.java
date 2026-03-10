@@ -3,7 +3,7 @@ package model;
 /**
  * The User class represents a system user.
  * It stores basic user credentials such as username and password.
- *
+
  * This class belongs to the Model layer and is used to transfer
  * user data between different layers of the application.
  */

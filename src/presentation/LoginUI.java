@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 /**
  * The LoginUI class represents the Presentation Layer.
+ *
  * It is responsible for interacting with the user,
  * collecting login information, and displaying results.
  */
