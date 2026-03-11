@@ -21,7 +21,6 @@ public class BookRepository {
     public List<Book> getAllBooks() {
         return books;
     }
-
     public Book findBookByTitle(String title) {
         for (Book book : books) {
             if (book.getTitle().equalsIgnoreCase(title)) {
