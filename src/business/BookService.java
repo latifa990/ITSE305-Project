@@ -2,7 +2,7 @@ package business;
 
 import data.Book;
 import data.BookRepository;
-
+// Provides services related to book management, acting as an intermediary between the presentation layer and the data layer
 public class BookService {
 
     private BookRepository bookRepository;
