@@ -2,7 +2,7 @@ package presentation;
 
 import business.BookService;
 import data.Book;
-
+// Demonstrates the search functionality for books in the library management system
 public class SearchBook {
 
     public static void main(String[] args) {
