@@ -5,7 +5,7 @@ import model.user;
 /**
  * The UserRepository class represents the Data Layer of the application.
  * *
- * Its main responsibility is to manage user data and validate
+ * its main responsibility is to manage user data and validate
  * user credentials during the login process.
  */
 public class UserRepository {
@@ -17,7 +17,7 @@ public class UserRepository {
      * Constructor initializes a sample user for testing login.
      */
     public UserRepository() {
-        storedUser = new user("admin", "1234");
+        storedUser = new user("admin", "5576");
     }
 
     /**
