@@ -23,7 +23,7 @@ public class LoginService {
      * Handles the login process by verifying user credentials.
      *  the username entered by the user
      *  the password entered by the user
-     * @return true if login is successful, otherwise false
+     * @return true if login is successful, otherwise false.
      */
     public boolean login(String username, String password) {
         return userRepository.validateUser(username, password);
