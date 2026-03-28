@@ -29,7 +29,7 @@ public class LoginServiceTest {
      *
      * Test data:
      * Username: admin
-     * Password: 1234
+     * Password: 5576
      *
      * Expected result:
      * The login should succeed, so the method should return true.
@@ -86,7 +86,7 @@ public class LoginServiceTest {
         LoginService service = new LoginService();
 
         // Act: call the login method using an invalid username and a valid password.
-        boolean result = service.login("wrong", "1234");
+        boolean result = service.login("wrong", "5567");
 
         // Assert: verify that the returned result is false.
         assertFalse(result);
