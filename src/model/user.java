@@ -40,7 +40,7 @@ public class user {
     /**
      * Returns the username stored in the User object.
      *
-     * @return the user's username
+     * @return the user's usernamee
      */
     public String getUsername() {
         return username;
@@ -49,7 +49,7 @@ public class user {
     /**
      * Returns the password stored in the User object.
      *
-     * @return the user's password
+     * @return the user's passwordd
      */
     public String getPassword() {
         return password;

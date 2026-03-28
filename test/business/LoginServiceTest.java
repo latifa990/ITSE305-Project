@@ -109,7 +109,7 @@ public class LoginServiceTest {
         LoginService service = new LoginService();
 
         // Act: call the login method using completely invalid credentials.
-        boolean result = service.login("user", "pass");
+        boolean result = service.login("user", "nada");
 
         // Assert: verify that the returned result is false.
         assertFalse(result);
