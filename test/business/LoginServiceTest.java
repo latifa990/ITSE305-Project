@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
  ****
  * This class belongs to Phase 03 of the project, where automated testing
  * is introduced using the JUnit framework.
- *
+ **
  * The purpose of this test class is to check whether the LoginService
  * behaves as expected under different login scenarios.
  *
