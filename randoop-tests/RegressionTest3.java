@@ -26,6 +26,7037 @@ public class RegressionTest3 {
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
         bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        boolean boolean15 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+    }
+
+    @Test
+    public void test1502() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1502");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        java.lang.String str19 = bBdata0.getBookTitle("hi!");
+        java.lang.String str21 = bBdata0.getBookTitle("");
+        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
+        boolean boolean25 = bBdata0.memberExists("");
+        java.lang.String str27 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        org.junit.Assert.assertNull(str27);
+    }
+
+    @Test
+    public void test1503() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1503");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.decreaseCopy("");
+        int int16 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1504() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1504");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        int int10 = bBdata0.getBorrowCount("");
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        int int14 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+    }
+
+    @Test
+    public void test1505() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1505");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        int int14 = bBdata0.getBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str17 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNull(str17);
+    }
+
+    @Test
+    public void test1506() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1506");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean8 = bBdata0.bookExists("hi!");
+        int int10 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test1507() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1507");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("");
+        boolean boolean8 = bBdata0.isMemberActive("");
+        int int10 = bBdata0.getBorrowCount("hi!");
+        boolean boolean12 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1508() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1508");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        java.lang.String str12 = bBdata0.getBookTitle("");
+        int int14 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str16 = bBdata0.getMemberName("hi!");
+        int int18 = bBdata0.getBorrowCount("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1509() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1509");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        boolean boolean8 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        boolean boolean11 = bBdata0.bookExists("");
+        boolean boolean13 = bBdata0.isMemberActive("");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean18 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1510() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1510");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        int int13 = bBdata0.getAvailableCopies("");
+        boolean boolean15 = bBdata0.bookExists("");
+        boolean boolean17 = bBdata0.memberExists("");
+        boolean boolean19 = bBdata0.isMemberActive("");
+        boolean boolean21 = bBdata0.memberExists("hi!");
+        int int23 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+    }
+
+    @Test
+    public void test1511() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1511");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        java.lang.String str18 = bBdata0.getMemberName("");
+        bBdata0.decreaseCopy("");
+        int int22 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.Class<?> wildcardClass25 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertNotNull(wildcardClass25);
+    }
+
+    @Test
+    public void test1512() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1512");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        boolean boolean8 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        boolean boolean11 = bBdata0.bookExists("");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean16 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1513() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1513");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str8 = bBdata0.getMemberName("");
+        int int9 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+    }
+
+    @Test
+    public void test1514() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1514");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        java.lang.String str17 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        java.lang.String str20 = bBdata0.getBookTitle("");
+        bBdata0.printAllBooks();
+        boolean boolean23 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        int int26 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean28 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str17);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+    }
+
+    @Test
+    public void test1515() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1515");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        boolean boolean8 = bBdata0.bookExists("");
+        java.lang.String str10 = bBdata0.getBookTitle("hi!");
+        boolean boolean12 = bBdata0.bookExists("hi!");
+        int int13 = bBdata0.getBorrowLimit();
+        int int15 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+    }
+
+    @Test
+    public void test1516() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1516");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        int int14 = bBdata0.getBorrowCount("hi!");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        java.lang.String str19 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1517() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1517");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        boolean boolean16 = bBdata0.bookExists("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1518() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1518");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        bBdata0.printAllBooks();
+        int int10 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int12 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+    }
+
+    @Test
+    public void test1519() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1519");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str13 = bBdata0.getBookTitle("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean19 = bBdata0.bookExists("");
+        int int20 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+    }
+
+    @Test
+    public void test1520() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1520");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getAvailableCopies("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str16 = bBdata0.getMemberName("");
+        int int18 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1521() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1521");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("hi!");
+        boolean boolean18 = bBdata0.isMemberActive("");
+        boolean boolean20 = bBdata0.memberExists("");
+        java.lang.String str22 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertNull(str22);
+    }
+
+    @Test
+    public void test1522() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1522");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        boolean boolean12 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean17 = bBdata0.memberExists("");
+        boolean boolean19 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test1523() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1523");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        java.lang.String str8 = bBdata0.getBookTitle("hi!");
+        boolean boolean10 = bBdata0.bookExists("");
+        java.lang.String str12 = bBdata0.getBookTitle("");
+        boolean boolean14 = bBdata0.isMemberActive("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1524() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1524");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.printAllMembers();
+        int int6 = bBdata0.getBorrowLimit();
+        int int8 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+    }
+
+    @Test
+    public void test1525() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1525");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        java.lang.String str2 = bBdata0.getBookTitle("");
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getAvailableCopies("");
+        int int7 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertNull(str2);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+    }
+
+    @Test
+    public void test1526() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1526");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+    }
+
+    @Test
+    public void test1527() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1527");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        int int18 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1528() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1528");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        boolean boolean16 = bBdata0.memberExists("");
+        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
+        int int20 = bBdata0.getAvailableCopies("");
+        boolean boolean22 = bBdata0.isMemberActive("");
+        boolean boolean24 = bBdata0.memberExists("");
+        boolean boolean26 = bBdata0.memberExists("hi!");
+        java.lang.Class<?> wildcardClass27 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        org.junit.Assert.assertNotNull(wildcardClass27);
+    }
+
+    @Test
+    public void test1529() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1529");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        int int12 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+    }
+
+    @Test
+    public void test1530() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1530");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        int int18 = bBdata0.getBorrowCount("");
+        bBdata0.printAllBooks();
+        java.lang.String str21 = bBdata0.getBookTitle("");
+        bBdata0.decreaseCopy("hi!");
+        int int24 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 3 + "'", int24 == 3);
+    }
+
+    @Test
+    public void test1531() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1531");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        boolean boolean6 = bBdata0.memberExists("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str10 = bBdata0.getBookTitle("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1532() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1532");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        boolean boolean15 = bBdata0.bookExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str19 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1533() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1533");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        java.lang.String str13 = bBdata0.getBookAuthor("");
+        int int15 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str19 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1534() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1534");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        int int19 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str23 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNull(str23);
+    }
+
+    @Test
+    public void test1535() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1535");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllMembers();
+        int int16 = bBdata0.getBorrowLimit();
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        boolean boolean20 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1536() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1536");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean17 = bBdata0.memberExists("");
+        int int19 = bBdata0.getBorrowCount("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+    }
+
+    @Test
+    public void test1537() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1537");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        boolean boolean6 = bBdata0.bookExists("");
+        int int7 = bBdata0.getBorrowLimit();
+        int int9 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+    }
+
+    @Test
+    public void test1538() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1538");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        java.lang.String str3 = bBdata0.getMemberName("");
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str7 = bBdata0.getMemberName("");
+        int int9 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertNull(str3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+    }
+
+    @Test
+    public void test1539() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1539");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        boolean boolean16 = bBdata0.memberExists("");
+        int int18 = bBdata0.getBorrowCount("hi!");
+        int int19 = bBdata0.getBorrowLimit();
+        int int21 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllMembers();
+        int int24 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+    }
+
+    @Test
+    public void test1540() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1540");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str16 = bBdata0.getMemberName("");
+        java.lang.String str18 = bBdata0.getMemberName("");
+        boolean boolean20 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1541() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1541");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        boolean boolean19 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test1542() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1542");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("");
+        int int9 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getBorrowLimit();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1543() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1543");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        boolean boolean6 = bBdata0.memberExists("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        boolean boolean14 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1544() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1544");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        int int8 = bBdata0.getBorrowLimit();
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1545() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1545");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        boolean boolean13 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("hi!");
+        int int17 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+    }
+
+    @Test
+    public void test1546() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1546");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+    }
+
+    @Test
+    public void test1547() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1547");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean8 = bBdata0.bookExists("hi!");
+        int int10 = bBdata0.getBorrowCount("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test1548() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1548");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        int int7 = bBdata0.getBorrowLimit();
+        int int9 = bBdata0.getBorrowCount("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("");
+        boolean boolean13 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1549() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1549");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        int int7 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean11 = bBdata0.memberExists("");
+        int int12 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+    }
+
+    @Test
+    public void test1550() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1550");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean23 = bBdata0.memberExists("hi!");
+        java.lang.String str25 = bBdata0.getBookTitle("");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNull(str25);
+    }
+
+    @Test
+    public void test1551() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1551");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getAvailableCopies("");
+        int int18 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str20 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNull(str20);
+    }
+
+    @Test
+    public void test1552() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1552");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        boolean boolean11 = bBdata0.memberExists("hi!");
+        int int13 = bBdata0.getBorrowCount("");
+        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNull(str15);
+    }
+
+    @Test
+    public void test1553() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1553");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        boolean boolean17 = bBdata0.bookExists("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test1554() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1554");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.decreaseCopy("");
+        int int17 = bBdata0.getBorrowLimit();
+        java.lang.String str19 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1555() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1555");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean9 = bBdata0.bookExists("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean14 = bBdata0.isMemberActive("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        boolean boolean18 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1556() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1556");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str13 = bBdata0.getBookTitle("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
+        int int17 = bBdata0.getBorrowCount("");
+        boolean boolean19 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test1557() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1557");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getAvailableCopies("");
+        int int7 = bBdata0.getBorrowLimit();
+        java.lang.Class<?> wildcardClass8 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+    @Test
+    public void test1558() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1558");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean12 = bBdata0.bookExists("");
+        java.lang.Class<?> wildcardClass13 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test1559() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1559");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean9 = bBdata0.bookExists("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean14 = bBdata0.isMemberActive("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str20 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str20);
+    }
+
+    @Test
+    public void test1560() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1560");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+    }
+
+    @Test
+    public void test1561() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1561");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        boolean boolean11 = bBdata0.memberExists("");
+        boolean boolean13 = bBdata0.bookExists("hi!");
+        java.lang.String str15 = bBdata0.getBookTitle("");
+        boolean boolean17 = bBdata0.memberExists("");
+        java.lang.String str19 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1562() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1562");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
+        int int16 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1563() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1563");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        boolean boolean8 = bBdata0.isMemberActive("hi!");
+        int int10 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str13 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str13);
+    }
+
+    @Test
+    public void test1564() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1564");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        boolean boolean8 = bBdata0.bookExists("hi!");
+        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        int int14 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str16 = bBdata0.getMemberName("hi!");
+        java.lang.String str18 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1565() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1565");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        boolean boolean5 = bBdata0.isMemberActive("");
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.memberExists("");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        int int13 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str15 = bBdata0.getMemberName("");
+        java.lang.String str17 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str17);
+    }
+
+    @Test
+    public void test1566() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1566");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        int int13 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
+    }
+
+    @Test
+    public void test1567() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1567");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getAvailableCopies("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        boolean boolean14 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1568() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1568");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        java.lang.String str2 = bBdata0.getBookTitle("hi!");
+        int int3 = bBdata0.getBorrowLimit();
+        boolean boolean5 = bBdata0.memberExists("");
+        java.lang.Class<?> wildcardClass6 = bBdata0.getClass();
+        org.junit.Assert.assertNull(str2);
+        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 3 + "'", int3 == 3);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNotNull(wildcardClass6);
+    }
+
+    @Test
+    public void test1569() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1569");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str9 = bBdata0.getMemberName("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        boolean boolean13 = bBdata0.memberExists("");
+        int int15 = bBdata0.getAvailableCopies("");
+        boolean boolean17 = bBdata0.bookExists("hi!");
+        int int19 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+    }
+
+    @Test
+    public void test1570() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1570");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getAvailableCopies("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        java.lang.String str14 = bBdata0.getBookTitle("");
+        boolean boolean16 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        java.lang.String str20 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str20);
+    }
+
+    @Test
+    public void test1571() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1571");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getAvailableCopies("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1572() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1572");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        java.lang.String str8 = bBdata0.getBookTitle("");
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertNull(str8);
+    }
+
+    @Test
+    public void test1573() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1573");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("hi!");
+        int int14 = bBdata0.getAvailableCopies("");
+        boolean boolean16 = bBdata0.memberExists("");
+        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test1574() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1574");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean13 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1575() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1575");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        bBdata0.increaseBorrowCount("hi!");
+        int int19 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
+    }
+
+    @Test
+    public void test1576() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1576");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.memberExists("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean14 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        int int16 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        boolean boolean19 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test1577() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1577");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean18 = bBdata0.bookExists("");
+        java.lang.String str20 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str20);
+    }
+
+    @Test
+    public void test1578() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1578");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        int int15 = bBdata0.getBorrowLimit();
+        java.lang.String str17 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+        org.junit.Assert.assertNull(str17);
+    }
+
+    @Test
+    public void test1579() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1579");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        boolean boolean13 = bBdata0.memberExists("");
+        int int15 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        int int19 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+    }
+
+    @Test
+    public void test1580() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1580");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean8 = bBdata0.isMemberActive("");
+        boolean boolean10 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test1581() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1581");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        boolean boolean13 = bBdata0.isMemberActive("");
+        bBdata0.printAllMembers();
+        int int15 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+    }
+
+    @Test
+    public void test1582() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1582");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        boolean boolean8 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+    @Test
+    public void test1583() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1583");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        java.lang.String str17 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        java.lang.String str20 = bBdata0.getBookTitle("");
+        bBdata0.printAllBooks();
+        boolean boolean23 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        int int26 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str28 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str17);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNull(str28);
+    }
+
+    @Test
+    public void test1584() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1584");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str9 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str9);
+    }
+
+    @Test
+    public void test1585() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1585");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean9 = bBdata0.memberExists("");
+        java.lang.Class<?> wildcardClass10 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNotNull(wildcardClass10);
+    }
+
+    @Test
+    public void test1586() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1586");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        int int14 = bBdata0.getBorrowCount("");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        boolean boolean18 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1587() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1587");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean15 = bBdata0.memberExists("");
+        int int17 = bBdata0.getBorrowCount("hi!");
+        bBdata0.decreaseCopy("hi!");
+        int int20 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+    }
+
+    @Test
+    public void test1588() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1588");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getMemberName("");
+        boolean boolean14 = bBdata0.bookExists("hi!");
+        boolean boolean16 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1589() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1589");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        java.lang.String str6 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        boolean boolean16 = bBdata0.isMemberActive("hi!");
+        int int18 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1590() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1590");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.memberExists("");
+        int int20 = bBdata0.getBorrowCount("hi!");
+        boolean boolean22 = bBdata0.isMemberActive("");
+        boolean boolean24 = bBdata0.bookExists("");
+        java.lang.String str26 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        org.junit.Assert.assertNull(str26);
+    }
+
+    @Test
+    public void test1591() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1591");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        int int12 = bBdata0.getAvailableCopies("");
+        boolean boolean14 = bBdata0.bookExists("");
+        int int16 = bBdata0.getBorrowCount("hi!");
+        int int18 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1592() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1592");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        java.lang.String str19 = bBdata0.getBookTitle("hi!");
+        java.lang.String str21 = bBdata0.getBookTitle("");
+        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str26 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertNull(str26);
+    }
+
+    @Test
+    public void test1593() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1593");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        boolean boolean8 = bBdata0.memberExists("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test1594() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1594");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        java.lang.Class<?> wildcardClass13 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test1595() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1595");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        boolean boolean8 = bBdata0.isMemberActive("hi!");
+        bBdata0.decreaseCopy("");
+        boolean boolean12 = bBdata0.bookExists("hi!");
+        boolean boolean14 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1596() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1596");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+    }
+
+    @Test
+    public void test1597() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1597");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+    }
+
+    @Test
+    public void test1598() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1598");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        boolean boolean13 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        java.lang.Class<?> wildcardClass15 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test1599() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1599");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        java.lang.String str12 = bBdata0.getBookTitle("");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1600() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1600");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowCount("hi!");
+        int int14 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+    }
+
+    @Test
+    public void test1601() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1601");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        boolean boolean5 = bBdata0.isMemberActive("");
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.memberExists("");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        int int13 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str15 = bBdata0.getBookTitle("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        java.lang.String str19 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1602() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1602");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.bookExists("");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str13 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNull(str13);
+    }
+
+    @Test
+    public void test1603() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1603");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean13 = bBdata0.bookExists("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        int int17 = bBdata0.getBorrowCount("hi!");
+        int int19 = bBdata0.getBorrowCount("");
+        boolean boolean21 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+    }
+
+    @Test
+    public void test1604() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1604");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        int int15 = bBdata0.getBorrowLimit();
+        int int17 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+    }
+
+    @Test
+    public void test1605() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1605");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str13 = bBdata0.getMemberName("");
+        java.lang.String str15 = bBdata0.getMemberName("hi!");
+        boolean boolean17 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test1606() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1606");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.bookExists("");
+        boolean boolean11 = bBdata0.memberExists("hi!");
+        java.lang.String str13 = bBdata0.getMemberName("");
+        boolean boolean15 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+    }
+
+    @Test
+    public void test1607() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1607");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        bBdata0.printAllBooks();
+        int int10 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        int int15 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+    }
+
+    @Test
+    public void test1608() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1608");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.memberExists("");
+        int int10 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test1609() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1609");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        int int16 = bBdata0.getBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        int int18 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 3 + "'", int18 == 3);
+    }
+
+    @Test
+    public void test1610() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1610");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        int int13 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int16 = bBdata0.getAvailableCopies("");
+        java.lang.String str18 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1611() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1611");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        int int8 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
+    }
+
+    @Test
+    public void test1612() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1612");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        boolean boolean14 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str18 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1613() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1613");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean10 = bBdata0.memberExists("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1614() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1614");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        boolean boolean21 = bBdata0.bookExists("hi!");
+        boolean boolean23 = bBdata0.bookExists("hi!");
+        int int25 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str27 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertNull(str27);
+    }
+
+    @Test
+    public void test1615() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1615");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        java.lang.String str17 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str17);
+    }
+
+    @Test
+    public void test1616() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1616");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        int int11 = bBdata0.getBorrowCount("");
+        int int12 = bBdata0.getBorrowLimit();
+        boolean boolean14 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1617() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1617");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        boolean boolean9 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        boolean boolean18 = bBdata0.bookExists("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str22 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str22);
+    }
+
+    @Test
+    public void test1618() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1618");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1619() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1619");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        bBdata0.printAllMembers();
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getBorrowCount("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1620() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1620");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        int int17 = bBdata0.getAvailableCopies("");
+        java.lang.String str19 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1621() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1621");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        int int14 = bBdata0.getBorrowCount("hi!");
+        boolean boolean16 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1622() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1622");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.decreaseCopy("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        bBdata0.decreaseCopy("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test1623() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1623");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        boolean boolean8 = bBdata0.memberExists("");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        java.lang.Class<?> wildcardClass15 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test1624() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1624");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        java.lang.String str3 = bBdata0.getMemberName("");
+        boolean boolean5 = bBdata0.bookExists("");
+        java.lang.String str7 = bBdata0.getMemberName("");
+        java.lang.String str9 = bBdata0.getBookTitle("");
+        java.lang.String str11 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertNull(str3);
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertNull(str11);
+    }
+
+    @Test
+    public void test1625() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1625");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int7 = bBdata0.getBorrowLimit();
+        java.lang.String str9 = bBdata0.getBookTitle("hi!");
+        int int11 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+    }
+
+    @Test
+    public void test1626() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1626");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str9 = bBdata0.getBookTitle("");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        boolean boolean16 = bBdata0.memberExists("");
+        int int18 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1627() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1627");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        java.lang.String str2 = bBdata0.getBookTitle("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.decreaseCopy("hi!");
+        int int9 = bBdata0.getBorrowCount("");
+        boolean boolean11 = bBdata0.bookExists("");
+        boolean boolean13 = bBdata0.bookExists("");
+        int int15 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertNull(str2);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+    }
+
+    @Test
+    public void test1628() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1628");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        int int10 = bBdata0.getBorrowLimit();
+        java.lang.String str12 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str18 = bBdata0.getBookAuthor("");
+        boolean boolean20 = bBdata0.bookExists("hi!");
+        int int22 = bBdata0.getAvailableCopies("");
+        java.lang.String str24 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertNull(str24);
+    }
+
+    @Test
+    public void test1629() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1629");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        java.lang.String str20 = bBdata0.getBookTitle("hi!");
+        int int22 = bBdata0.getBorrowCount("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+    }
+
+    @Test
+    public void test1630() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1630");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        int int8 = bBdata0.getAvailableCopies("");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        boolean boolean14 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test1631() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1631");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        int int7 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        int int10 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+    }
+
+    @Test
+    public void test1632() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1632");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        int int14 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
+    }
+
+    @Test
+    public void test1633() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1633");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("");
+        boolean boolean17 = bBdata0.bookExists("hi!");
+        int int19 = bBdata0.getBorrowCount("hi!");
+        boolean boolean21 = bBdata0.isMemberActive("");
+        boolean boolean23 = bBdata0.bookExists("");
+        boolean boolean25 = bBdata0.bookExists("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean28 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+    }
+
+    @Test
+    public void test1634() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1634");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        java.lang.String str13 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str13);
+    }
+
+    @Test
+    public void test1635() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1635");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        boolean boolean14 = bBdata0.isMemberActive("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1636() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1636");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getBookAuthor("");
+        java.lang.Class<?> wildcardClass5 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNotNull(wildcardClass5);
+    }
+
+    @Test
+    public void test1637() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1637");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str15 = bBdata0.getBookTitle("");
+        boolean boolean17 = bBdata0.isMemberActive("hi!");
+        java.lang.String str19 = bBdata0.getBookAuthor("");
+        boolean boolean21 = bBdata0.bookExists("");
+        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
+        int int24 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 3 + "'", int24 == 3);
+    }
+
+    @Test
+    public void test1638() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1638");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int15 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str22 = bBdata0.getMemberName("");
+        java.lang.String str24 = bBdata0.getBookAuthor("");
+        int int26 = bBdata0.getAvailableCopies("");
+        boolean boolean28 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+        org.junit.Assert.assertNull(str22);
+        org.junit.Assert.assertNull(str24);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+    }
+
+    @Test
+    public void test1639() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1639");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str8 = bBdata0.getBookTitle("hi!");
+        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1640() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1640");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1641() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1641");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        boolean boolean8 = bBdata0.isMemberActive("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1642() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1642");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str9 = bBdata0.getMemberName("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        boolean boolean13 = bBdata0.memberExists("");
+        java.lang.String str15 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNull(str15);
+    }
+
+    @Test
+    public void test1643() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1643");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        boolean boolean19 = bBdata0.memberExists("hi!");
+        java.lang.String str21 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNull(str21);
+    }
+
+    @Test
+    public void test1644() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1644");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        boolean boolean8 = bBdata0.memberExists("");
+        int int9 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+    }
+
+    @Test
+    public void test1645() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1645");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        boolean boolean10 = bBdata0.isMemberActive("");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1646() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1646");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("");
+        boolean boolean17 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        boolean boolean22 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+    }
+
+    @Test
+    public void test1647() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1647");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        boolean boolean8 = bBdata0.isMemberActive("hi!");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+    @Test
+    public void test1648() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1648");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        java.lang.Class<?> wildcardClass8 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNotNull(wildcardClass8);
+    }
+
+    @Test
+    public void test1649() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1649");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        boolean boolean16 = bBdata0.bookExists("hi!");
+        boolean boolean18 = bBdata0.bookExists("hi!");
+        boolean boolean20 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1650() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1650");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str16 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        boolean boolean19 = bBdata0.isMemberActive("");
+        int int20 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+    }
+
+    @Test
+    public void test1651() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1651");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        boolean boolean5 = bBdata0.isMemberActive("");
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.memberExists("");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        int int13 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+    }
+
+    @Test
+    public void test1652() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1652");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1653() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1653");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        boolean boolean20 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1654() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1654");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        java.lang.Class<?> wildcardClass7 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test1655() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1655");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        int int6 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1656() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1656");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        int int18 = bBdata0.getBorrowCount("");
+        boolean boolean20 = bBdata0.memberExists("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1657() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1657");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        java.lang.String str17 = bBdata0.getMemberName("");
+        boolean boolean19 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str23 = bBdata0.getMemberName("hi!");
+        int int25 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str17);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+    }
+
+    @Test
+    public void test1658() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1658");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.memberExists("");
+        int int20 = bBdata0.getBorrowCount("hi!");
+        boolean boolean22 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        int int26 = bBdata0.getAvailableCopies("");
+        boolean boolean28 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+    }
+
+    @Test
+    public void test1659() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1659");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        int int18 = bBdata0.getBorrowCount("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1660() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1660");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertNull(str6);
+    }
+
+    @Test
+    public void test1661() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1661");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        int int12 = bBdata0.getBorrowCount("hi!");
+        int int14 = bBdata0.getBorrowCount("hi!");
+        boolean boolean16 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1662() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1662");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        boolean boolean15 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str19 = bBdata0.getBookAuthor("");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllBooks();
+        java.lang.String str24 = bBdata0.getBookTitle("");
+        boolean boolean26 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertNull(str24);
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test1663() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1663");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean18 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1664() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1664");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean17 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test1665() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1665");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        int int14 = bBdata0.getBorrowCount("hi!");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        java.lang.String str18 = bBdata0.getMemberName("hi!");
+        int int19 = bBdata0.getBorrowLimit();
+        boolean boolean21 = bBdata0.isMemberActive("hi!");
+        boolean boolean23 = bBdata0.isMemberActive("hi!");
+        int int25 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+    }
+
+    @Test
+    public void test1666() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1666");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        java.lang.String str16 = bBdata0.getMemberName("");
+        bBdata0.increaseBorrowCount("");
+        int int20 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean24 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+    }
+
+    @Test
+    public void test1667() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1667");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        int int8 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
+    }
+
+    @Test
+    public void test1668() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1668");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str8 = bBdata0.getBookTitle("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test1669() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1669");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1670() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1670");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        int int7 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("");
+        java.lang.Class<?> wildcardClass12 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertNotNull(wildcardClass12);
+    }
+
+    @Test
+    public void test1671() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1671");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean14 = bBdata0.bookExists("hi!");
+        int int16 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1672() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1672");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.bookExists("");
+        boolean boolean11 = bBdata0.memberExists("hi!");
+        java.lang.String str13 = bBdata0.getMemberName("");
+        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str15);
+    }
+
+    @Test
+    public void test1673() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1673");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        int int14 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean16 = bBdata0.isMemberActive("hi!");
+        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test1674() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1674");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int15 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        int int21 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+    }
+
+    @Test
+    public void test1675() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1675");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        java.lang.String str18 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1676() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1676");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        boolean boolean8 = bBdata0.isMemberActive("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test1677() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1677");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str13 = bBdata0.getBookTitle("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str19 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1678() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1678");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        int int18 = bBdata0.getBorrowCount("hi!");
+        int int20 = bBdata0.getBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+    }
+
+    @Test
+    public void test1679() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1679");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        java.lang.String str6 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        java.lang.String str9 = bBdata0.getBookAuthor("");
+        int int11 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+    }
+
+    @Test
+    public void test1680() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1680");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        boolean boolean8 = bBdata0.memberExists("");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        java.lang.Class<?> wildcardClass13 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test1681() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1681");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        boolean boolean18 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1682() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1682");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        boolean boolean6 = bBdata0.memberExists("");
+        bBdata0.increaseBorrowCount("");
+        int int9 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+    }
+
+    @Test
+    public void test1683() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1683");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        int int6 = bBdata0.getBorrowCount("");
+        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1684() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1684");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        int int13 = bBdata0.getAvailableCopies("");
+        boolean boolean15 = bBdata0.bookExists("");
+        boolean boolean17 = bBdata0.memberExists("");
+        boolean boolean19 = bBdata0.isMemberActive("");
+        boolean boolean21 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+    }
+
+    @Test
+    public void test1685() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1685");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        java.lang.Class<?> wildcardClass19 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNotNull(wildcardClass19);
+    }
+
+    @Test
+    public void test1686() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1686");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str7 = bBdata0.getBookAuthor("hi!");
+        boolean boolean9 = bBdata0.bookExists("");
+        java.lang.String str11 = bBdata0.getMemberName("");
+        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
+        boolean boolean15 = bBdata0.memberExists("hi!");
+        boolean boolean17 = bBdata0.memberExists("hi!");
+        java.lang.String str19 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1687() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1687");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        boolean boolean14 = bBdata0.memberExists("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        int int18 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 3 + "'", int18 == 3);
+    }
+
+    @Test
+    public void test1688() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1688");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+    }
+
+    @Test
+    public void test1689() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1689");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.bookExists("hi!");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+    }
+
+    @Test
+    public void test1690() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1690");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        int int13 = bBdata0.getAvailableCopies("");
+        boolean boolean15 = bBdata0.isMemberActive("hi!");
+        java.lang.String str17 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNull(str17);
+    }
+
+    @Test
+    public void test1691() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1691");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean10 = bBdata0.memberExists("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test1692() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1692");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.memberExists("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean14 = bBdata0.bookExists("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("");
+        int int18 = bBdata0.getAvailableCopies("");
+        boolean boolean20 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1693() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1693");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.memberExists("");
+        int int20 = bBdata0.getBorrowCount("hi!");
+        boolean boolean22 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("");
+        java.lang.String str26 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNull(str26);
+    }
+
+    @Test
+    public void test1694() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1694");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1695() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1695");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        java.lang.String str20 = bBdata0.getBookAuthor("hi!");
+        int int22 = bBdata0.getAvailableCopies("");
+        int int24 = bBdata0.getAvailableCopies("");
+        int int26 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+    }
+
+    @Test
+    public void test1696() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1696");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        boolean boolean11 = bBdata0.bookExists("");
+        boolean boolean13 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1697() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1697");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str9);
+    }
+
+    @Test
+    public void test1698() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1698");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        int int7 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean11 = bBdata0.memberExists("");
+        int int13 = bBdata0.getAvailableCopies("");
+        boolean boolean15 = bBdata0.bookExists("hi!");
+        boolean boolean17 = bBdata0.memberExists("hi!");
+        boolean boolean19 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test1699() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1699");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean12 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1700() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1700");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean17 = bBdata0.bookExists("hi!");
+        int int18 = bBdata0.getBorrowLimit();
+        java.lang.String str20 = bBdata0.getBookAuthor("");
+        int int22 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 3 + "'", int18 == 3);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+    }
+
+    @Test
+    public void test1701() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1701");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        java.lang.String str8 = bBdata0.getMemberName("");
+        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1702() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1702");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        boolean boolean8 = bBdata0.bookExists("hi!");
+        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1703() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1703");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.isMemberActive("");
+        bBdata0.printAllMembers();
+        java.lang.String str21 = bBdata0.getBookAuthor("");
+        java.lang.String str23 = bBdata0.getMemberName("hi!");
+        bBdata0.decreaseCopy("");
+        int int27 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
+    }
+
+    @Test
+    public void test1704() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1704");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        java.lang.String str16 = bBdata0.getMemberName("");
+        java.lang.String str18 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1705() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1705");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("");
+        boolean boolean8 = bBdata0.isMemberActive("");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        boolean boolean12 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1706() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1706");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getAvailableCopies("");
+        java.lang.String str18 = bBdata0.getMemberName("");
+        java.lang.Class<?> wildcardClass19 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertNotNull(wildcardClass19);
+    }
+
+    @Test
+    public void test1707() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1707");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        java.lang.String str12 = bBdata0.getBookTitle("");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        boolean boolean16 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1708() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1708");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        bBdata0.printAllBooks();
+        int int10 = bBdata0.getBorrowLimit();
+        int int12 = bBdata0.getBorrowCount("hi!");
+        bBdata0.decreaseCopy("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test1709() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1709");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        boolean boolean11 = bBdata0.memberExists("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1710() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1710");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
+        boolean boolean15 = bBdata0.isMemberActive("");
+        boolean boolean17 = bBdata0.isMemberActive("");
+        int int19 = bBdata0.getBorrowCount("hi!");
+        int int21 = bBdata0.getAvailableCopies("hi!");
+        int int23 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+    }
+
+    @Test
+    public void test1711() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1711");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        java.lang.String str19 = bBdata0.getMemberName("");
+        int int21 = bBdata0.getAvailableCopies("");
+        int int23 = bBdata0.getAvailableCopies("");
+        int int25 = bBdata0.getBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+    }
+
+    @Test
+    public void test1712() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1712");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        boolean boolean8 = bBdata0.memberExists("");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        java.lang.String str14 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1713() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1713");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+    }
+
+    @Test
+    public void test1714() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1714");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+    }
+
+    @Test
+    public void test1715() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1715");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        int int7 = bBdata0.getBorrowCount("hi!");
+        boolean boolean9 = bBdata0.bookExists("");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+    @Test
+    public void test1716() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1716");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1717() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1717");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean13 = bBdata0.bookExists("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1718() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1718");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        int int9 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str11 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertNull(str11);
+    }
+
+    @Test
+    public void test1719() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1719");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        java.lang.String str2 = bBdata0.getBookTitle("");
+        int int4 = bBdata0.getBorrowCount("");
+        boolean boolean6 = bBdata0.bookExists("hi!");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str10 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertNull(str2);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1720() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1720");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        java.lang.String str8 = bBdata0.getBookTitle("");
+        java.lang.String str10 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1721() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1721");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        int int8 = bBdata0.getAvailableCopies("");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1722() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1722");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1723() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1723");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        boolean boolean4 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("hi!");
+        int int8 = bBdata0.getAvailableCopies("");
+        int int9 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+    }
+
+    @Test
+    public void test1724() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1724");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+    }
+
+    @Test
+    public void test1725() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1725");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str8 = bBdata0.getBookAuthor("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        boolean boolean15 = bBdata0.isMemberActive("");
+        java.lang.Class<?> wildcardClass16 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNotNull(wildcardClass16);
+    }
+
+    @Test
+    public void test1726() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1726");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        int int8 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("");
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1727() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1727");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        java.lang.String str4 = bBdata0.getBookTitle("hi!");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        boolean boolean8 = bBdata0.memberExists("");
+        java.lang.Class<?> wildcardClass9 = bBdata0.getClass();
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNotNull(wildcardClass9);
+    }
+
+    @Test
+    public void test1728() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1728");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        int int14 = bBdata0.getBorrowCount("hi!");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        java.lang.String str18 = bBdata0.getBookTitle("");
+        boolean boolean20 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+    }
+
+    @Test
+    public void test1729() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1729");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str15);
+    }
+
+    @Test
+    public void test1730() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1730");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        bBdata0.decreaseCopy("hi!");
+        int int20 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+    }
+
+    @Test
+    public void test1731() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1731");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        int int9 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str13 = bBdata0.getBookTitle("");
+        boolean boolean15 = bBdata0.memberExists("");
+        int int17 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+    }
+
+    @Test
+    public void test1732() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1732");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        int int8 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
+    }
+
+    @Test
+    public void test1733() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1733");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
+        boolean boolean15 = bBdata0.isMemberActive("");
+        int int17 = bBdata0.getBorrowCount("");
+        boolean boolean19 = bBdata0.memberExists("");
+        java.lang.String str21 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str13);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNull(str21);
+    }
+
+    @Test
+    public void test1734() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1734");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean23 = bBdata0.memberExists("hi!");
+        java.lang.String str25 = bBdata0.getBookTitle("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertNull(str25);
+    }
+
+    @Test
+    public void test1735() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1735");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getBookAuthor("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+    }
+
+    @Test
+    public void test1736() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1736");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.isMemberActive("");
+        bBdata0.printAllMembers();
+        boolean boolean21 = bBdata0.bookExists("hi!");
+        int int23 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean26 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test1737() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1737");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.memberExists("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+    }
+
+    @Test
+    public void test1738() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1738");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.isMemberActive("hi!");
+        int int8 = bBdata0.getAvailableCopies("");
+        java.lang.String str10 = bBdata0.getMemberName("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.decreaseCopy("hi!");
+        boolean boolean16 = bBdata0.bookExists("");
+        java.lang.String str18 = bBdata0.getBookTitle("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1739() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1739");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean13 = bBdata0.bookExists("");
+        java.lang.String str15 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertNull(str15);
+    }
+
+    @Test
+    public void test1740() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1740");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        boolean boolean12 = bBdata0.bookExists("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        java.lang.Class<?> wildcardClass15 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNotNull(wildcardClass15);
+    }
+
+    @Test
+    public void test1741() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1741");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        boolean boolean13 = bBdata0.isMemberActive("hi!");
+        int int14 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str23 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        int int25 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + 3 + "'", int25 == 3);
+    }
+
+    @Test
+    public void test1742() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1742");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        boolean boolean10 = bBdata0.bookExists("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test1743() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1743");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        boolean boolean14 = bBdata0.isMemberActive("");
+        boolean boolean16 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+    }
+
+    @Test
+    public void test1744() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1744");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("");
+        boolean boolean17 = bBdata0.memberExists("");
+        int int19 = bBdata0.getAvailableCopies("");
+        java.lang.String str21 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNull(str21);
+    }
+
+    @Test
+    public void test1745() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1745");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int15 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str22 = bBdata0.getMemberName("");
+        java.lang.String str24 = bBdata0.getBookAuthor("");
+        int int26 = bBdata0.getBorrowCount("");
+        java.lang.String str28 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+        org.junit.Assert.assertNull(str22);
+        org.junit.Assert.assertNull(str24);
+        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
+        org.junit.Assert.assertNull(str28);
+    }
+
+    @Test
+    public void test1746() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1746");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        java.lang.String str6 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+    }
+
+    @Test
+    public void test1747() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1747");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        int int10 = bBdata0.getBorrowLimit();
+        java.lang.String str12 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        int int18 = bBdata0.getAvailableCopies("");
+        boolean boolean20 = bBdata0.bookExists("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str24 = bBdata0.getBookTitle("");
+        java.lang.String str26 = bBdata0.getBookTitle("");
+        boolean boolean28 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertNull(str24);
+        org.junit.Assert.assertNull(str26);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+    }
+
+    @Test
+    public void test1748() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1748");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        int int18 = bBdata0.getBorrowCount("hi!");
+        int int20 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+    }
+
+    @Test
+    public void test1749() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1749");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("");
+        int int8 = bBdata0.getAvailableCopies("");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1750() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1750");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookTitle("");
+        int int16 = bBdata0.getBorrowCount("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1751() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1751");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+    }
+
+    @Test
+    public void test1752() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1752");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        java.lang.String str2 = bBdata0.getBookTitle("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.decreaseCopy("");
+        boolean boolean8 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertNull(str2);
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+    }
+
+    @Test
+    public void test1753() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1753");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1754() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1754");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        int int16 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1755() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1755");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        int int13 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+    }
+
+    @Test
+    public void test1756() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1756");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.memberExists("");
+        int int20 = bBdata0.getBorrowCount("hi!");
+        boolean boolean22 = bBdata0.isMemberActive("");
+        java.lang.String str24 = bBdata0.getBookTitle("");
+        java.lang.Class<?> wildcardClass25 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertNull(str24);
+        org.junit.Assert.assertNotNull(wildcardClass25);
+    }
+
+    @Test
+    public void test1757() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1757");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        boolean boolean8 = bBdata0.bookExists("");
+        java.lang.String str10 = bBdata0.getBookTitle("hi!");
+        boolean boolean12 = bBdata0.bookExists("hi!");
+        int int13 = bBdata0.getBorrowLimit();
+        boolean boolean15 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+    }
+
+    @Test
+    public void test1758() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1758");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        boolean boolean12 = bBdata0.bookExists("");
+        java.lang.String str14 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1759() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1759");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("");
+        int int7 = bBdata0.getBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        int int10 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+    }
+
+    @Test
+    public void test1760() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1760");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        int int19 = bBdata0.getBorrowCount("");
+        java.lang.String str21 = bBdata0.getBookTitle("hi!");
+        java.lang.String str23 = bBdata0.getBookAuthor("");
+        java.lang.Class<?> wildcardClass24 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertNotNull(wildcardClass24);
+    }
+
+    @Test
+    public void test1761() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1761");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        java.lang.String str17 = bBdata0.getMemberName("");
+        boolean boolean19 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str23 = bBdata0.getMemberName("hi!");
+        java.lang.String str25 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str28 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str17);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertNull(str25);
+        org.junit.Assert.assertNull(str28);
+    }
+
+    @Test
+    public void test1762() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1762");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("hi!");
+        boolean boolean18 = bBdata0.isMemberActive("");
+        boolean boolean20 = bBdata0.memberExists("");
+        java.lang.String str22 = bBdata0.getBookTitle("");
+        int int23 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertNull(str22);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 3 + "'", int23 == 3);
+    }
+
+    @Test
+    public void test1763() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1763");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        boolean boolean6 = bBdata0.memberExists("hi!");
+        java.lang.String str8 = bBdata0.getBookTitle("hi!");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+    }
+
+    @Test
+    public void test1764() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1764");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookTitle("");
+        int int16 = bBdata0.getBorrowCount("");
+        int int17 = bBdata0.getBorrowLimit();
+        int int19 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+    }
+
+    @Test
+    public void test1765() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1765");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        java.lang.String str20 = bBdata0.getBookAuthor("hi!");
+        int int22 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean26 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+    }
+
+    @Test
+    public void test1766() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1766");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllMembers();
+        int int16 = bBdata0.getBorrowLimit();
+        int int17 = bBdata0.getBorrowLimit();
+        boolean boolean19 = bBdata0.isMemberActive("");
+        boolean boolean21 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+    }
+
+    @Test
+    public void test1767() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1767");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        boolean boolean11 = bBdata0.memberExists("");
+        boolean boolean13 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1768() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1768");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        java.lang.String str6 = bBdata0.getBookAuthor("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str10 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+    }
+
+    @Test
+    public void test1769() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1769");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
+        bBdata0.decreaseCopy("");
+        boolean boolean23 = bBdata0.isMemberActive("");
+        int int25 = bBdata0.getBorrowCount("");
+        boolean boolean27 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+    }
+
+    @Test
+    public void test1770() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1770");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.decreaseCopy("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        bBdata0.decreaseCopy("");
+        int int12 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean14 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1771() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1771");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str11 = bBdata0.getBookAuthor("");
+        bBdata0.printAllMembers();
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getBorrowCount("");
+        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test1772() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1772");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean17 = bBdata0.bookExists("hi!");
+        int int19 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+    }
+
+    @Test
+    public void test1773() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1773");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.printAllMembers();
+        int int7 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+    }
+
+    @Test
+    public void test1774() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1774");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        int int19 = bBdata0.getBorrowCount("");
+        int int21 = bBdata0.getBorrowCount("");
+        java.lang.String str23 = bBdata0.getBookTitle("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertNull(str23);
+    }
+
+    @Test
+    public void test1775() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1775");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1776() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1776");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        int int6 = bBdata0.getBorrowLimit();
+        java.lang.String str8 = bBdata0.getBookTitle("");
+        java.lang.String str10 = bBdata0.getBookTitle("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        boolean boolean13 = bBdata0.memberExists("");
+        int int15 = bBdata0.getAvailableCopies("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+    }
+
+    @Test
+    public void test1777() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1777");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean20 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.printAllBooks();
+        java.lang.Class<?> wildcardClass26 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertNotNull(wildcardClass26);
+    }
+
+    @Test
+    public void test1778() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1778");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        java.lang.Class<?> wildcardClass7 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNotNull(wildcardClass7);
+    }
+
+    @Test
+    public void test1779() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1779");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("hi!");
+        int int23 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str27 = bBdata0.getMemberName("hi!");
+        boolean boolean29 = bBdata0.isMemberActive("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertNull(str27);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+    }
+
+    @Test
+    public void test1780() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1780");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        int int17 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("");
+        int int20 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+    }
+
+    @Test
+    public void test1781() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1781");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        boolean boolean11 = bBdata0.memberExists("hi!");
+        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str13);
+    }
+
+    @Test
+    public void test1782() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1782");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookAuthor("");
+        boolean boolean9 = bBdata0.memberExists("");
+        bBdata0.printAllBooks();
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str16 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1783() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1783");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        int int11 = bBdata0.getBorrowLimit();
+        boolean boolean13 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("hi!");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1784() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1784");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str9 = bBdata0.getBookTitle("");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        boolean boolean16 = bBdata0.memberExists("");
+        int int18 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str20 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        java.lang.String str23 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertNull(str23);
+    }
+
+    @Test
+    public void test1785() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1785");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
+        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str20 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str20);
+    }
+
+    @Test
+    public void test1786() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1786");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int5 = bBdata0.getBorrowCount("hi!");
+        boolean boolean7 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+    }
+
+    @Test
+    public void test1787() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1787");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean9 = bBdata0.bookExists("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1788() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1788");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        java.lang.String str17 = bBdata0.getMemberName("");
+        bBdata0.printAllMembers();
+        java.lang.String str20 = bBdata0.getBookTitle("");
+        bBdata0.printAllBooks();
+        boolean boolean23 = bBdata0.bookExists("hi!");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("");
+        boolean boolean28 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertNull(str17);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+    }
+
+    @Test
+    public void test1789() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1789");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean8 = bBdata0.bookExists("hi!");
+        boolean boolean10 = bBdata0.bookExists("");
+        java.lang.String str12 = bBdata0.getMemberName("hi!");
+        java.lang.String str14 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+    }
+
+    @Test
+    public void test1790() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1790");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.Class<?> wildcardClass11 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNotNull(wildcardClass11);
+    }
+
+    @Test
+    public void test1791() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1791");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str10 = bBdata0.getBookTitle("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("hi!");
+        java.lang.String str15 = bBdata0.getBookAuthor("");
+        boolean boolean17 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test1792() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1792");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        java.lang.String str20 = bBdata0.getBookAuthor("hi!");
+        int int22 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertNull(str20);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+    }
+
+    @Test
+    public void test1793() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1793");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        java.lang.String str3 = bBdata0.getMemberName("");
+        int int5 = bBdata0.getAvailableCopies("");
+        int int7 = bBdata0.getAvailableCopies("");
+        int int9 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertNull(str3);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+    }
+
+    @Test
+    public void test1794() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1794");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+    }
+
+    @Test
+    public void test1795() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1795");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int5 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("hi!");
+        boolean boolean9 = bBdata0.bookExists("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+    }
+
+    @Test
+    public void test1796() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1796");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        boolean boolean13 = bBdata0.memberExists("");
+        int int15 = bBdata0.getBorrowCount("");
+        boolean boolean17 = bBdata0.memberExists("hi!");
+        boolean boolean19 = bBdata0.isMemberActive("hi!");
+        int int20 = bBdata0.getBorrowLimit();
+        int int22 = bBdata0.getBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        java.lang.Class<?> wildcardClass24 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
+        org.junit.Assert.assertNotNull(wildcardClass24);
+    }
+
+    @Test
+    public void test1797() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1797");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean15 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("");
+        java.lang.String str19 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1798() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1798");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str15 = bBdata0.getMemberName("");
+        boolean boolean17 = bBdata0.bookExists("");
+        boolean boolean19 = bBdata0.bookExists("hi!");
+        int int20 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+    }
+
+    @Test
+    public void test1799() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1799");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean18 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("hi!");
+        int int23 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str27 = bBdata0.getMemberName("hi!");
+        boolean boolean29 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+        org.junit.Assert.assertNull(str27);
+        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+    }
+
+    @Test
+    public void test1800() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1800");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean11 = bBdata0.bookExists("");
+        bBdata0.decreaseCopy("");
+        bBdata0.decreaseCopy("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str19 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str19);
+    }
+
+    @Test
+    public void test1801() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1801");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        boolean boolean11 = bBdata0.isMemberActive("hi!");
+        boolean boolean13 = bBdata0.bookExists("");
+        int int15 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+    }
+
+    @Test
+    public void test1802() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1802");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        int int6 = bBdata0.getBorrowCount("hi!");
+        boolean boolean8 = bBdata0.bookExists("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean12 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1803() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1803");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str8 = bBdata0.getBookTitle("hi!");
+        boolean boolean10 = bBdata0.bookExists("hi!");
+        boolean boolean12 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1804() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1804");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        int int14 = bBdata0.getBorrowCount("hi!");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        java.lang.String str18 = bBdata0.getMemberName("");
+        java.lang.String str20 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        org.junit.Assert.assertNull(str16);
+        org.junit.Assert.assertNull(str18);
+        org.junit.Assert.assertNull(str20);
+    }
+
+    @Test
+    public void test1805() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1805");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        java.lang.String str14 = bBdata0.getMemberName("");
+        boolean boolean16 = bBdata0.isMemberActive("");
+        bBdata0.printAllMembers();
+        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("hi!");
+        int int24 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
+    }
+
+    @Test
+    public void test1806() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1806");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int6 = bBdata0.getBorrowCount("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        boolean boolean10 = bBdata0.memberExists("hi!");
+        int int12 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str16 = bBdata0.getBookTitle("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1807() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1807");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean11 = bBdata0.bookExists("");
+        bBdata0.decreaseCopy("");
+        java.lang.String str15 = bBdata0.getBookTitle("hi!");
+        int int16 = bBdata0.getBorrowLimit();
+        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertNull(str15);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
+        org.junit.Assert.assertNotNull(wildcardClass17);
+    }
+
+    @Test
+    public void test1808() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1808");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        int int13 = bBdata0.getAvailableCopies("");
+        boolean boolean15 = bBdata0.memberExists("hi!");
+        java.lang.String str17 = bBdata0.getMemberName("hi!");
+        java.lang.String str19 = bBdata0.getBookTitle("");
+        boolean boolean21 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNull(str17);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+    }
+
+    @Test
+    public void test1809() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1809");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str5 = bBdata0.getMemberName("");
+        boolean boolean7 = bBdata0.bookExists("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("");
+        bBdata0.printAllBooks();
+        int int12 = bBdata0.getBorrowCount("");
+        int int14 = bBdata0.getBorrowCount("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str5);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+    }
+
+    @Test
+    public void test1810() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1810");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        boolean boolean9 = bBdata0.bookExists("");
+        int int11 = bBdata0.getBorrowCount("hi!");
+        boolean boolean13 = bBdata0.memberExists("");
+        int int15 = bBdata0.getBorrowCount("");
+        boolean boolean17 = bBdata0.memberExists("hi!");
+        boolean boolean19 = bBdata0.isMemberActive("hi!");
+        int int20 = bBdata0.getBorrowLimit();
+        java.lang.String str22 = bBdata0.getBookAuthor("hi!");
+        java.lang.Class<?> wildcardClass23 = bBdata0.getClass();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
+        org.junit.Assert.assertNull(str22);
+        org.junit.Assert.assertNotNull(wildcardClass23);
+    }
+
+    @Test
+    public void test1811() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1811");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
         java.lang.String str8 = bBdata0.getMemberName("hi!");
         java.lang.String str10 = bBdata0.getMemberName("hi!");
         int int12 = bBdata0.getBorrowCount("");
@@ -46,9 +7077,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1502() throws Throwable {
+    public void test1812() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1502");
+            System.out.format("%n%s%n", "RegressionTest3.test1812");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -76,9 +7107,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1503() throws Throwable {
+    public void test1813() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1503");
+            System.out.format("%n%s%n", "RegressionTest3.test1813");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.printAllMembers();
@@ -98,9 +7129,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1504() throws Throwable {
+    public void test1814() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1504");
+            System.out.format("%n%s%n", "RegressionTest3.test1814");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -123,9 +7154,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1505() throws Throwable {
+    public void test1815() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1505");
+            System.out.format("%n%s%n", "RegressionTest3.test1815");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("");
@@ -142,9 +7173,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1506() throws Throwable {
+    public void test1816() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1506");
+            System.out.format("%n%s%n", "RegressionTest3.test1816");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -169,9 +7200,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1507() throws Throwable {
+    public void test1817() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1507");
+            System.out.format("%n%s%n", "RegressionTest3.test1817");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -191,9 +7222,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1508() throws Throwable {
+    public void test1818() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1508");
+            System.out.format("%n%s%n", "RegressionTest3.test1818");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         bBdata0.printAllMembers();
@@ -208,9 +7239,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1509() throws Throwable {
+    public void test1819() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1509");
+            System.out.format("%n%s%n", "RegressionTest3.test1819");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -224,9 +7255,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1510() throws Throwable {
+    public void test1820() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1510");
+            System.out.format("%n%s%n", "RegressionTest3.test1820");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -244,9 +7275,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1511() throws Throwable {
+    public void test1821() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1511");
+            System.out.format("%n%s%n", "RegressionTest3.test1821");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -266,9 +7297,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1512() throws Throwable {
+    public void test1822() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1512");
+            System.out.format("%n%s%n", "RegressionTest3.test1822");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         bBdata0.printAllMembers();
@@ -281,9 +7312,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1513() throws Throwable {
+    public void test1823() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1513");
+            System.out.format("%n%s%n", "RegressionTest3.test1823");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.printAllMembers();
@@ -305,9 +7336,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1514() throws Throwable {
+    public void test1824() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1514");
+            System.out.format("%n%s%n", "RegressionTest3.test1824");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -339,9 +7370,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1515() throws Throwable {
+    public void test1825() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1515");
+            System.out.format("%n%s%n", "RegressionTest3.test1825");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -372,9 +7403,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1516() throws Throwable {
+    public void test1826() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1516");
+            System.out.format("%n%s%n", "RegressionTest3.test1826");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -392,9 +7423,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1517() throws Throwable {
+    public void test1827() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1517");
+            System.out.format("%n%s%n", "RegressionTest3.test1827");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -423,9 +7454,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1518() throws Throwable {
+    public void test1828() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1518");
+            System.out.format("%n%s%n", "RegressionTest3.test1828");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -447,9 +7478,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1519() throws Throwable {
+    public void test1829() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1519");
+            System.out.format("%n%s%n", "RegressionTest3.test1829");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -482,9 +7513,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1520() throws Throwable {
+    public void test1830() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1520");
+            System.out.format("%n%s%n", "RegressionTest3.test1830");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.printAllMembers();
@@ -506,9 +7537,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1521() throws Throwable {
+    public void test1831() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1521");
+            System.out.format("%n%s%n", "RegressionTest3.test1831");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -532,9 +7563,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1522() throws Throwable {
+    public void test1832() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1522");
+            System.out.format("%n%s%n", "RegressionTest3.test1832");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         bBdata0.printAllBooks();
@@ -548,9 +7579,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1523() throws Throwable {
+    public void test1833() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1523");
+            System.out.format("%n%s%n", "RegressionTest3.test1833");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -579,9 +7610,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1524() throws Throwable {
+    public void test1834() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1524");
+            System.out.format("%n%s%n", "RegressionTest3.test1834");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -597,9 +7628,40 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1525() throws Throwable {
+    public void test1835() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1525");
+            System.out.format("%n%s%n", "RegressionTest3.test1835");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllBooks();
+        boolean boolean19 = bBdata0.isMemberActive("hi!");
+        boolean boolean21 = bBdata0.isMemberActive("hi!");
+        java.lang.String str23 = bBdata0.getBookTitle("");
+        int int25 = bBdata0.getBorrowCount("");
+        boolean boolean27 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+    }
+
+    @Test
+    public void test1836() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1836");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -620,9 +7682,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1526() throws Throwable {
+    public void test1837() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1526");
+            System.out.format("%n%s%n", "RegressionTest3.test1837");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -643,9 +7705,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1527() throws Throwable {
+    public void test1838() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1527");
+            System.out.format("%n%s%n", "RegressionTest3.test1838");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("");
@@ -660,9 +7722,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1528() throws Throwable {
+    public void test1839() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1528");
+            System.out.format("%n%s%n", "RegressionTest3.test1839");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         bBdata0.printAllBooks();
@@ -683,9 +7745,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1529() throws Throwable {
+    public void test1840() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1529");
+            System.out.format("%n%s%n", "RegressionTest3.test1840");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -705,9 +7767,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1530() throws Throwable {
+    public void test1841() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1530");
+            System.out.format("%n%s%n", "RegressionTest3.test1841");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -726,9 +7788,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1531() throws Throwable {
+    public void test1842() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1531");
+            System.out.format("%n%s%n", "RegressionTest3.test1842");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.printAllMembers();
@@ -741,9 +7803,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1532() throws Throwable {
+    public void test1843() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1532");
+            System.out.format("%n%s%n", "RegressionTest3.test1843");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -769,9 +7831,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1533() throws Throwable {
+    public void test1844() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1533");
+            System.out.format("%n%s%n", "RegressionTest3.test1844");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -795,9 +7857,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1534() throws Throwable {
+    public void test1845() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1534");
+            System.out.format("%n%s%n", "RegressionTest3.test1845");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -827,9 +7889,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1535() throws Throwable {
+    public void test1846() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1535");
+            System.out.format("%n%s%n", "RegressionTest3.test1846");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -856,9 +7918,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1536() throws Throwable {
+    public void test1847() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1536");
+            System.out.format("%n%s%n", "RegressionTest3.test1847");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -873,9 +7935,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1537() throws Throwable {
+    public void test1848() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1537");
+            System.out.format("%n%s%n", "RegressionTest3.test1848");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -900,9 +7962,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1538() throws Throwable {
+    public void test1849() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1538");
+            System.out.format("%n%s%n", "RegressionTest3.test1849");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -921,9 +7983,33 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1539() throws Throwable {
+    public void test1850() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1539");
+            System.out.format("%n%s%n", "RegressionTest3.test1850");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        int int8 = bBdata0.getAvailableCopies("");
+        boolean boolean10 = bBdata0.isMemberActive("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("");
+        boolean boolean14 = bBdata0.bookExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str18 = bBdata0.getBookTitle("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1851() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1851");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -949,9 +8035,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1540() throws Throwable {
+    public void test1852() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1540");
+            System.out.format("%n%s%n", "RegressionTest3.test1852");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -970,9 +8056,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1541() throws Throwable {
+    public void test1853() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1541");
+            System.out.format("%n%s%n", "RegressionTest3.test1853");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -990,9 +8076,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1542() throws Throwable {
+    public void test1854() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1542");
+            System.out.format("%n%s%n", "RegressionTest3.test1854");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1008,9 +8094,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1543() throws Throwable {
+    public void test1855() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1543");
+            System.out.format("%n%s%n", "RegressionTest3.test1855");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         bBdata0.printAllBooks();
@@ -1027,9 +8113,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1544() throws Throwable {
+    public void test1856() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1544");
+            System.out.format("%n%s%n", "RegressionTest3.test1856");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1044,9 +8130,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1545() throws Throwable {
+    public void test1857() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1545");
+            System.out.format("%n%s%n", "RegressionTest3.test1857");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1068,9 +8154,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1546() throws Throwable {
+    public void test1858() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1546");
+            System.out.format("%n%s%n", "RegressionTest3.test1858");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1086,9 +8172,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1547() throws Throwable {
+    public void test1859() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1547");
+            System.out.format("%n%s%n", "RegressionTest3.test1859");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -1108,9 +8194,83 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1548() throws Throwable {
+    public void test1860() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1548");
+            System.out.format("%n%s%n", "RegressionTest3.test1860");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        boolean boolean16 = bBdata0.memberExists("");
+        int int18 = bBdata0.getBorrowCount("hi!");
+        int int19 = bBdata0.getBorrowLimit();
+        int int21 = bBdata0.getAvailableCopies("");
+        boolean boolean23 = bBdata0.memberExists("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+    }
+
+    @Test
+    public void test1861() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1861");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean8 = bBdata0.bookExists("hi!");
+        boolean boolean10 = bBdata0.bookExists("");
+        java.lang.String str12 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1862() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1862");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("");
+        boolean boolean20 = bBdata0.memberExists("hi!");
+        boolean boolean22 = bBdata0.bookExists("hi!");
+        int int23 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 3 + "'", int23 == 3);
+    }
+
+    @Test
+    public void test1863() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1863");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -1128,9 +8288,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1549() throws Throwable {
+    public void test1864() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1549");
+            System.out.format("%n%s%n", "RegressionTest3.test1864");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1147,9 +8307,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1550() throws Throwable {
+    public void test1865() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1550");
+            System.out.format("%n%s%n", "RegressionTest3.test1865");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1167,9 +8327,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1551() throws Throwable {
+    public void test1866() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1551");
+            System.out.format("%n%s%n", "RegressionTest3.test1866");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1193,9 +8353,33 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1552() throws Throwable {
+    public void test1867() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1552");
+            System.out.format("%n%s%n", "RegressionTest3.test1867");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str9 = bBdata0.getBookTitle("");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean14 = bBdata0.memberExists("");
+        boolean boolean16 = bBdata0.isMemberActive("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean19 = bBdata0.bookExists("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+    }
+
+    @Test
+    public void test1868() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1868");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1214,9 +8398,28 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1553() throws Throwable {
+    public void test1869() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1553");
+            System.out.format("%n%s%n", "RegressionTest3.test1869");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        int int4 = bBdata0.getAvailableCopies("");
+        bBdata0.decreaseCopy("hi!");
+        int int8 = bBdata0.getBorrowCount("");
+        boolean boolean10 = bBdata0.memberExists("");
+        java.lang.String str12 = bBdata0.getMemberName("hi!");
+        boolean boolean14 = bBdata0.memberExists("hi!");
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+    }
+
+    @Test
+    public void test1870() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1870");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.decreaseCopy("hi!");
@@ -1227,9 +8430,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1554() throws Throwable {
+    public void test1871() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1554");
+            System.out.format("%n%s%n", "RegressionTest3.test1871");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1246,9 +8449,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1555() throws Throwable {
+    public void test1872() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1555");
+            System.out.format("%n%s%n", "RegressionTest3.test1872");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1269,9 +8472,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1556() throws Throwable {
+    public void test1873() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1556");
+            System.out.format("%n%s%n", "RegressionTest3.test1873");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         boolean boolean4 = bBdata0.memberExists("");
@@ -1281,9 +8484,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1557() throws Throwable {
+    public void test1874() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1557");
+            System.out.format("%n%s%n", "RegressionTest3.test1874");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         java.lang.String str2 = bBdata0.getBookTitle("");
         bBdata0.printAllMembers();
@@ -1293,9 +8496,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1558() throws Throwable {
+    public void test1875() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1558");
+            System.out.format("%n%s%n", "RegressionTest3.test1875");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -1316,9 +8519,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1559() throws Throwable {
+    public void test1876() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1559");
+            System.out.format("%n%s%n", "RegressionTest3.test1876");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -1338,9 +8541,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1560() throws Throwable {
+    public void test1877() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1560");
+            System.out.format("%n%s%n", "RegressionTest3.test1877");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1358,9 +8561,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1561() throws Throwable {
+    public void test1878() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1561");
+            System.out.format("%n%s%n", "RegressionTest3.test1878");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1389,9 +8592,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1562() throws Throwable {
+    public void test1879() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1562");
+            System.out.format("%n%s%n", "RegressionTest3.test1879");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1409,9 +8612,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1563() throws Throwable {
+    public void test1880() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1563");
+            System.out.format("%n%s%n", "RegressionTest3.test1880");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         boolean boolean4 = bBdata0.bookExists("");
@@ -1436,9 +8639,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1564() throws Throwable {
+    public void test1881() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1564");
+            System.out.format("%n%s%n", "RegressionTest3.test1881");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         java.lang.String str2 = bBdata0.getBookTitle("hi!");
         bBdata0.printAllMembers();
@@ -1456,9 +8659,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1565() throws Throwable {
+    public void test1882() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1565");
+            System.out.format("%n%s%n", "RegressionTest3.test1882");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -1482,9 +8685,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1566() throws Throwable {
+    public void test1883() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1566");
+            System.out.format("%n%s%n", "RegressionTest3.test1883");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -1503,9 +8706,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1567() throws Throwable {
+    public void test1884() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1567");
+            System.out.format("%n%s%n", "RegressionTest3.test1884");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1527,9 +8730,36 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1568() throws Throwable {
+    public void test1885() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1568");
+            System.out.format("%n%s%n", "RegressionTest3.test1885");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        boolean boolean10 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        boolean boolean13 = bBdata0.isMemberActive("hi!");
+        int int14 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        int int18 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean22 = bBdata0.bookExists("hi!");
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+    }
+
+    @Test
+    public void test1886() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1886");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -1544,9 +8774,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1569() throws Throwable {
+    public void test1887() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1569");
+            System.out.format("%n%s%n", "RegressionTest3.test1887");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1566,9 +8796,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1570() throws Throwable {
+    public void test1888() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1570");
+            System.out.format("%n%s%n", "RegressionTest3.test1888");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1594,9 +8824,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1571() throws Throwable {
+    public void test1889() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1571");
+            System.out.format("%n%s%n", "RegressionTest3.test1889");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1618,9 +8848,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1572() throws Throwable {
+    public void test1890() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1572");
+            System.out.format("%n%s%n", "RegressionTest3.test1890");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1635,9 +8865,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1573() throws Throwable {
+    public void test1891() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1573");
+            System.out.format("%n%s%n", "RegressionTest3.test1891");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1652,9 +8882,45 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1574() throws Throwable {
+    public void test1892() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1574");
+            System.out.format("%n%s%n", "RegressionTest3.test1892");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        java.lang.String str2 = bBdata0.getBookTitle("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertNull(str2);
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+    }
+
+    @Test
+    public void test1893() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1893");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str7 = bBdata0.getBookAuthor("");
+        bBdata0.printAllMembers();
+        int int9 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+    }
+
+    @Test
+    public void test1894() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1894");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.increaseBorrowCount("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1664,9 +8930,29 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1575() throws Throwable {
+    public void test1895() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1575");
+            System.out.format("%n%s%n", "RegressionTest3.test1895");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        bBdata0.printAllMembers();
+        bBdata0.printAllMembers();
+        boolean boolean6 = bBdata0.memberExists("");
+        java.lang.String str8 = bBdata0.getMemberName("");
+        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
+        int int12 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
+    }
+
+    @Test
+    public void test1896() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1896");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         int int4 = bBdata0.getAvailableCopies("");
@@ -1679,9 +8965,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1576() throws Throwable {
+    public void test1897() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1576");
+            System.out.format("%n%s%n", "RegressionTest3.test1897");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1696,9 +8982,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1577() throws Throwable {
+    public void test1898() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1577");
+            System.out.format("%n%s%n", "RegressionTest3.test1898");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1716,9 +9002,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1578() throws Throwable {
+    public void test1899() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1578");
+            System.out.format("%n%s%n", "RegressionTest3.test1899");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1735,9 +9021,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1579() throws Throwable {
+    public void test1900() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1579");
+            System.out.format("%n%s%n", "RegressionTest3.test1900");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         int int4 = bBdata0.getAvailableCopies("");
@@ -1749,9 +9035,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1580() throws Throwable {
+    public void test1901() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1580");
+            System.out.format("%n%s%n", "RegressionTest3.test1901");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1775,9 +9061,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1581() throws Throwable {
+    public void test1902() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1581");
+            System.out.format("%n%s%n", "RegressionTest3.test1902");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1802,9 +9088,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1582() throws Throwable {
+    public void test1903() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1582");
+            System.out.format("%n%s%n", "RegressionTest3.test1903");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1822,9 +9108,58 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1583() throws Throwable {
+    public void test1904() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1583");
+            System.out.format("%n%s%n", "RegressionTest3.test1904");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        boolean boolean14 = bBdata0.isMemberActive("");
+        boolean boolean16 = bBdata0.memberExists("");
+        int int18 = bBdata0.getAvailableCopies("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
+    }
+
+    @Test
+    public void test1905() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1905");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        int int8 = bBdata0.getAvailableCopies("hi!");
+        int int10 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str12 = bBdata0.getMemberName("");
+        bBdata0.printAllBooks();
+        boolean boolean15 = bBdata0.bookExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str21 = bBdata0.getMemberName("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        org.junit.Assert.assertNull(str21);
+    }
+
+    @Test
+    public void test1906() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1906");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1849,9 +9184,25 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1584() throws Throwable {
+    public void test1907() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1584");
+            System.out.format("%n%s%n", "RegressionTest3.test1907");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        java.lang.String str3 = bBdata0.getMemberName("");
+        int int5 = bBdata0.getAvailableCopies("");
+        int int7 = bBdata0.getAvailableCopies("");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertNull(str3);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+    }
+
+    @Test
+    public void test1908() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1908");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1880,9 +9231,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1585() throws Throwable {
+    public void test1909() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1585");
+            System.out.format("%n%s%n", "RegressionTest3.test1909");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -1901,9 +9252,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1586() throws Throwable {
+    public void test1910() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1586");
+            System.out.format("%n%s%n", "RegressionTest3.test1910");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1925,9 +9276,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1587() throws Throwable {
+    public void test1911() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1587");
+            System.out.format("%n%s%n", "RegressionTest3.test1911");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -1948,9 +9299,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1588() throws Throwable {
+    public void test1912() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1588");
+            System.out.format("%n%s%n", "RegressionTest3.test1912");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -1970,9 +9321,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1589() throws Throwable {
+    public void test1913() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1589");
+            System.out.format("%n%s%n", "RegressionTest3.test1913");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -1990,9 +9341,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1590() throws Throwable {
+    public void test1914() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1590");
+            System.out.format("%n%s%n", "RegressionTest3.test1914");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2012,9 +9363,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1591() throws Throwable {
+    public void test1915() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1591");
+            System.out.format("%n%s%n", "RegressionTest3.test1915");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.printAllMembers();
@@ -2027,9 +9378,40 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1592() throws Throwable {
+    public void test1916() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1592");
+            System.out.format("%n%s%n", "RegressionTest3.test1916");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        int int16 = bBdata0.getAvailableCopies("hi!");
+        int int17 = bBdata0.getBorrowLimit();
+        java.lang.String str19 = bBdata0.getBookTitle("hi!");
+        java.lang.String str21 = bBdata0.getBookTitle("");
+        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
+        boolean boolean25 = bBdata0.memberExists("");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
+        org.junit.Assert.assertNull(str19);
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertNull(str23);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+    }
+
+    @Test
+    public void test1917() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1917");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2053,9 +9435,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1593() throws Throwable {
+    public void test1918() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1593");
+            System.out.format("%n%s%n", "RegressionTest3.test1918");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -2077,9 +9459,32 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1594() throws Throwable {
+    public void test1919() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1594");
+            System.out.format("%n%s%n", "RegressionTest3.test1919");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookTitle("hi!");
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        bBdata0.increaseBorrowCount("");
+        boolean boolean13 = bBdata0.bookExists("");
+        int int15 = bBdata0.getBorrowCount("hi!");
+        boolean boolean17 = bBdata0.isMemberActive("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+    }
+
+    @Test
+    public void test1920() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1920");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2104,9 +9509,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1595() throws Throwable {
+    public void test1921() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1595");
+            System.out.format("%n%s%n", "RegressionTest3.test1921");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2128,9 +9533,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1596() throws Throwable {
+    public void test1922() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1596");
+            System.out.format("%n%s%n", "RegressionTest3.test1922");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("");
@@ -2151,9 +9556,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1597() throws Throwable {
+    public void test1923() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1597");
+            System.out.format("%n%s%n", "RegressionTest3.test1923");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2179,9 +9584,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1598() throws Throwable {
+    public void test1924() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1598");
+            System.out.format("%n%s%n", "RegressionTest3.test1924");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -2198,9 +9603,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1599() throws Throwable {
+    public void test1925() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1599");
+            System.out.format("%n%s%n", "RegressionTest3.test1925");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2219,9 +9624,30 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1600() throws Throwable {
+    public void test1926() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1600");
+            System.out.format("%n%s%n", "RegressionTest3.test1926");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        java.lang.String str7 = bBdata0.getBookAuthor("hi!");
+        boolean boolean9 = bBdata0.bookExists("");
+        java.lang.String str11 = bBdata0.getMemberName("");
+        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertNull(str13);
+    }
+
+    @Test
+    public void test1927() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1927");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2246,9 +9672,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1601() throws Throwable {
+    public void test1928() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1601");
+            System.out.format("%n%s%n", "RegressionTest3.test1928");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("hi!");
@@ -2262,9 +9688,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1602() throws Throwable {
+    public void test1929() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1602");
+            System.out.format("%n%s%n", "RegressionTest3.test1929");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -2285,9 +9711,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1603() throws Throwable {
+    public void test1930() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1603");
+            System.out.format("%n%s%n", "RegressionTest3.test1930");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2312,9 +9738,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1604() throws Throwable {
+    public void test1931() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1604");
+            System.out.format("%n%s%n", "RegressionTest3.test1931");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("");
@@ -2332,9 +9758,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1605() throws Throwable {
+    public void test1932() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1605");
+            System.out.format("%n%s%n", "RegressionTest3.test1932");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int1 = bBdata0.getBorrowLimit();
         bBdata0.printAllMembers();
@@ -2347,9 +9773,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1606() throws Throwable {
+    public void test1933() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1606");
+            System.out.format("%n%s%n", "RegressionTest3.test1933");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2372,9 +9798,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1607() throws Throwable {
+    public void test1934() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1607");
+            System.out.format("%n%s%n", "RegressionTest3.test1934");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         bBdata0.printAllBooks();
@@ -2387,9 +9813,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1608() throws Throwable {
+    public void test1935() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1608");
+            System.out.format("%n%s%n", "RegressionTest3.test1935");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2407,9 +9833,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1609() throws Throwable {
+    public void test1936() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1609");
+            System.out.format("%n%s%n", "RegressionTest3.test1936");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2433,9 +9859,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1610() throws Throwable {
+    public void test1937() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1610");
+            System.out.format("%n%s%n", "RegressionTest3.test1937");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2463,9 +9889,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1611() throws Throwable {
+    public void test1938() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1611");
+            System.out.format("%n%s%n", "RegressionTest3.test1938");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("");
@@ -2483,9 +9909,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1612() throws Throwable {
+    public void test1939() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1612");
+            System.out.format("%n%s%n", "RegressionTest3.test1939");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2506,9 +9932,38 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1613() throws Throwable {
+    public void test1940() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1613");
+            System.out.format("%n%s%n", "RegressionTest3.test1940");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.memberExists("hi!");
+        bBdata0.printAllBooks();
+        int int4 = bBdata0.getBorrowLimit();
+        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.isMemberActive("hi!");
+        java.lang.String str11 = bBdata0.getBookTitle("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        int int13 = bBdata0.getBorrowLimit();
+        int int15 = bBdata0.getBorrowCount("hi!");
+        bBdata0.decreaseCopy("hi!");
+        int int18 = bBdata0.getBorrowLimit();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertNull(str11);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
+        org.junit.Assert.assertTrue("'" + int18 + "' != '" + 3 + "'", int18 == 3);
+    }
+
+    @Test
+    public void test1941() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1941");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         bBdata0.printAllBooks();
@@ -2526,9 +9981,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1614() throws Throwable {
+    public void test1942() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1614");
+            System.out.format("%n%s%n", "RegressionTest3.test1942");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -2545,9 +10000,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1615() throws Throwable {
+    public void test1943() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1615");
+            System.out.format("%n%s%n", "RegressionTest3.test1943");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -2573,9 +10028,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1616() throws Throwable {
+    public void test1944() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1616");
+            System.out.format("%n%s%n", "RegressionTest3.test1944");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2598,9 +10053,31 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1617() throws Throwable {
+    public void test1945() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1617");
+            System.out.format("%n%s%n", "RegressionTest3.test1945");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        java.lang.String str7 = bBdata0.getBookAuthor("");
+        bBdata0.decreaseCopy("");
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        boolean boolean14 = bBdata0.isMemberActive("");
+        int int16 = bBdata0.getAvailableCopies("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+    }
+
+    @Test
+    public void test1946() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1946");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -2628,9 +10105,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1618() throws Throwable {
+    public void test1947() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1618");
+            System.out.format("%n%s%n", "RegressionTest3.test1947");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2659,9 +10136,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1619() throws Throwable {
+    public void test1948() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1619");
+            System.out.format("%n%s%n", "RegressionTest3.test1948");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2683,9 +10160,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1620() throws Throwable {
+    public void test1949() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1620");
+            System.out.format("%n%s%n", "RegressionTest3.test1949");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2707,9 +10184,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1621() throws Throwable {
+    public void test1950() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1621");
+            System.out.format("%n%s%n", "RegressionTest3.test1950");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -2729,9 +10206,31 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1622() throws Throwable {
+    public void test1951() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1622");
+            System.out.format("%n%s%n", "RegressionTest3.test1951");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        boolean boolean8 = bBdata0.bookExists("");
+        int int10 = bBdata0.getBorrowCount("");
+        boolean boolean12 = bBdata0.memberExists("");
+        bBdata0.increaseBorrowCount("hi!");
+        int int15 = bBdata0.getBorrowLimit();
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
+    }
+
+    @Test
+    public void test1952() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1952");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2752,9 +10251,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1623() throws Throwable {
+    public void test1953() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1623");
+            System.out.format("%n%s%n", "RegressionTest3.test1953");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -2783,9 +10282,54 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1624() throws Throwable {
+    public void test1954() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1624");
+            System.out.format("%n%s%n", "RegressionTest3.test1954");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        bBdata0.decreaseCopy("hi!");
+        int int19 = bBdata0.getBorrowCount("");
+        java.lang.String str21 = bBdata0.getBookTitle("hi!");
+        boolean boolean23 = bBdata0.bookExists("");
+        boolean boolean25 = bBdata0.isMemberActive("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertNull(str21);
+        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
+        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+    }
+
+    @Test
+    public void test1955() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1955");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.decreaseCopy("");
+        int int9 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
+    }
+
+    @Test
+    public void test1956() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1956");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         bBdata0.printAllMembers();
@@ -2801,9 +10345,27 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1625() throws Throwable {
+    public void test1957() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1625");
+            System.out.format("%n%s%n", "RegressionTest3.test1957");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        java.lang.String str3 = bBdata0.getMemberName("");
+        int int5 = bBdata0.getAvailableCopies("");
+        int int7 = bBdata0.getBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertNull(str3);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
+        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
+    }
+
+    @Test
+    public void test1958() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1958");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -2826,9 +10388,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1626() throws Throwable {
+    public void test1959() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1626");
+            System.out.format("%n%s%n", "RegressionTest3.test1959");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2849,9 +10411,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1627() throws Throwable {
+    public void test1960() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1627");
+            System.out.format("%n%s%n", "RegressionTest3.test1960");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2868,9 +10430,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1628() throws Throwable {
+    public void test1961() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1628");
+            System.out.format("%n%s%n", "RegressionTest3.test1961");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         bBdata0.decreaseCopy("");
@@ -2882,9 +10444,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1629() throws Throwable {
+    public void test1962() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1629");
+            System.out.format("%n%s%n", "RegressionTest3.test1962");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         java.lang.String str4 = bBdata0.getMemberName("hi!");
@@ -2912,9 +10474,31 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1630() throws Throwable {
+    public void test1963() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1630");
+            System.out.format("%n%s%n", "RegressionTest3.test1963");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int1 = bBdata0.getBorrowLimit();
+        bBdata0.printAllMembers();
+        int int4 = bBdata0.getBorrowCount("");
+        java.lang.String str6 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("");
+        java.lang.String str10 = bBdata0.getBookAuthor("");
+        boolean boolean12 = bBdata0.bookExists("hi!");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
+        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
+        org.junit.Assert.assertNull(str6);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+    }
+
+    @Test
+    public void test1964() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1964");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         java.lang.String str4 = bBdata0.getBookAuthor("hi!");
@@ -2925,9 +10509,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1631() throws Throwable {
+    public void test1965() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1631");
+            System.out.format("%n%s%n", "RegressionTest3.test1965");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2944,9 +10528,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1632() throws Throwable {
+    public void test1966() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1632");
+            System.out.format("%n%s%n", "RegressionTest3.test1966");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -2968,9 +10552,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1633() throws Throwable {
+    public void test1967() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1633");
+            System.out.format("%n%s%n", "RegressionTest3.test1967");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -2993,9 +10577,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1634() throws Throwable {
+    public void test1968() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1634");
+            System.out.format("%n%s%n", "RegressionTest3.test1968");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3022,9 +10606,29 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1635() throws Throwable {
+    public void test1969() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1635");
+            System.out.format("%n%s%n", "RegressionTest3.test1969");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("");
+        boolean boolean6 = bBdata0.isMemberActive("");
+        bBdata0.printAllBooks();
+        boolean boolean9 = bBdata0.bookExists("");
+        bBdata0.decreaseCopy("");
+        boolean boolean13 = bBdata0.bookExists("");
+        bBdata0.decreaseCopy("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+    }
+
+    @Test
+    public void test1970() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1970");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -3041,9 +10645,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1636() throws Throwable {
+    public void test1971() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1636");
+            System.out.format("%n%s%n", "RegressionTest3.test1971");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3066,9 +10670,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1637() throws Throwable {
+    public void test1972() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1637");
+            System.out.format("%n%s%n", "RegressionTest3.test1972");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3090,9 +10694,32 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1638() throws Throwable {
+    public void test1973() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1638");
+            System.out.format("%n%s%n", "RegressionTest3.test1973");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        int int9 = bBdata0.getBorrowLimit();
+        boolean boolean11 = bBdata0.bookExists("hi!");
+        int int12 = bBdata0.getBorrowLimit();
+        boolean boolean14 = bBdata0.isMemberActive("");
+        java.lang.String str16 = bBdata0.getBookAuthor("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertNull(str16);
+    }
+
+    @Test
+    public void test1974() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1974");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         bBdata0.printAllMembers();
@@ -3111,9 +10738,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1639() throws Throwable {
+    public void test1975() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1639");
+            System.out.format("%n%s%n", "RegressionTest3.test1975");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3132,9 +10759,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1640() throws Throwable {
+    public void test1976() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1640");
+            System.out.format("%n%s%n", "RegressionTest3.test1976");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -3155,9 +10782,26 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1641() throws Throwable {
+    public void test1977() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1641");
+            System.out.format("%n%s%n", "RegressionTest3.test1977");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        int int2 = bBdata0.getAvailableCopies("");
+        java.lang.String str4 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllBooks();
+        boolean boolean7 = bBdata0.isMemberActive("");
+        java.lang.String str9 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        org.junit.Assert.assertNull(str9);
+    }
+
+    @Test
+    public void test1978() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1978");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3185,9 +10829,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1642() throws Throwable {
+    public void test1979() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1642");
+            System.out.format("%n%s%n", "RegressionTest3.test1979");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3208,9 +10852,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1643() throws Throwable {
+    public void test1980() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1643");
+            System.out.format("%n%s%n", "RegressionTest3.test1980");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("hi!");
         java.lang.String str4 = bBdata0.getBookTitle("");
@@ -3227,9 +10871,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1644() throws Throwable {
+    public void test1981() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1644");
+            System.out.format("%n%s%n", "RegressionTest3.test1981");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -3252,9 +10896,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1645() throws Throwable {
+    public void test1982() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1645");
+            System.out.format("%n%s%n", "RegressionTest3.test1982");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3271,9 +10915,39 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1646() throws Throwable {
+    public void test1983() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1646");
+            System.out.format("%n%s%n", "RegressionTest3.test1983");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        bBdata0.decreaseCopy("");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        bBdata0.decreaseCopy("");
+        java.lang.String str8 = bBdata0.getMemberName("hi!");
+        java.lang.String str10 = bBdata0.getMemberName("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        java.lang.String str14 = bBdata0.getBookAuthor("");
+        int int16 = bBdata0.getAvailableCopies("");
+        boolean boolean18 = bBdata0.isMemberActive("");
+        bBdata0.printAllMembers();
+        boolean boolean21 = bBdata0.bookExists("hi!");
+        int int23 = bBdata0.getAvailableCopies("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllBooks();
+        bBdata0.increaseBorrowCount("");
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertNull(str8);
+        org.junit.Assert.assertNull(str10);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
+    }
+
+    @Test
+    public void test1984() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1984");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3297,9 +10971,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1647() throws Throwable {
+    public void test1985() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1647");
+            System.out.format("%n%s%n", "RegressionTest3.test1985");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         int int2 = bBdata0.getAvailableCopies("");
         bBdata0.printAllMembers();
@@ -3323,9 +10997,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1648() throws Throwable {
+    public void test1986() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1648");
+            System.out.format("%n%s%n", "RegressionTest3.test1986");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3350,9 +11024,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1649() throws Throwable {
+    public void test1987() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1649");
+            System.out.format("%n%s%n", "RegressionTest3.test1987");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         int int4 = bBdata0.getAvailableCopies("hi!");
@@ -3366,9 +11040,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1650() throws Throwable {
+    public void test1988() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1650");
+            System.out.format("%n%s%n", "RegressionTest3.test1988");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.memberExists("hi!");
         bBdata0.printAllBooks();
@@ -3385,9 +11059,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1651() throws Throwable {
+    public void test1989() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1651");
+            System.out.format("%n%s%n", "RegressionTest3.test1989");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3410,9 +11084,33 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1652() throws Throwable {
+    public void test1990() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1652");
+            System.out.format("%n%s%n", "RegressionTest3.test1990");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        boolean boolean12 = bBdata0.memberExists("hi!");
+        boolean boolean14 = bBdata0.isMemberActive("");
+        int int16 = bBdata0.getBorrowCount("");
+        java.lang.String str18 = bBdata0.getMemberName("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        org.junit.Assert.assertNull(str18);
+    }
+
+    @Test
+    public void test1991() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1991");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3436,9 +11134,25 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1653() throws Throwable {
+    public void test1992() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1653");
+            System.out.format("%n%s%n", "RegressionTest3.test1992");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        java.lang.String str4 = bBdata0.getBookTitle("hi!");
+        java.lang.String str6 = bBdata0.getBookTitle("hi!");
+        bBdata0.increaseBorrowCount("hi!");
+        bBdata0.printAllBooks();
+        bBdata0.printAllMembers();
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertNull(str4);
+        org.junit.Assert.assertNull(str6);
+    }
+
+    @Test
+    public void test1993() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1993");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3468,9 +11182,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1654() throws Throwable {
+    public void test1994() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1654");
+            System.out.format("%n%s%n", "RegressionTest3.test1994");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         boolean boolean2 = bBdata0.bookExists("hi!");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3498,9 +11212,36 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1655() throws Throwable {
+    public void test1995() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1655");
+            System.out.format("%n%s%n", "RegressionTest3.test1995");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.memberExists("hi!");
+        int int5 = bBdata0.getBorrowLimit();
+        bBdata0.increaseBorrowCount("");
+        bBdata0.increaseBorrowCount("");
+        bBdata0.printAllMembers();
+        java.lang.String str12 = bBdata0.getBookTitle("hi!");
+        java.lang.String str14 = bBdata0.getMemberName("hi!");
+        bBdata0.printAllMembers();
+        boolean boolean17 = bBdata0.memberExists("");
+        int int19 = bBdata0.getBorrowCount("");
+        int int21 = bBdata0.getAvailableCopies("hi!");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str12);
+        org.junit.Assert.assertNull(str14);
+        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
+        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
+    }
+
+    @Test
+    public void test1996() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1996");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3528,9 +11269,30 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1656() throws Throwable {
+    public void test1997() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1656");
+            System.out.format("%n%s%n", "RegressionTest3.test1997");
+        Latifa.BBdata bBdata0 = new Latifa.BBdata();
+        boolean boolean2 = bBdata0.bookExists("hi!");
+        boolean boolean4 = bBdata0.bookExists("");
+        int int5 = bBdata0.getBorrowLimit();
+        java.lang.String str7 = bBdata0.getMemberName("");
+        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
+        boolean boolean11 = bBdata0.memberExists("");
+        bBdata0.printAllMembers();
+        bBdata0.decreaseCopy("");
+        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
+        org.junit.Assert.assertNull(str7);
+        org.junit.Assert.assertNull(str9);
+        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+    }
+
+    @Test
+    public void test1998() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest3.test1998");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("");
@@ -3552,9 +11314,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1657() throws Throwable {
+    public void test1999() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1657");
+            System.out.format("%n%s%n", "RegressionTest3.test1999");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3577,9 +11339,9 @@ public class RegressionTest3 {
     }
 
     @Test
-    public void test1658() throws Throwable {
+    public void test2000() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1658");
+            System.out.format("%n%s%n", "RegressionTest3.test2000");
         Latifa.BBdata bBdata0 = new Latifa.BBdata();
         bBdata0.decreaseCopy("");
         boolean boolean4 = bBdata0.memberExists("hi!");
@@ -3597,7737 +11359,6 @@ public class RegressionTest3 {
         org.junit.Assert.assertNull(str10);
         org.junit.Assert.assertNull(str12);
         org.junit.Assert.assertNotNull(wildcardClass19);
-    }
-
-    @Test
-    public void test1659() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1659");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        int int3 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 3 + "'", int3 == 3);
-    }
-
-    @Test
-    public void test1660() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1660");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        int int16 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-    }
-
-    @Test
-    public void test1661() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1661");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean11 = bBdata0.memberExists("");
-        int int13 = bBdata0.getAvailableCopies("");
-        boolean boolean15 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1662() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1662");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        int int12 = bBdata0.getAvailableCopies("");
-        boolean boolean14 = bBdata0.bookExists("");
-        int int16 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1663() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1663");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        int int8 = bBdata0.getAvailableCopies("");
-        java.lang.String str10 = bBdata0.getMemberName("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        int int16 = bBdata0.getBorrowLimit();
-        java.lang.String str18 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1664() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1664");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean14 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1665() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1665");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean11 = bBdata0.isMemberActive("");
-        int int13 = bBdata0.getAvailableCopies("");
-        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1666() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1666");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        boolean boolean19 = bBdata0.bookExists("");
-        bBdata0.printAllMembers();
-        boolean boolean22 = bBdata0.isMemberActive("hi!");
-        java.lang.Class<?> wildcardClass23 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
-    }
-
-    @Test
-    public void test1667() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1667");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        int int12 = bBdata0.getBorrowCount("hi!");
-        boolean boolean14 = bBdata0.isMemberActive("hi!");
-        boolean boolean16 = bBdata0.isMemberActive("hi!");
-        java.lang.String str18 = bBdata0.getBookTitle("hi!");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1668() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1668");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-    }
-
-    @Test
-    public void test1669() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1669");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("hi!");
-        boolean boolean19 = bBdata0.isMemberActive("");
-        boolean boolean21 = bBdata0.bookExists("");
-        java.lang.String str23 = bBdata0.getMemberName("");
-        boolean boolean25 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str23);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-    }
-
-    @Test
-    public void test1670() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1670");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        int int15 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-    }
-
-    @Test
-    public void test1671() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1671");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        java.lang.String str20 = bBdata0.getBookTitle("hi!");
-        java.lang.String str22 = bBdata0.getBookTitle("hi!");
-        java.lang.String str24 = bBdata0.getMemberName("");
-        boolean boolean26 = bBdata0.memberExists("");
-        java.lang.Class<?> wildcardClass27 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertNull(str24);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
-    }
-
-    @Test
-    public void test1672() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1672");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str8 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-    }
-
-    @Test
-    public void test1673() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1673");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.isMemberActive("");
-        int int9 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-    }
-
-    @Test
-    public void test1674() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1674");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean13 = bBdata0.bookExists("");
-        boolean boolean15 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1675() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1675");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean17 = bBdata0.isMemberActive("hi!");
-        boolean boolean19 = bBdata0.bookExists("");
-        java.lang.String str21 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNull(str21);
-    }
-
-    @Test
-    public void test1676() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1676");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        int int18 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str20 = bBdata0.getBookAuthor("");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1677() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1677");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        boolean boolean19 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.decreaseCopy("");
-        int int24 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 3 + "'", int24 == 3);
-    }
-
-    @Test
-    public void test1678() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1678");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        boolean boolean4 = bBdata0.isMemberActive("");
-        bBdata0.decreaseCopy("hi!");
-        int int8 = bBdata0.getAvailableCopies("");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1679() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1679");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        java.lang.String str11 = bBdata0.getMemberName("hi!");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        boolean boolean16 = bBdata0.memberExists("hi!");
-        int int18 = bBdata0.getAvailableCopies("");
-        int int19 = bBdata0.getBorrowLimit();
-        boolean boolean21 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-    }
-
-    @Test
-    public void test1680() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1680");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str19 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        boolean boolean23 = bBdata0.isMemberActive("hi!");
-        java.lang.String str25 = bBdata0.getBookTitle("");
-        int int27 = bBdata0.getAvailableCopies("hi!");
-        int int29 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertNull(str25);
-        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
-        org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
-    }
-
-    @Test
-    public void test1681() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1681");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("hi!");
-        boolean boolean14 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1682() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1682");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getBookTitle("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        java.lang.String str19 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        java.lang.String str23 = bBdata0.getMemberName("");
-        int int25 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNull(str23);
-        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
-    }
-
-    @Test
-    public void test1683() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1683");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.decreaseCopy("hi!");
-        java.lang.Class<?> wildcardClass7 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNotNull(wildcardClass7);
-    }
-
-    @Test
-    public void test1684() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1684");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str13 = bBdata0.getBookTitle("hi!");
-        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
-        int int17 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-    }
-
-    @Test
-    public void test1685() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1685");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        boolean boolean7 = bBdata0.memberExists("");
-        boolean boolean9 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-    }
-
-    @Test
-    public void test1686() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1686");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getBookTitle("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        java.lang.String str19 = bBdata0.getMemberName("");
-        int int21 = bBdata0.getAvailableCopies("hi!");
-        java.lang.Class<?> wildcardClass22 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
-        org.junit.Assert.assertNotNull(wildcardClass22);
-    }
-
-    @Test
-    public void test1687() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1687");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean5 = bBdata0.isMemberActive("hi!");
-        boolean boolean7 = bBdata0.isMemberActive("hi!");
-        boolean boolean9 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-    }
-
-    @Test
-    public void test1688() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1688");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        java.lang.String str20 = bBdata0.getBookTitle("");
-        bBdata0.printAllBooks();
-        boolean boolean23 = bBdata0.bookExists("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("");
-        boolean boolean28 = bBdata0.memberExists("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-    }
-
-    @Test
-    public void test1689() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1689");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        java.lang.String str11 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        boolean boolean14 = bBdata0.memberExists("hi!");
-        java.lang.String str16 = bBdata0.getBookTitle("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1690() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1690");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        int int6 = bBdata0.getBorrowLimit();
-        java.lang.String str8 = bBdata0.getBookTitle("");
-        int int10 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-    }
-
-    @Test
-    public void test1691() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1691");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-    }
-
-    @Test
-    public void test1692() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1692");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean18 = bBdata0.bookExists("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1693() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1693");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.bookExists("");
-        boolean boolean8 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-    }
-
-    @Test
-    public void test1694() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1694");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        java.lang.String str12 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-    }
-
-    @Test
-    public void test1695() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1695");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("hi!");
-        int int19 = bBdata0.getBorrowCount("");
-        java.lang.String str21 = bBdata0.getBookTitle("hi!");
-        java.lang.String str23 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-        org.junit.Assert.assertNull(str21);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1696() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1696");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getBookTitle("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        java.lang.String str19 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        java.lang.String str23 = bBdata0.getMemberName("hi!");
-        java.lang.String str25 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNull(str23);
-        org.junit.Assert.assertNull(str25);
-    }
-
-    @Test
-    public void test1697() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1697");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getAvailableCopies("hi!");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-    }
-
-    @Test
-    public void test1698() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1698");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getAvailableCopies("");
-        boolean boolean8 = bBdata0.isMemberActive("");
-        int int10 = bBdata0.getBorrowCount("hi!");
-        int int12 = bBdata0.getBorrowCount("hi!");
-        bBdata0.decreaseCopy("");
-        int int16 = bBdata0.getAvailableCopies("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1699() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1699");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        java.lang.String str20 = bBdata0.getBookAuthor("hi!");
-        int int21 = bBdata0.getBorrowLimit();
-        int int23 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 3 + "'", int21 == 3);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
-    }
-
-    @Test
-    public void test1700() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1700");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        boolean boolean18 = bBdata0.bookExists("");
-        int int20 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-    }
-
-    @Test
-    public void test1701() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1701");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        boolean boolean11 = bBdata0.bookExists("");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-    }
-
-    @Test
-    public void test1702() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1702");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        boolean boolean16 = bBdata0.memberExists("hi!");
-        java.lang.String str18 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1703() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1703");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str5 = bBdata0.getMemberName("hi!");
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        int int9 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str11 = bBdata0.getBookTitle("");
-        java.lang.String str13 = bBdata0.getBookTitle("hi!");
-        boolean boolean15 = bBdata0.bookExists("");
-        boolean boolean17 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str5);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1704() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1704");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int15 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        java.lang.String str18 = bBdata0.getMemberName("hi!");
-        boolean boolean20 = bBdata0.bookExists("hi!");
-        int int22 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
-    }
-
-    @Test
-    public void test1705() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1705");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean12 = bBdata0.bookExists("");
-        int int14 = bBdata0.getAvailableCopies("hi!");
-        int int16 = bBdata0.getBorrowCount("hi!");
-        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNotNull(wildcardClass17);
-    }
-
-    @Test
-    public void test1706() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1706");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        int int6 = bBdata0.getBorrowLimit();
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-    }
-
-    @Test
-    public void test1707() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1707");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        boolean boolean9 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        int int12 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-    }
-
-    @Test
-    public void test1708() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1708");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.decreaseCopy("hi!");
-        int int8 = bBdata0.getBorrowCount("");
-        bBdata0.decreaseCopy("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean14 = bBdata0.memberExists("");
-        boolean boolean16 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1709() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1709");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        int int14 = bBdata0.getAvailableCopies("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean20 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1710() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1710");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str9 = bBdata0.getMemberName("hi!");
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        boolean boolean13 = bBdata0.memberExists("");
-        int int15 = bBdata0.getAvailableCopies("");
-        boolean boolean17 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1711() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1711");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int8 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-    }
-
-    @Test
-    public void test1712() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1712");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int5 = bBdata0.getBorrowCount("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str9 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
-        org.junit.Assert.assertNull(str9);
-    }
-
-    @Test
-    public void test1713() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1713");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        java.lang.String str20 = bBdata0.getBookTitle("hi!");
-        java.lang.String str22 = bBdata0.getBookTitle("hi!");
-        java.lang.String str24 = bBdata0.getMemberName("");
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertNull(str24);
-    }
-
-    @Test
-    public void test1714() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1714");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        int int10 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-    }
-
-    @Test
-    public void test1715() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1715");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int15 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        java.lang.String str18 = bBdata0.getMemberName("hi!");
-        boolean boolean20 = bBdata0.memberExists("hi!");
-        boolean boolean22 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-    }
-
-    @Test
-    public void test1716() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1716");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("");
-        boolean boolean10 = bBdata0.bookExists("");
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        int int14 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1717() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1717");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        java.lang.String str4 = bBdata0.getMemberName("");
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-    }
-
-    @Test
-    public void test1718() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1718");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        int int13 = bBdata0.getBorrowCount("");
-        int int15 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-    }
-
-    @Test
-    public void test1719() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1719");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        int int7 = bBdata0.getBorrowCount("hi!");
-        boolean boolean9 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        boolean boolean12 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-    }
-
-    @Test
-    public void test1720() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1720");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        boolean boolean13 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int17 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-    }
-
-    @Test
-    public void test1721() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1721");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int8 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str11 = bBdata0.getBookTitle("hi!");
-        java.lang.String str13 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1722() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1722");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        java.lang.Class<?> wildcardClass16 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNotNull(wildcardClass16);
-    }
-
-    @Test
-    public void test1723() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1723");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str11 = bBdata0.getBookAuthor("");
-        bBdata0.printAllMembers();
-        int int14 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str16 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1724() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1724");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        int int7 = bBdata0.getBorrowCount("hi!");
-        boolean boolean9 = bBdata0.bookExists("");
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-    }
-
-    @Test
-    public void test1725() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1725");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.bookExists("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1726() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1726");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        boolean boolean6 = bBdata0.memberExists("");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str10 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1727() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1727");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean18 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1728() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1728");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean14 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        java.lang.String str17 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str17);
-    }
-
-    @Test
-    public void test1729() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1729");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        boolean boolean11 = bBdata0.memberExists("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-    }
-
-    @Test
-    public void test1730() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1730");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        boolean boolean8 = bBdata0.isMemberActive("hi!");
-        bBdata0.decreaseCopy("");
-        boolean boolean12 = bBdata0.bookExists("hi!");
-        boolean boolean14 = bBdata0.memberExists("");
-        bBdata0.decreaseCopy("");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        int int19 = bBdata0.getBorrowLimit();
-        int int21 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
-    }
-
-    @Test
-    public void test1731() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1731");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str5 = bBdata0.getMemberName("hi!");
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        int int9 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str11 = bBdata0.getBookTitle("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str5);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertNull(str11);
-    }
-
-    @Test
-    public void test1732() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1732");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-    }
-
-    @Test
-    public void test1733() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1733");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str8 = bBdata0.getBookTitle("hi!");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-    }
-
-    @Test
-    public void test1734() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1734");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        java.lang.String str20 = bBdata0.getBookTitle("");
-        bBdata0.printAllBooks();
-        boolean boolean23 = bBdata0.bookExists("hi!");
-        boolean boolean25 = bBdata0.bookExists("hi!");
-        int int27 = bBdata0.getAvailableCopies("hi!");
-        int int29 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertTrue("'" + int27 + "' != '" + (-1) + "'", int27 == (-1));
-        org.junit.Assert.assertTrue("'" + int29 + "' != '" + (-1) + "'", int29 == (-1));
-    }
-
-    @Test
-    public void test1735() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1735");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        boolean boolean21 = bBdata0.bookExists("hi!");
-        int int23 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
-    }
-
-    @Test
-    public void test1736() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1736");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str19 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        boolean boolean23 = bBdata0.isMemberActive("hi!");
-        int int25 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str27 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
-        org.junit.Assert.assertNull(str27);
-    }
-
-    @Test
-    public void test1737() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1737");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        java.lang.String str9 = bBdata0.getBookTitle("hi!");
-        java.lang.String str11 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-    }
-
-    @Test
-    public void test1738() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1738");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean23 = bBdata0.memberExists("");
-        int int25 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertTrue("'" + int25 + "' != '" + (-1) + "'", int25 == (-1));
-    }
-
-    @Test
-    public void test1739() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1739");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.memberExists("hi!");
-        java.lang.String str11 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-    }
-
-    @Test
-    public void test1740() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1740");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        int int18 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str20 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1741() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1741");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        int int8 = bBdata0.getBorrowCount("");
-        boolean boolean10 = bBdata0.isMemberActive("");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        boolean boolean14 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1742() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1742");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str5 = bBdata0.getMemberName("hi!");
-        int int7 = bBdata0.getBorrowCount("");
-        int int8 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str5);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
-    }
-
-    @Test
-    public void test1743() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1743");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-    }
-
-    @Test
-    public void test1744() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1744");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.bookExists("hi!");
-        boolean boolean18 = bBdata0.bookExists("hi!");
-        int int20 = bBdata0.getAvailableCopies("");
-        java.lang.String str22 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNull(str22);
-    }
-
-    @Test
-    public void test1745() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1745");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        boolean boolean8 = bBdata0.isMemberActive("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        boolean boolean14 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1746() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1746");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        java.lang.String str17 = bBdata0.getBookTitle("hi!");
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertNull(str19);
-    }
-
-    @Test
-    public void test1747() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1747");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        int int21 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
-    }
-
-    @Test
-    public void test1748() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1748");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-    }
-
-    @Test
-    public void test1749() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1749");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllBooks();
-        int int17 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str19 = bBdata0.getMemberName("hi!");
-        java.lang.String str21 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNull(str21);
-    }
-
-    @Test
-    public void test1750() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1750");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        int int6 = bBdata0.getAvailableCopies("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        int int13 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-    }
-
-    @Test
-    public void test1751() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1751");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        boolean boolean5 = bBdata0.isMemberActive("");
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.memberExists("");
-        java.lang.String str11 = bBdata0.getBookTitle("");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-    }
-
-    @Test
-    public void test1752() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1752");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        int int14 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean16 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1753() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1753");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        int int14 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1754() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1754");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        boolean boolean16 = bBdata0.memberExists("");
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        int int20 = bBdata0.getAvailableCopies("");
-        java.lang.String str22 = bBdata0.getMemberName("");
-        int int23 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 3 + "'", int23 == 3);
-    }
-
-    @Test
-    public void test1755() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1755");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str13 = bBdata0.getBookTitle("hi!");
-        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean19 = bBdata0.bookExists("");
-        int int20 = bBdata0.getBorrowLimit();
-        boolean boolean22 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-    }
-
-    @Test
-    public void test1756() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1756");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        int int13 = bBdata0.getBorrowCount("");
-        java.lang.String str15 = bBdata0.getMemberName("hi!");
-        boolean boolean17 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1757() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1757");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        boolean boolean8 = bBdata0.memberExists("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean14 = bBdata0.isMemberActive("hi!");
-        java.lang.String str16 = bBdata0.getBookAuthor("");
-        boolean boolean18 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1758() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1758");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        int int6 = bBdata0.getAvailableCopies("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str11 = bBdata0.getBookAuthor("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertNull(str11);
-    }
-
-    @Test
-    public void test1759() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1759");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
-        boolean boolean11 = bBdata0.memberExists("");
-        boolean boolean13 = bBdata0.bookExists("hi!");
-        int int15 = bBdata0.getBorrowCount("");
-        bBdata0.printAllBooks();
-        int int18 = bBdata0.getBorrowCount("");
-        boolean boolean20 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1760() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1760");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        int int14 = bBdata0.getBorrowCount("");
-        java.lang.String str16 = bBdata0.getBookTitle("hi!");
-        java.lang.String str18 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1761() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1761");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean16 = bBdata0.memberExists("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1762() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1762");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        int int8 = bBdata0.getBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        int int11 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-    }
-
-    @Test
-    public void test1763() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1763");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        boolean boolean9 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-    }
-
-    @Test
-    public void test1764() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1764");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        java.lang.String str9 = bBdata0.getBookTitle("hi!");
-        java.lang.String str11 = bBdata0.getMemberName("hi!");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1765() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1765");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        bBdata0.decreaseCopy("");
-        boolean boolean20 = bBdata0.memberExists("hi!");
-        java.lang.String str22 = bBdata0.getBookTitle("hi!");
-        java.lang.String str24 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertNull(str24);
-    }
-
-    @Test
-    public void test1766() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1766");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        java.lang.String str8 = bBdata0.getBookTitle("hi!");
-        boolean boolean10 = bBdata0.bookExists("");
-        java.lang.String str12 = bBdata0.getBookTitle("");
-        boolean boolean14 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1767() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1767");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-    }
-
-    @Test
-    public void test1768() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1768");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        int int13 = bBdata0.getBorrowLimit();
-        java.lang.Class<?> wildcardClass14 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
-        org.junit.Assert.assertNotNull(wildcardClass14);
-    }
-
-    @Test
-    public void test1769() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1769");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.isMemberActive("");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        boolean boolean15 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1770() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1770");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        java.lang.String str2 = bBdata0.getBookTitle("");
-        int int4 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertNull(str2);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-    }
-
-    @Test
-    public void test1771() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1771");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str19 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNull(str19);
-    }
-
-    @Test
-    public void test1772() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1772");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        bBdata0.decreaseCopy("");
-        java.lang.String str20 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1773() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1773");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        java.lang.String str11 = bBdata0.getBookTitle("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        int int13 = bBdata0.getBorrowLimit();
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int19 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1774() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1774");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1775() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1775");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        boolean boolean18 = bBdata0.memberExists("");
-        int int20 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str22 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        java.lang.String str26 = bBdata0.getBookAuthor("");
-        java.lang.String str28 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertNull(str26);
-        org.junit.Assert.assertNull(str28);
-    }
-
-    @Test
-    public void test1776() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1776");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1777() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1777");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("");
-        int int18 = bBdata0.getAvailableCopies("");
-        boolean boolean20 = bBdata0.bookExists("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1778() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1778");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        int int4 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean6 = bBdata0.bookExists("");
-        bBdata0.printAllMembers();
-        boolean boolean9 = bBdata0.memberExists("");
-        java.lang.String str11 = bBdata0.getMemberName("");
-        bBdata0.decreaseCopy("");
-        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1779() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1779");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        int int6 = bBdata0.getBorrowLimit();
-        java.lang.String str8 = bBdata0.getBookTitle("");
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        bBdata0.decreaseCopy("hi!");
-        boolean boolean14 = bBdata0.isMemberActive("hi!");
-        java.lang.Class<?> wildcardClass15 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
-    }
-
-    @Test
-    public void test1780() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1780");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        boolean boolean10 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-    }
-
-    @Test
-    public void test1781() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1781");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllBooks();
-        int int17 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-    }
-
-    @Test
-    public void test1782() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1782");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        java.lang.String str18 = bBdata0.getMemberName("");
-        boolean boolean20 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1783() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1783");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        boolean boolean13 = bBdata0.memberExists("");
-        int int15 = bBdata0.getBorrowCount("");
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        boolean boolean19 = bBdata0.isMemberActive("hi!");
-        int int20 = bBdata0.getBorrowLimit();
-        int int22 = bBdata0.getBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        int int26 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 3 + "'", int20 == 3);
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
-        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
-    }
-
-    @Test
-    public void test1784() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1784");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        int int13 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str15 = bBdata0.getMemberName("hi!");
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1785() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1785");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        int int16 = bBdata0.getBorrowLimit();
-        int int17 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1786() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1786");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        boolean boolean8 = bBdata0.memberExists("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1787() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1787");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        boolean boolean5 = bBdata0.isMemberActive("");
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.memberExists("");
-        boolean boolean11 = bBdata0.isMemberActive("");
-        int int12 = bBdata0.getBorrowLimit();
-        int int14 = bBdata0.getBorrowCount("");
-        java.lang.Class<?> wildcardClass15 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNotNull(wildcardClass15);
-    }
-
-    @Test
-    public void test1788() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1788");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-    }
-
-    @Test
-    public void test1789() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1789");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        java.lang.String str6 = bBdata0.getBookAuthor("");
-        boolean boolean8 = bBdata0.bookExists("");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        int int12 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-    }
-
-    @Test
-    public void test1790() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1790");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.memberExists("");
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str20 = bBdata0.getBookTitle("");
-        boolean boolean22 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.Class<?> wildcardClass27 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
-    }
-
-    @Test
-    public void test1791() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1791");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getBorrowCount("");
-        int int17 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1792() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1792");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("");
-        java.lang.String str12 = bBdata0.getBookAuthor("");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str16 = bBdata0.getMemberName("");
-        java.lang.String str18 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1793() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1793");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        java.lang.String str9 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertNull(str9);
-    }
-
-    @Test
-    public void test1794() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1794");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean17 = bBdata0.memberExists("");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1795() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1795");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        java.lang.String str3 = bBdata0.getMemberName("");
-        int int5 = bBdata0.getAvailableCopies("");
-        boolean boolean7 = bBdata0.isMemberActive("hi!");
-        int int9 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertNull(str3);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + (-1) + "'", int5 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-    }
-
-    @Test
-    public void test1796() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1796");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        boolean boolean16 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1797() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1797");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        int int20 = bBdata0.getAvailableCopies("");
-        boolean boolean22 = bBdata0.bookExists("hi!");
-        java.lang.Class<?> wildcardClass23 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
-    }
-
-    @Test
-    public void test1798() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1798");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.Class<?> wildcardClass16 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNotNull(wildcardClass16);
-    }
-
-    @Test
-    public void test1799() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1799");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("");
-        int int9 = bBdata0.getAvailableCopies("hi!");
-        int int11 = bBdata0.getBorrowCount("");
-        java.lang.String str13 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1800() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1800");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getAvailableCopies("hi!");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllMembers();
-        int int15 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-    }
-
-    @Test
-    public void test1801() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1801");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        int int4 = bBdata0.getAvailableCopies("");
-        java.lang.String str6 = bBdata0.getMemberName("hi!");
-        int int8 = bBdata0.getAvailableCopies("");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.bookExists("");
-        boolean boolean14 = bBdata0.bookExists("");
-        java.lang.String str16 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1802() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1802");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean17 = bBdata0.isMemberActive("hi!");
-        int int19 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1803() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1803");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        boolean boolean16 = bBdata0.memberExists("");
-        int int18 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean21 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-    }
-
-    @Test
-    public void test1804() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1804");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        java.lang.String str6 = bBdata0.getMemberName("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        int int12 = bBdata0.getBorrowCount("");
-        int int14 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1805() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1805");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        java.lang.String str6 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        java.lang.String str9 = bBdata0.getBookAuthor("");
-        java.lang.String str11 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertNull(str11);
-    }
-
-    @Test
-    public void test1806() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1806");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        java.lang.String str20 = bBdata0.getMemberName("");
-        boolean boolean22 = bBdata0.bookExists("hi!");
-        boolean boolean24 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-    }
-
-    @Test
-    public void test1807() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1807");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        java.lang.String str16 = bBdata0.getBookTitle("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("");
-        boolean boolean22 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-    }
-
-    @Test
-    public void test1808() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1808");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str9 = bBdata0.getBookTitle("");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        boolean boolean16 = bBdata0.memberExists("");
-        int int18 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str20 = bBdata0.getBookTitle("");
-        java.lang.String str22 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertNull(str22);
-    }
-
-    @Test
-    public void test1809() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1809");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean15 = bBdata0.memberExists("");
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        int int19 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str21 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-        org.junit.Assert.assertNull(str21);
-    }
-
-    @Test
-    public void test1810() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1810");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.isMemberActive("");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        java.lang.String str15 = bBdata0.getBookAuthor("");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str20 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1811() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1811");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean10 = bBdata0.bookExists("");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-    }
-
-    @Test
-    public void test1812() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1812");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        int int8 = bBdata0.getBorrowLimit();
-        int int10 = bBdata0.getBorrowCount("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-    }
-
-    @Test
-    public void test1813() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1813");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
-        bBdata0.decreaseCopy("hi!");
-        boolean boolean13 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-    }
-
-    @Test
-    public void test1814() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1814");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        int int11 = bBdata0.getBorrowLimit();
-        java.lang.String str13 = bBdata0.getBookAuthor("");
-        int int15 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        int int19 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1815() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1815");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        java.lang.String str19 = bBdata0.getBookTitle("hi!");
-        java.lang.String str21 = bBdata0.getBookTitle("");
-        int int23 = bBdata0.getBorrowCount("");
-        java.lang.String str25 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNull(str21);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
-        org.junit.Assert.assertNull(str25);
-    }
-
-    @Test
-    public void test1816() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1816");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("hi!");
-        boolean boolean14 = bBdata0.bookExists("");
-        java.lang.String str16 = bBdata0.getBookAuthor("");
-        java.lang.String str18 = bBdata0.getBookAuthor("");
-        int int19 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-    }
-
-    @Test
-    public void test1817() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1817");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        java.lang.String str20 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1818() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1818");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        boolean boolean13 = bBdata0.bookExists("");
-        java.lang.Class<?> wildcardClass14 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(wildcardClass14);
-    }
-
-    @Test
-    public void test1819() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1819");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("hi!");
-        boolean boolean14 = bBdata0.bookExists("hi!");
-        java.lang.Class<?> wildcardClass15 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
-    }
-
-    @Test
-    public void test1820() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1820");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        java.lang.String str10 = bBdata0.getMemberName("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1821() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1821");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        boolean boolean18 = bBdata0.memberExists("");
-        boolean boolean20 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        int int22 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + 3 + "'", int22 == 3);
-    }
-
-    @Test
-    public void test1822() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1822");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        bBdata0.decreaseCopy("");
-        int int19 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-    }
-
-    @Test
-    public void test1823() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1823");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        int int11 = bBdata0.getBorrowLimit();
-        boolean boolean13 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        int int17 = bBdata0.getBorrowCount("");
-        boolean boolean19 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-    }
-
-    @Test
-    public void test1824() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1824");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        int int13 = bBdata0.getAvailableCopies("");
-        boolean boolean15 = bBdata0.bookExists("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNull(str17);
-    }
-
-    @Test
-    public void test1825() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1825");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        boolean boolean5 = bBdata0.isMemberActive("");
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.memberExists("");
-        java.lang.String str11 = bBdata0.getBookTitle("");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1826() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1826");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        java.lang.String str4 = bBdata0.getMemberName("");
-        int int5 = bBdata0.getBorrowLimit();
-        boolean boolean7 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-    }
-
-    @Test
-    public void test1827() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1827");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        boolean boolean14 = bBdata0.memberExists("hi!");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        boolean boolean19 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-    }
-
-    @Test
-    public void test1828() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1828");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str19 = bBdata0.getBookAuthor("");
-        boolean boolean21 = bBdata0.isMemberActive("");
-        java.lang.String str23 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1829() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1829");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-    }
-
-    @Test
-    public void test1830() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1830");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        int int8 = bBdata0.getBorrowLimit();
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        boolean boolean12 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-    }
-
-    @Test
-    public void test1831() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1831");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getMemberName("");
-        boolean boolean14 = bBdata0.memberExists("hi!");
-        int int15 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-    }
-
-    @Test
-    public void test1832() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1832");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        java.lang.String str2 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.decreaseCopy("hi!");
-        int int9 = bBdata0.getBorrowCount("");
-        boolean boolean11 = bBdata0.bookExists("");
-        boolean boolean13 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        boolean boolean16 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertNull(str2);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1833() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1833");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        boolean boolean16 = bBdata0.memberExists("");
-        bBdata0.increaseBorrowCount("hi!");
-        int int19 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-    }
-
-    @Test
-    public void test1834() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1834");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        bBdata0.decreaseCopy("");
-        bBdata0.increaseBorrowCount("hi!");
-        int int13 = bBdata0.getAvailableCopies("");
-        java.lang.String str15 = bBdata0.getBookTitle("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1835() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1835");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean14 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        int int16 = bBdata0.getBorrowLimit();
-        java.lang.String str18 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1836() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1836");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        boolean boolean8 = bBdata0.bookExists("");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str13 = bBdata0.getBookTitle("");
-        boolean boolean15 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1837() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1837");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        boolean boolean8 = bBdata0.bookExists("hi!");
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        int int12 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-    }
-
-    @Test
-    public void test1838() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1838");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        int int18 = bBdata0.getBorrowCount("");
-        bBdata0.printAllBooks();
-        java.lang.String str21 = bBdata0.getBookTitle("");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        java.lang.String str28 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertNull(str21);
-        org.junit.Assert.assertNull(str28);
-    }
-
-    @Test
-    public void test1839() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1839");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        java.lang.String str8 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        int int11 = bBdata0.getAvailableCopies("");
-        bBdata0.decreaseCopy("");
-        boolean boolean15 = bBdata0.bookExists("");
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1840() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1840");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean18 = bBdata0.bookExists("hi!");
-        int int19 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-    }
-
-    @Test
-    public void test1841() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1841");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean17 = bBdata0.memberExists("");
-        int int19 = bBdata0.getBorrowCount("");
-        int int21 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
-    }
-
-    @Test
-    public void test1842() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1842");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean13 = bBdata0.bookExists("");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str19 = bBdata0.getBookTitle("");
-        java.lang.String str21 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNull(str21);
-    }
-
-    @Test
-    public void test1843() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1843");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean17 = bBdata0.isMemberActive("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str23 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1844() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1844");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        int int12 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str17 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str17);
-    }
-
-    @Test
-    public void test1845() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1845");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean6 = bBdata0.memberExists("");
-        java.lang.String str8 = bBdata0.getMemberName("");
-        java.lang.String str10 = bBdata0.getBookAuthor("");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1846() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1846");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        int int16 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-    }
-
-    @Test
-    public void test1847() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1847");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        java.lang.String str6 = bBdata0.getBookTitle("");
-        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str8);
-    }
-
-    @Test
-    public void test1848() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1848");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        bBdata0.printAllBooks();
-        boolean boolean10 = bBdata0.memberExists("hi!");
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str12);
-    }
-
-    @Test
-    public void test1849() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1849");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        boolean boolean6 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-    }
-
-    @Test
-    public void test1850() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1850");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        int int14 = bBdata0.getAvailableCopies("hi!");
-        int int16 = bBdata0.getAvailableCopies("");
-        boolean boolean18 = bBdata0.bookExists("hi!");
-        java.lang.String str20 = bBdata0.getMemberName("");
-        java.lang.String str22 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertNull(str22);
-    }
-
-    @Test
-    public void test1851() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1851");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllBooks();
-        boolean boolean17 = bBdata0.isMemberActive("hi!");
-        java.lang.String str19 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNull(str19);
-    }
-
-    @Test
-    public void test1852() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1852");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        int int11 = bBdata0.getBorrowCount("");
-        java.lang.String str13 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1853() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1853");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str11 = bBdata0.getBookAuthor("");
-        java.lang.String str13 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1854() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1854");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        boolean boolean8 = bBdata0.bookExists("");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1855() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1855");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        boolean boolean5 = bBdata0.isMemberActive("");
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.memberExists("");
-        java.lang.String str11 = bBdata0.getBookAuthor("");
-        int int13 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str15 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str20 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1856() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1856");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        int int10 = bBdata0.getBorrowCount("");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getBorrowCount("");
-        java.lang.String str18 = bBdata0.getBookAuthor("");
-        int int19 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-    }
-
-    @Test
-    public void test1857() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1857");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getBookTitle("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        java.lang.String str19 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        boolean boolean23 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-    }
-
-    @Test
-    public void test1858() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1858");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int8 = bBdata0.getAvailableCopies("");
-        int int10 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-    }
-
-    @Test
-    public void test1859() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1859");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        java.lang.String str6 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str10 = bBdata0.getBookAuthor("");
-        boolean boolean12 = bBdata0.bookExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        int int20 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str22 = bBdata0.getBookTitle("");
-        int int24 = bBdata0.getAvailableCopies("");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertTrue("'" + int24 + "' != '" + (-1) + "'", int24 == (-1));
-    }
-
-    @Test
-    public void test1860() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1860");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean17 = bBdata0.bookExists("hi!");
-        int int19 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1861() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1861");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        boolean boolean19 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str23 = bBdata0.getMemberName("hi!");
-        int int24 = bBdata0.getBorrowLimit();
-        java.lang.String str26 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNull(str23);
-        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 3 + "'", int24 == 3);
-        org.junit.Assert.assertNull(str26);
-    }
-
-    @Test
-    public void test1862() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1862");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        int int11 = bBdata0.getBorrowLimit();
-        boolean boolean13 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        int int16 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-    }
-
-    @Test
-    public void test1863() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1863");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNotNull(wildcardClass17);
-    }
-
-    @Test
-    public void test1864() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1864");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean9 = bBdata0.bookExists("hi!");
-        boolean boolean11 = bBdata0.bookExists("");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-    }
-
-    @Test
-    public void test1865() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1865");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        boolean boolean4 = bBdata0.isMemberActive("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        java.lang.String str9 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertNull(str9);
-    }
-
-    @Test
-    public void test1866() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1866");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-    }
-
-    @Test
-    public void test1867() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1867");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("");
-        int int9 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str11 = bBdata0.getBookAuthor("hi!");
-        int int13 = bBdata0.getBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-    }
-
-    @Test
-    public void test1868() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1868");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        java.lang.String str6 = bBdata0.getMemberName("hi!");
-        bBdata0.decreaseCopy("");
-        bBdata0.increaseBorrowCount("hi!");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean14 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1869() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1869");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookTitle("");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        boolean boolean18 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1870() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1870");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean11 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("");
-        java.lang.String str15 = bBdata0.getBookTitle("hi!");
-        int int16 = bBdata0.getBorrowLimit();
-        java.lang.String str18 = bBdata0.getMemberName("");
-        java.lang.String str20 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1871() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1871");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        int int7 = bBdata0.getBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
-    }
-
-    @Test
-    public void test1872() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1872");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        java.lang.String str11 = bBdata0.getBookTitle("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1873() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1873");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean15 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1874() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1874");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getAvailableCopies("");
-        int int7 = bBdata0.getBorrowLimit();
-        java.lang.String str9 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertNull(str9);
-    }
-
-    @Test
-    public void test1875() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1875");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowCount("hi!");
-        boolean boolean13 = bBdata0.memberExists("");
-        int int15 = bBdata0.getBorrowCount("");
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        int int21 = bBdata0.getAvailableCopies("");
-        int int23 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
-    }
-
-    @Test
-    public void test1876() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1876");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        int int4 = bBdata0.getAvailableCopies("hi!");
-        int int6 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        java.lang.String str12 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-    }
-
-    @Test
-    public void test1877() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1877");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        int int18 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean22 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-    }
-
-    @Test
-    public void test1878() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1878");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean16 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1879() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1879");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1880() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1880");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        int int18 = bBdata0.getBorrowCount("");
-        bBdata0.printAllBooks();
-        java.lang.String str21 = bBdata0.getBookTitle("");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertNull(str21);
-    }
-
-    @Test
-    public void test1881() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1881");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.bookExists("");
-        int int11 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-    }
-
-    @Test
-    public void test1882() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1882");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean18 = bBdata0.bookExists("");
-        boolean boolean20 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1883() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1883");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-    }
-
-    @Test
-    public void test1884() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1884");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.decreaseCopy("hi!");
-        int int8 = bBdata0.getBorrowCount("");
-        bBdata0.decreaseCopy("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1885() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1885");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1886() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1886");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        int int12 = bBdata0.getAvailableCopies("");
-        boolean boolean14 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1887() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1887");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str16 = bBdata0.getBookTitle("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        boolean boolean19 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-    }
-
-    @Test
-    public void test1888() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1888");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        boolean boolean16 = bBdata0.memberExists("");
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        int int19 = bBdata0.getBorrowLimit();
-        boolean boolean21 = bBdata0.bookExists("");
-        java.lang.String str23 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1889() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1889");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        boolean boolean16 = bBdata0.bookExists("hi!");
-        java.lang.String str18 = bBdata0.getBookTitle("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.Class<?> wildcardClass21 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertNotNull(wildcardClass21);
-    }
-
-    @Test
-    public void test1890() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1890");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        java.lang.String str18 = bBdata0.getMemberName("");
-        boolean boolean20 = bBdata0.isMemberActive("hi!");
-        boolean boolean22 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-    }
-
-    @Test
-    public void test1891() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1891");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        java.lang.String str6 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        int int10 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-    }
-
-    @Test
-    public void test1892() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1892");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-    }
-
-    @Test
-    public void test1893() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1893");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        boolean boolean14 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1894() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1894");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        int int14 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1895() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1895");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
-        int int14 = bBdata0.getAvailableCopies("");
-        java.lang.String str16 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1896() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1896");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("");
-        int int9 = bBdata0.getAvailableCopies("hi!");
-        int int11 = bBdata0.getBorrowCount("");
-        java.lang.String str13 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1897() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1897");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str19 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        boolean boolean25 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-    }
-
-    @Test
-    public void test1898() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1898");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        java.lang.String str2 = bBdata0.getBookTitle("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        int int7 = bBdata0.getBorrowCount("");
-        java.lang.String str9 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertNull(str2);
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
-        org.junit.Assert.assertNull(str9);
-    }
-
-    @Test
-    public void test1899() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1899");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        java.lang.String str18 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1900() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1900");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        boolean boolean21 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        java.lang.String str24 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str24);
-    }
-
-    @Test
-    public void test1901() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1901");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str23 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1902() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1902");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        int int10 = bBdata0.getBorrowLimit();
-        int int12 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-    }
-
-    @Test
-    public void test1903() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1903");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
-        boolean boolean11 = bBdata0.memberExists("");
-        boolean boolean13 = bBdata0.bookExists("hi!");
-        java.lang.String str15 = bBdata0.getBookTitle("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1904() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1904");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        java.lang.String str4 = bBdata0.getBookTitle("hi!");
-        java.lang.Class<?> wildcardClass5 = bBdata0.getClass();
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
-    }
-
-    @Test
-    public void test1905() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1905");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        int int10 = bBdata0.getBorrowLimit();
-        int int12 = bBdata0.getBorrowCount("hi!");
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-    }
-
-    @Test
-    public void test1906() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1906");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.isMemberActive("hi!");
-        int int11 = bBdata0.getBorrowLimit();
-        boolean boolean13 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        int int17 = bBdata0.getBorrowCount("");
-        java.lang.Class<?> wildcardClass18 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-        org.junit.Assert.assertNotNull(wildcardClass18);
-    }
-
-    @Test
-    public void test1907() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1907");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        java.lang.Class<?> wildcardClass20 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNotNull(wildcardClass20);
-    }
-
-    @Test
-    public void test1908() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1908");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        boolean boolean17 = bBdata0.bookExists("");
-        boolean boolean19 = bBdata0.isMemberActive("hi!");
-        boolean boolean21 = bBdata0.bookExists("");
-        java.lang.String str23 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1909() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1909");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean14 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
-    }
-
-    @Test
-    public void test1910() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1910");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int12 = bBdata0.getBorrowCount("");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str16 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1911() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1911");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        boolean boolean16 = bBdata0.memberExists("");
-        java.lang.String str18 = bBdata0.getBookAuthor("hi!");
-        int int20 = bBdata0.getAvailableCopies("");
-        boolean boolean22 = bBdata0.isMemberActive("");
-        boolean boolean24 = bBdata0.memberExists("");
-        boolean boolean26 = bBdata0.memberExists("hi!");
-        int int27 = bBdata0.getBorrowLimit();
-        boolean boolean29 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + int27 + "' != '" + 3 + "'", int27 == 3);
-        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
-    }
-
-    @Test
-    public void test1912() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1912");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str12 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("");
-        int int18 = bBdata0.getAvailableCopies("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str22 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertNull(str22);
-    }
-
-    @Test
-    public void test1913() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1913");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str9 = bBdata0.getBookAuthor("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str9);
-    }
-
-    @Test
-    public void test1914() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1914");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        boolean boolean11 = bBdata0.memberExists("hi!");
-        boolean boolean13 = bBdata0.memberExists("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-    }
-
-    @Test
-    public void test1915() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1915");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        java.lang.String str10 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        java.lang.String str14 = bBdata0.getBookTitle("hi!");
-        int int16 = bBdata0.getBorrowCount("");
-        boolean boolean18 = bBdata0.isMemberActive("hi!");
-        boolean boolean20 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1916() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1916");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllBooks();
-        int int16 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
-    }
-
-    @Test
-    public void test1917() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1917");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        java.lang.Class<?> wildcardClass11 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNotNull(wildcardClass11);
-    }
-
-    @Test
-    public void test1918() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1918");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1919() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1919");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        boolean boolean11 = bBdata0.isMemberActive("hi!");
-        int int13 = bBdata0.getBorrowCount("hi!");
-        boolean boolean15 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1920() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1920");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        int int10 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean12 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("");
-        java.lang.String str16 = bBdata0.getMemberName("");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        boolean boolean20 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1921() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1921");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        boolean boolean11 = bBdata0.bookExists("");
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-    }
-
-    @Test
-    public void test1922() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1922");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        int int17 = bBdata0.getAvailableCopies("");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean21 = bBdata0.memberExists("");
-        java.lang.String str23 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1923() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1923");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean14 = bBdata0.bookExists("");
-        int int15 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str20 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-        org.junit.Assert.assertNull(str20);
-    }
-
-    @Test
-    public void test1924() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1924");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        int int14 = bBdata0.getBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1925() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1925");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        java.lang.String str6 = bBdata0.getMemberName("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.decreaseCopy("hi!");
-        int int13 = bBdata0.getBorrowLimit();
-        boolean boolean15 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1926() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1926");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        int int6 = bBdata0.getBorrowLimit();
-        boolean boolean8 = bBdata0.bookExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-    }
-
-    @Test
-    public void test1927() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1927");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int15 = bBdata0.getBorrowLimit();
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        java.lang.String str19 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNull(str19);
-    }
-
-    @Test
-    public void test1928() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1928");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        int int8 = bBdata0.getAvailableCopies("");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        int int14 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1929() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1929");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int15 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean22 = bBdata0.isMemberActive("");
-        boolean boolean24 = bBdata0.bookExists("hi!");
-        boolean boolean26 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-    }
-
-    @Test
-    public void test1930() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1930");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("");
-        boolean boolean11 = bBdata0.isMemberActive("");
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1931() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1931");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        int int10 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        java.lang.String str15 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1932() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1932");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        java.lang.String str19 = bBdata0.getMemberName("");
-        boolean boolean21 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-    }
-
-    @Test
-    public void test1933() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1933");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        java.lang.String str2 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertNull(str2);
-        org.junit.Assert.assertNull(str4);
-    }
-
-    @Test
-    public void test1934() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1934");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        int int14 = bBdata0.getBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-    }
-
-    @Test
-    public void test1935() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1935");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        int int5 = bBdata0.getBorrowLimit();
-        int int7 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + (-1) + "'", int7 == (-1));
-    }
-
-    @Test
-    public void test1936() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1936");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        java.lang.String str14 = bBdata0.getBookTitle("hi!");
-        int int16 = bBdata0.getBorrowCount("");
-        boolean boolean18 = bBdata0.bookExists("hi!");
-        int int20 = bBdata0.getAvailableCopies("");
-        java.lang.Class<?> wildcardClass21 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNotNull(wildcardClass21);
-    }
-
-    @Test
-    public void test1937() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1937");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str14 = bBdata0.getBookTitle("hi!");
-        int int15 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 3 + "'", int15 == 3);
-    }
-
-    @Test
-    public void test1938() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1938");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str14 = bBdata0.getBookTitle("hi!");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-    }
-
-    @Test
-    public void test1939() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1939");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        int int8 = bBdata0.getBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean12 = bBdata0.bookExists("");
-        boolean boolean14 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1940() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1940");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        boolean boolean16 = bBdata0.memberExists("");
-        bBdata0.increaseBorrowCount("hi!");
-        int int20 = bBdata0.getBorrowCount("");
-        java.lang.String str22 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNull(str22);
-    }
-
-    @Test
-    public void test1941() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1941");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean6 = bBdata0.memberExists("");
-        java.lang.String str8 = bBdata0.getMemberName("");
-        int int9 = bBdata0.getBorrowLimit();
-        java.lang.String str11 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str13 = bBdata0.getMemberName("");
-        int int15 = bBdata0.getAvailableCopies("");
-        int int17 = bBdata0.getAvailableCopies("");
-        int int19 = bBdata0.getAvailableCopies("");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + (-1) + "'", int17 == (-1));
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1942() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1942");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        int int4 = bBdata0.getAvailableCopies("");
-        java.lang.String str6 = bBdata0.getMemberName("hi!");
-        java.lang.String str8 = bBdata0.getBookTitle("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-    }
-
-    @Test
-    public void test1943() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1943");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean14 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        int int16 = bBdata0.getBorrowLimit();
-        java.lang.String str18 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 3 + "'", int16 == 3);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1944() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1944");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        boolean boolean8 = bBdata0.memberExists("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        bBdata0.printAllBooks();
-        boolean boolean17 = bBdata0.memberExists("hi!");
-        int int19 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1945() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1945");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean11 = bBdata0.memberExists("");
-        int int12 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        java.lang.String str18 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1946() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1946");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str9 = bBdata0.getBookTitle("");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str9);
-        org.junit.Assert.assertNull(str14);
-    }
-
-    @Test
-    public void test1947() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1947");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        bBdata0.decreaseCopy("hi!");
-        boolean boolean15 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1948() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1948");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.Class<?> wildcardClass9 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNotNull(wildcardClass9);
-    }
-
-    @Test
-    public void test1949() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1949");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        int int14 = bBdata0.getBorrowLimit();
-        boolean boolean16 = bBdata0.bookExists("hi!");
-        java.lang.String str18 = bBdata0.getBookTitle("");
-        boolean boolean20 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 3 + "'", int14 == 3);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1950() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1950");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        java.lang.String str8 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        boolean boolean13 = bBdata0.isMemberActive("");
-        java.lang.String str15 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1951() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1951");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        boolean boolean9 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int12 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-    }
-
-    @Test
-    public void test1952() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1952");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        bBdata0.printAllBooks();
-        boolean boolean5 = bBdata0.isMemberActive("");
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.memberExists("");
-        java.lang.String str11 = bBdata0.getBookAuthor("");
-        int int13 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str15 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.printAllMembers();
-        int int19 = bBdata0.getBorrowCount("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + (-1) + "'", int19 == (-1));
-    }
-
-    @Test
-    public void test1953() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1953");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        int int10 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str12 = bBdata0.getBookTitle("");
-        boolean boolean14 = bBdata0.isMemberActive("");
-        bBdata0.decreaseCopy("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1954() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1954");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        boolean boolean9 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        bBdata0.increaseBorrowCount("");
-        boolean boolean14 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1955() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1955");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        int int8 = bBdata0.getBorrowLimit();
-        int int10 = bBdata0.getBorrowCount("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("hi!");
-        bBdata0.increaseBorrowCount("");
-        boolean boolean16 = bBdata0.bookExists("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 3 + "'", int8 == 3);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1956() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1956");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        boolean boolean17 = bBdata0.bookExists("");
-        boolean boolean19 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-    }
-
-    @Test
-    public void test1957() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1957");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getAvailableCopies("hi!");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str13 = bBdata0.getBookAuthor("hi!");
-        java.lang.Class<?> wildcardClass14 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str13);
-        org.junit.Assert.assertNotNull(wildcardClass14);
-    }
-
-    @Test
-    public void test1958() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1958");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str16 = bBdata0.getBookTitle("hi!");
-        boolean boolean18 = bBdata0.isMemberActive("");
-        java.lang.String str20 = bBdata0.getBookAuthor("");
-        java.lang.String str22 = bBdata0.getBookAuthor("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNull(str20);
-        org.junit.Assert.assertNull(str22);
-    }
-
-    @Test
-    public void test1959() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1959");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookTitle("hi!");
-        boolean boolean9 = bBdata0.isMemberActive("hi!");
-        boolean boolean11 = bBdata0.memberExists("hi!");
-        int int13 = bBdata0.getBorrowCount("");
-        int int15 = bBdata0.getBorrowCount("hi!");
-        bBdata0.decreaseCopy("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + (-1) + "'", int15 == (-1));
-    }
-
-    @Test
-    public void test1960() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1960");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        int int8 = bBdata0.getAvailableCopies("");
-        java.lang.String str10 = bBdata0.getMemberName("");
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        int int14 = bBdata0.getBorrowCount("");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-    }
-
-    @Test
-    public void test1961() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1961");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        int int4 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean6 = bBdata0.bookExists("");
-        bBdata0.printAllMembers();
-        boolean boolean9 = bBdata0.memberExists("");
-        java.lang.String str11 = bBdata0.getMemberName("");
-        bBdata0.decreaseCopy("");
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        java.lang.String str17 = bBdata0.getBookTitle("");
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNull(str17);
-    }
-
-    @Test
-    public void test1962() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1962");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        boolean boolean14 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str18 = bBdata0.getMemberName("hi!");
-        boolean boolean20 = bBdata0.memberExists("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1963() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1963");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.bookExists("");
-        int int5 = bBdata0.getBorrowLimit();
-        java.lang.String str7 = bBdata0.getMemberName("");
-        boolean boolean9 = bBdata0.memberExists("");
-        bBdata0.printAllBooks();
-        boolean boolean12 = bBdata0.memberExists("");
-        int int13 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 3 + "'", int13 == 3);
-    }
-
-    @Test
-    public void test1964() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1964");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        int int4 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("hi!");
-        java.lang.String str10 = bBdata0.getBookAuthor("hi!");
-        java.lang.Class<?> wildcardClass11 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNotNull(wildcardClass11);
-    }
-
-    @Test
-    public void test1965() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1965");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.printAllBooks();
-        int int3 = bBdata0.getBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + (-1) + "'", int3 == (-1));
-    }
-
-    @Test
-    public void test1966() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1966");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        int int14 = bBdata0.getBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("hi!");
-        int int17 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1967() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1967");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str8 = bBdata0.getBookAuthor("");
-        boolean boolean10 = bBdata0.bookExists("hi!");
-        boolean boolean12 = bBdata0.isMemberActive("");
-        java.lang.String str14 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str16 = bBdata0.getMemberName("");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-    }
-
-    @Test
-    public void test1968() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1968");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.increaseBorrowCount("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str12);
-    }
-
-    @Test
-    public void test1969() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1969");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        boolean boolean12 = bBdata0.memberExists("hi!");
-        bBdata0.increaseBorrowCount("");
-        int int16 = bBdata0.getAvailableCopies("");
-        boolean boolean18 = bBdata0.memberExists("");
-        int int20 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str22 = bBdata0.getMemberName("hi!");
-        java.lang.String str24 = bBdata0.getBookAuthor("hi!");
-        bBdata0.decreaseCopy("hi!");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertNull(str22);
-        org.junit.Assert.assertNull(str24);
-    }
-
-    @Test
-    public void test1970() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1970");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean13 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str16 = bBdata0.getBookTitle("");
-        int int18 = bBdata0.getBorrowCount("");
-        boolean boolean20 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-    }
-
-    @Test
-    public void test1971() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1971");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.isMemberActive("hi!");
-        java.lang.String str8 = bBdata0.getMemberName("");
-        int int9 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-    }
-
-    @Test
-    public void test1972() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1972");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        int int4 = bBdata0.getBorrowCount("");
-        int int6 = bBdata0.getBorrowCount("hi!");
-        boolean boolean8 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        int int10 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str17 = bBdata0.getBookTitle("hi!");
-        java.lang.Class<?> wildcardClass18 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + (-1) + "'", int4 == (-1));
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertNotNull(wildcardClass18);
-    }
-
-    @Test
-    public void test1973() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1973");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        boolean boolean11 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("");
-        java.lang.String str15 = bBdata0.getBookTitle("hi!");
-        boolean boolean17 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        int int20 = bBdata0.getAvailableCopies("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-    }
-
-    @Test
-    public void test1974() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1974");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        int int9 = bBdata0.getAvailableCopies("");
-        int int11 = bBdata0.getAvailableCopies("");
-        int int13 = bBdata0.getBorrowCount("hi!");
-        boolean boolean15 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1975() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1975");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getBookTitle("hi!");
-        java.lang.String str14 = bBdata0.getMemberName("hi!");
-        java.lang.String str16 = bBdata0.getBookTitle("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        int int20 = bBdata0.getAvailableCopies("");
-        int int22 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + (-1) + "'", int20 == (-1));
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
-    }
-
-    @Test
-    public void test1976() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1976");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        int int16 = bBdata0.getAvailableCopies("");
-        java.lang.String str18 = bBdata0.getMemberName("");
-        bBdata0.printAllMembers();
-        int int21 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNull(str18);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + (-1) + "'", int21 == (-1));
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1977() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1977");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean10 = bBdata0.memberExists("");
-        int int12 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean14 = bBdata0.bookExists("hi!");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        boolean boolean18 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-    }
-
-    @Test
-    public void test1978() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1978");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        java.lang.String str6 = bBdata0.getBookAuthor("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("");
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("hi!");
-        java.lang.String str15 = bBdata0.getBookAuthor("");
-        boolean boolean17 = bBdata0.bookExists("hi!");
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        java.lang.Class<?> wildcardClass20 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNotNull(wildcardClass20);
-    }
-
-    @Test
-    public void test1979() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1979");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        java.lang.String str6 = bBdata0.getBookTitle("hi!");
-        bBdata0.printAllBooks();
-        int int9 = bBdata0.getBorrowCount("hi!");
-        boolean boolean11 = bBdata0.memberExists("");
-        int int13 = bBdata0.getAvailableCopies("");
-        boolean boolean15 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        int int17 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertNull(str6);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + (-1) + "'", int9 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + (-1) + "'", int13 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + int17 + "' != '" + 3 + "'", int17 == 3);
-    }
-
-    @Test
-    public void test1980() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1980");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.bookExists("");
-        bBdata0.decreaseCopy("");
-        boolean boolean10 = bBdata0.bookExists("");
-        bBdata0.printAllBooks();
-        boolean boolean13 = bBdata0.isMemberActive("hi!");
-        java.lang.Class<?> wildcardClass14 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(wildcardClass14);
-    }
-
-    @Test
-    public void test1981() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1981");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        boolean boolean8 = bBdata0.bookExists("");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str13 = bBdata0.getBookTitle("");
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str13);
-    }
-
-    @Test
-    public void test1982() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1982");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int12 = bBdata0.getBorrowCount("");
-        java.lang.String str14 = bBdata0.getMemberName("");
-        boolean boolean16 = bBdata0.isMemberActive("");
-        bBdata0.printAllMembers();
-        java.lang.String str19 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllBooks();
-        java.lang.Class<?> wildcardClass21 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertNotNull(wildcardClass21);
-    }
-
-    @Test
-    public void test1983() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1983");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        boolean boolean6 = bBdata0.memberExists("");
-        int int8 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("");
-        java.lang.String str12 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-    }
-
-    @Test
-    public void test1984() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1984");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        int int11 = bBdata0.getBorrowLimit();
-        int int12 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 3 + "'", int11 == 3);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-    }
-
-    @Test
-    public void test1985() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1985");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        java.lang.String str2 = bBdata0.getBookTitle("");
-        java.lang.String str4 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("hi!");
-        int int7 = bBdata0.getBorrowLimit();
-        org.junit.Assert.assertNull(str2);
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int7 + "' != '" + 3 + "'", int7 == 3);
-    }
-
-    @Test
-    public void test1986() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1986");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        int int6 = bBdata0.getBorrowLimit();
-        boolean boolean8 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        int int10 = bBdata0.getBorrowLimit();
-        java.lang.Class<?> wildcardClass11 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 3 + "'", int6 == 3);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-        org.junit.Assert.assertNotNull(wildcardClass11);
-    }
-
-    @Test
-    public void test1987() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1987");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.memberExists("hi!");
-        bBdata0.printAllBooks();
-        int int4 = bBdata0.getBorrowLimit();
-        boolean boolean6 = bBdata0.memberExists("hi!");
-        java.lang.String str8 = bBdata0.getBookAuthor("hi!");
-        int int10 = bBdata0.getBorrowCount("hi!");
-        int int12 = bBdata0.getBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("hi!");
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + (-1) + "'", int10 == (-1));
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + (-1) + "'", int12 == (-1));
-        org.junit.Assert.assertNull(str15);
-    }
-
-    @Test
-    public void test1988() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1988");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        boolean boolean8 = bBdata0.memberExists("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("");
-        boolean boolean14 = bBdata0.isMemberActive("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-    }
-
-    @Test
-    public void test1989() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1989");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        bBdata0.decreaseCopy("");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-    }
-
-    @Test
-    public void test1990() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1990");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int6 = bBdata0.getBorrowCount("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getBookTitle("hi!");
-        java.lang.String str12 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        java.lang.String str15 = bBdata0.getBookTitle("");
-        boolean boolean17 = bBdata0.isMemberActive("hi!");
-        java.lang.String str19 = bBdata0.getBookAuthor("");
-        boolean boolean21 = bBdata0.bookExists("");
-        java.lang.String str23 = bBdata0.getBookAuthor("hi!");
-        bBdata0.printAllMembers();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + (-1) + "'", int6 == (-1));
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNull(str19);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(str23);
-    }
-
-    @Test
-    public void test1991() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1991");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllMembers();
-        bBdata0.printAllMembers();
-        boolean boolean6 = bBdata0.memberExists("");
-        int int8 = bBdata0.getAvailableCopies("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-    }
-
-    @Test
-    public void test1992() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1992");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        java.lang.String str15 = bBdata0.getMemberName("");
-        java.lang.String str17 = bBdata0.getMemberName("");
-        boolean boolean19 = bBdata0.isMemberActive("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.String str23 = bBdata0.getMemberName("hi!");
-        int int24 = bBdata0.getBorrowLimit();
-        int int26 = bBdata0.getBorrowCount("");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str15);
-        org.junit.Assert.assertNull(str17);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNull(str23);
-        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 3 + "'", int24 == 3);
-        org.junit.Assert.assertTrue("'" + int26 + "' != '" + (-1) + "'", int26 == (-1));
-    }
-
-    @Test
-    public void test1993() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1993");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("hi!");
-        java.lang.String str4 = bBdata0.getBookTitle("");
-        boolean boolean6 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        boolean boolean9 = bBdata0.isMemberActive("");
-        boolean boolean11 = bBdata0.isMemberActive("");
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-    }
-
-    @Test
-    public void test1994() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1994");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        int int10 = bBdata0.getBorrowLimit();
-        java.lang.String str12 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int18 = bBdata0.getBorrowCount("hi!");
-        int int19 = bBdata0.getBorrowLimit();
-        boolean boolean21 = bBdata0.memberExists("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 3 + "'", int19 == 3);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-    }
-
-    @Test
-    public void test1995() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1995");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int2 = bBdata0.getAvailableCopies("");
-        java.lang.String str4 = bBdata0.getMemberName("hi!");
-        bBdata0.printAllBooks();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        bBdata0.decreaseCopy("");
-        bBdata0.increaseBorrowCount("hi!");
-        boolean boolean13 = bBdata0.bookExists("");
-        boolean boolean15 = bBdata0.bookExists("hi!");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + (-1) + "'", int2 == (-1));
-        org.junit.Assert.assertNull(str4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-    }
-
-    @Test
-    public void test1996() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1996");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        int int9 = bBdata0.getBorrowLimit();
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        int int14 = bBdata0.getBorrowCount("hi!");
-        java.lang.String str16 = bBdata0.getBookAuthor("hi!");
-        int int18 = bBdata0.getAvailableCopies("hi!");
-        bBdata0.printAllMembers();
-        bBdata0.printAllBooks();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 3 + "'", int9 == 3);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertNull(str16);
-        org.junit.Assert.assertTrue("'" + int18 + "' != '" + (-1) + "'", int18 == (-1));
-    }
-
-    @Test
-    public void test1997() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1997");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("");
-        bBdata0.printAllMembers();
-        java.lang.String str7 = bBdata0.getBookAuthor("");
-        bBdata0.decreaseCopy("");
-        boolean boolean11 = bBdata0.bookExists("hi!");
-        int int12 = bBdata0.getBorrowLimit();
-        int int14 = bBdata0.getAvailableCopies("hi!");
-        boolean boolean16 = bBdata0.isMemberActive("hi!");
-        java.lang.String str18 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str7);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + int12 + "' != '" + 3 + "'", int12 == 3);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(str18);
-    }
-
-    @Test
-    public void test1998() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1998");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        boolean boolean2 = bBdata0.bookExists("hi!");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        int int5 = bBdata0.getBorrowLimit();
-        bBdata0.increaseBorrowCount("");
-        bBdata0.increaseBorrowCount("");
-        bBdata0.printAllMembers();
-        java.lang.String str12 = bBdata0.getMemberName("");
-        java.lang.String str14 = bBdata0.getBookAuthor("");
-        bBdata0.increaseBorrowCount("hi!");
-        java.lang.Class<?> wildcardClass17 = bBdata0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertNull(str12);
-        org.junit.Assert.assertNull(str14);
-        org.junit.Assert.assertNotNull(wildcardClass17);
-    }
-
-    @Test
-    public void test1999() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test1999");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        bBdata0.decreaseCopy("");
-        boolean boolean4 = bBdata0.memberExists("hi!");
-        bBdata0.decreaseCopy("");
-        java.lang.String str8 = bBdata0.getMemberName("hi!");
-        java.lang.String str10 = bBdata0.getMemberName("hi!");
-        bBdata0.increaseBorrowCount("hi!");
-        bBdata0.printAllBooks();
-        bBdata0.decreaseCopy("");
-        java.lang.String str17 = bBdata0.getBookTitle("hi!");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(str8);
-        org.junit.Assert.assertNull(str10);
-        org.junit.Assert.assertNull(str17);
-    }
-
-    @Test
-    public void test2000() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest3.test2000");
-        Latifa.BBdata bBdata0 = new Latifa.BBdata();
-        int int1 = bBdata0.getBorrowLimit();
-        bBdata0.decreaseCopy("hi!");
-        int int4 = bBdata0.getBorrowLimit();
-        int int5 = bBdata0.getBorrowLimit();
-        boolean boolean7 = bBdata0.isMemberActive("");
-        org.junit.Assert.assertTrue("'" + int1 + "' != '" + 3 + "'", int1 == 3);
-        org.junit.Assert.assertTrue("'" + int4 + "' != '" + 3 + "'", int4 == 3);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 3 + "'", int5 == 3);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
     }
 }
 
