@@ -6553,24 +6553,6 @@ public class RegressionTest0 {
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
-        data.Book book5 = bookService0.findBookByTitle("hi!");
-        bookService0.displayAllBooks();
-        bookService0.displayAllBooks();
-        data.Book book9 = bookService0.findBookByTitle("");
-        bookService0.displayAllBooks();
-        bookService0.displayAllBooks();
-        org.junit.Assert.assertNull(book2);
-        org.junit.Assert.assertNull(book5);
-        org.junit.Assert.assertNull(book9);
-    }
-
-    @Test
-    public void test0287() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0287");
-        business.BookService bookService0 = new business.BookService();
-        data.Book book2 = bookService0.findBookByTitle("");
-        bookService0.displayAllBooks();
         data.Book book4 = null;
         bookService0.addBook(book4);
         bookService0.displayAllBooks();
@@ -6594,9 +6576,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0288() throws Throwable {
+    public void test0287() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0288");
+            System.out.format("%n%s%n", "RegressionTest0.test0287");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6624,9 +6606,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0289() throws Throwable {
+    public void test0288() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0289");
+            System.out.format("%n%s%n", "RegressionTest0.test0288");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6648,9 +6630,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0290() throws Throwable {
+    public void test0289() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0290");
+            System.out.format("%n%s%n", "RegressionTest0.test0289");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6675,9 +6657,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0291() throws Throwable {
+    public void test0290() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0291");
+            System.out.format("%n%s%n", "RegressionTest0.test0290");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6706,9 +6688,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0292() throws Throwable {
+    public void test0291() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0292");
+            System.out.format("%n%s%n", "RegressionTest0.test0291");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6732,9 +6714,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0293() throws Throwable {
+    public void test0292() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0293");
+            System.out.format("%n%s%n", "RegressionTest0.test0292");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6757,9 +6739,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0294() throws Throwable {
+    public void test0293() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0294");
+            System.out.format("%n%s%n", "RegressionTest0.test0293");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6780,9 +6762,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0295() throws Throwable {
+    public void test0294() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0295");
+            System.out.format("%n%s%n", "RegressionTest0.test0294");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6799,9 +6781,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0296() throws Throwable {
+    public void test0295() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0296");
+            System.out.format("%n%s%n", "RegressionTest0.test0295");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6822,9 +6804,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0297() throws Throwable {
+    public void test0296() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0297");
+            System.out.format("%n%s%n", "RegressionTest0.test0296");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6847,9 +6829,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0298() throws Throwable {
+    public void test0297() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0298");
+            System.out.format("%n%s%n", "RegressionTest0.test0297");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6877,9 +6859,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0299() throws Throwable {
+    public void test0298() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0299");
+            System.out.format("%n%s%n", "RegressionTest0.test0298");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6899,9 +6881,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0300() throws Throwable {
+    public void test0299() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0300");
+            System.out.format("%n%s%n", "RegressionTest0.test0299");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -6921,9 +6903,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0301() throws Throwable {
+    public void test0300() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0301");
+            System.out.format("%n%s%n", "RegressionTest0.test0300");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -6952,9 +6934,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0302() throws Throwable {
+    public void test0301() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0302");
+            System.out.format("%n%s%n", "RegressionTest0.test0301");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -6969,9 +6951,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0303() throws Throwable {
+    public void test0302() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0303");
+            System.out.format("%n%s%n", "RegressionTest0.test0302");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -6991,9 +6973,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0304() throws Throwable {
+    public void test0303() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0304");
+            System.out.format("%n%s%n", "RegressionTest0.test0303");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book3 = null;
@@ -7012,9 +6994,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0305() throws Throwable {
+    public void test0304() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0305");
+            System.out.format("%n%s%n", "RegressionTest0.test0304");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7042,9 +7024,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0306() throws Throwable {
+    public void test0305() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0306");
+            System.out.format("%n%s%n", "RegressionTest0.test0305");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7064,9 +7046,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0307() throws Throwable {
+    public void test0306() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0307");
+            System.out.format("%n%s%n", "RegressionTest0.test0306");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7088,9 +7070,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0308() throws Throwable {
+    public void test0307() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0308");
+            System.out.format("%n%s%n", "RegressionTest0.test0307");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7111,9 +7093,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0309() throws Throwable {
+    public void test0308() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0309");
+            System.out.format("%n%s%n", "RegressionTest0.test0308");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7131,9 +7113,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0310() throws Throwable {
+    public void test0309() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0310");
+            System.out.format("%n%s%n", "RegressionTest0.test0309");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7153,9 +7135,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0311() throws Throwable {
+    public void test0310() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0311");
+            System.out.format("%n%s%n", "RegressionTest0.test0310");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -7180,9 +7162,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0312() throws Throwable {
+    public void test0311() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0312");
+            System.out.format("%n%s%n", "RegressionTest0.test0311");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7208,9 +7190,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0313() throws Throwable {
+    public void test0312() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0313");
+            System.out.format("%n%s%n", "RegressionTest0.test0312");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7231,9 +7213,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0314() throws Throwable {
+    public void test0313() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0314");
+            System.out.format("%n%s%n", "RegressionTest0.test0313");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7257,9 +7239,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0315() throws Throwable {
+    public void test0314() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0315");
+            System.out.format("%n%s%n", "RegressionTest0.test0314");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7286,9 +7268,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0316() throws Throwable {
+    public void test0315() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0316");
+            System.out.format("%n%s%n", "RegressionTest0.test0315");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7304,9 +7286,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0317() throws Throwable {
+    public void test0316() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0317");
+            System.out.format("%n%s%n", "RegressionTest0.test0316");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7328,9 +7310,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0318() throws Throwable {
+    public void test0317() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0318");
+            System.out.format("%n%s%n", "RegressionTest0.test0317");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7352,9 +7334,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0319() throws Throwable {
+    public void test0318() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0319");
+            System.out.format("%n%s%n", "RegressionTest0.test0318");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7370,9 +7352,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0320() throws Throwable {
+    public void test0319() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0320");
+            System.out.format("%n%s%n", "RegressionTest0.test0319");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7392,9 +7374,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0321() throws Throwable {
+    public void test0320() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0321");
+            System.out.format("%n%s%n", "RegressionTest0.test0320");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7411,9 +7393,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0322() throws Throwable {
+    public void test0321() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0322");
+            System.out.format("%n%s%n", "RegressionTest0.test0321");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("hi!");
         java.lang.Class<?> wildcardClass3 = bookService0.getClass();
@@ -7422,9 +7404,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0323() throws Throwable {
+    public void test0322() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0323");
+            System.out.format("%n%s%n", "RegressionTest0.test0322");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7446,9 +7428,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0324() throws Throwable {
+    public void test0323() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0324");
+            System.out.format("%n%s%n", "RegressionTest0.test0323");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7470,9 +7452,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0325() throws Throwable {
+    public void test0324() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0325");
+            System.out.format("%n%s%n", "RegressionTest0.test0324");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -7492,9 +7474,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0326() throws Throwable {
+    public void test0325() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0326");
+            System.out.format("%n%s%n", "RegressionTest0.test0325");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -7518,9 +7500,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0327() throws Throwable {
+    public void test0326() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0327");
+            System.out.format("%n%s%n", "RegressionTest0.test0326");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7547,9 +7529,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0328() throws Throwable {
+    public void test0327() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0328");
+            System.out.format("%n%s%n", "RegressionTest0.test0327");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7571,9 +7553,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0329() throws Throwable {
+    public void test0328() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0329");
+            System.out.format("%n%s%n", "RegressionTest0.test0328");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7595,9 +7577,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0330() throws Throwable {
+    public void test0329() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0330");
+            System.out.format("%n%s%n", "RegressionTest0.test0329");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7624,9 +7606,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0331() throws Throwable {
+    public void test0330() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0331");
+            System.out.format("%n%s%n", "RegressionTest0.test0330");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7660,9 +7642,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0332() throws Throwable {
+    public void test0331() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0332");
+            System.out.format("%n%s%n", "RegressionTest0.test0331");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -7680,9 +7662,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0333() throws Throwable {
+    public void test0332() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0333");
+            System.out.format("%n%s%n", "RegressionTest0.test0332");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -7702,9 +7684,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0334() throws Throwable {
+    public void test0333() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0334");
+            System.out.format("%n%s%n", "RegressionTest0.test0333");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7729,9 +7711,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0335() throws Throwable {
+    public void test0334() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0335");
+            System.out.format("%n%s%n", "RegressionTest0.test0334");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7759,9 +7741,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0336() throws Throwable {
+    public void test0335() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0336");
+            System.out.format("%n%s%n", "RegressionTest0.test0335");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -7787,9 +7769,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0337() throws Throwable {
+    public void test0336() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0337");
+            System.out.format("%n%s%n", "RegressionTest0.test0336");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7813,9 +7795,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0338() throws Throwable {
+    public void test0337() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0338");
+            System.out.format("%n%s%n", "RegressionTest0.test0337");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7845,9 +7827,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0339() throws Throwable {
+    public void test0338() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0339");
+            System.out.format("%n%s%n", "RegressionTest0.test0338");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7872,9 +7854,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0340() throws Throwable {
+    public void test0339() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0340");
+            System.out.format("%n%s%n", "RegressionTest0.test0339");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7892,9 +7874,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0341() throws Throwable {
+    public void test0340() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0341");
+            System.out.format("%n%s%n", "RegressionTest0.test0340");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7915,9 +7897,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0342() throws Throwable {
+    public void test0341() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0342");
+            System.out.format("%n%s%n", "RegressionTest0.test0341");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7944,9 +7926,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0343() throws Throwable {
+    public void test0342() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0343");
+            System.out.format("%n%s%n", "RegressionTest0.test0342");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7969,9 +7951,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0344() throws Throwable {
+    public void test0343() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0344");
+            System.out.format("%n%s%n", "RegressionTest0.test0343");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -7993,9 +7975,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0345() throws Throwable {
+    public void test0344() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0345");
+            System.out.format("%n%s%n", "RegressionTest0.test0344");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8024,9 +8006,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0346() throws Throwable {
+    public void test0345() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0346");
+            System.out.format("%n%s%n", "RegressionTest0.test0345");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8044,9 +8026,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0347() throws Throwable {
+    public void test0346() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0347");
+            System.out.format("%n%s%n", "RegressionTest0.test0346");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8072,9 +8054,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0348() throws Throwable {
+    public void test0347() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0348");
+            System.out.format("%n%s%n", "RegressionTest0.test0347");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8097,9 +8079,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0349() throws Throwable {
+    public void test0348() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0349");
+            System.out.format("%n%s%n", "RegressionTest0.test0348");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8136,9 +8118,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0350() throws Throwable {
+    public void test0349() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0350");
+            System.out.format("%n%s%n", "RegressionTest0.test0349");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8156,9 +8138,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0351() throws Throwable {
+    public void test0350() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0351");
+            System.out.format("%n%s%n", "RegressionTest0.test0350");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8189,9 +8171,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0352() throws Throwable {
+    public void test0351() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0352");
+            System.out.format("%n%s%n", "RegressionTest0.test0351");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8215,9 +8197,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0353() throws Throwable {
+    public void test0352() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0353");
+            System.out.format("%n%s%n", "RegressionTest0.test0352");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8239,9 +8221,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0354() throws Throwable {
+    public void test0353() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0354");
+            System.out.format("%n%s%n", "RegressionTest0.test0353");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8269,9 +8251,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0355() throws Throwable {
+    public void test0354() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0355");
+            System.out.format("%n%s%n", "RegressionTest0.test0354");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8287,9 +8269,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0356() throws Throwable {
+    public void test0355() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0356");
+            System.out.format("%n%s%n", "RegressionTest0.test0355");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8317,9 +8299,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0357() throws Throwable {
+    public void test0356() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0357");
+            System.out.format("%n%s%n", "RegressionTest0.test0356");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8341,9 +8323,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0358() throws Throwable {
+    public void test0357() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0358");
+            System.out.format("%n%s%n", "RegressionTest0.test0357");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8371,9 +8353,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0359() throws Throwable {
+    public void test0358() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0359");
+            System.out.format("%n%s%n", "RegressionTest0.test0358");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8396,9 +8378,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0360() throws Throwable {
+    public void test0359() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0360");
+            System.out.format("%n%s%n", "RegressionTest0.test0359");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8419,9 +8401,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0361() throws Throwable {
+    public void test0360() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0361");
+            System.out.format("%n%s%n", "RegressionTest0.test0360");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8448,9 +8430,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0362() throws Throwable {
+    public void test0361() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0362");
+            System.out.format("%n%s%n", "RegressionTest0.test0361");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8470,9 +8452,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0363() throws Throwable {
+    public void test0362() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0363");
+            System.out.format("%n%s%n", "RegressionTest0.test0362");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -8497,9 +8479,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0364() throws Throwable {
+    public void test0363() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0364");
+            System.out.format("%n%s%n", "RegressionTest0.test0363");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8526,9 +8508,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0365() throws Throwable {
+    public void test0364() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0365");
+            System.out.format("%n%s%n", "RegressionTest0.test0364");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8555,9 +8537,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0366() throws Throwable {
+    public void test0365() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0366");
+            System.out.format("%n%s%n", "RegressionTest0.test0365");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8583,9 +8565,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0367() throws Throwable {
+    public void test0366() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0367");
+            System.out.format("%n%s%n", "RegressionTest0.test0366");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8603,9 +8585,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0368() throws Throwable {
+    public void test0367() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0368");
+            System.out.format("%n%s%n", "RegressionTest0.test0367");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8637,9 +8619,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0369() throws Throwable {
+    public void test0368() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0369");
+            System.out.format("%n%s%n", "RegressionTest0.test0368");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book3 = null;
@@ -8657,9 +8639,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0370() throws Throwable {
+    public void test0369() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0370");
+            System.out.format("%n%s%n", "RegressionTest0.test0369");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -8684,9 +8666,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0371() throws Throwable {
+    public void test0370() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0371");
+            System.out.format("%n%s%n", "RegressionTest0.test0370");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8712,9 +8694,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0372() throws Throwable {
+    public void test0371() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0372");
+            System.out.format("%n%s%n", "RegressionTest0.test0371");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8733,9 +8715,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0373() throws Throwable {
+    public void test0372() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0373");
+            System.out.format("%n%s%n", "RegressionTest0.test0372");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8762,9 +8744,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0374() throws Throwable {
+    public void test0373() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0374");
+            System.out.format("%n%s%n", "RegressionTest0.test0373");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8784,9 +8766,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0375() throws Throwable {
+    public void test0374() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0375");
+            System.out.format("%n%s%n", "RegressionTest0.test0374");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8820,9 +8802,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0376() throws Throwable {
+    public void test0375() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0376");
+            System.out.format("%n%s%n", "RegressionTest0.test0375");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8854,9 +8836,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0377() throws Throwable {
+    public void test0376() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0377");
+            System.out.format("%n%s%n", "RegressionTest0.test0376");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8880,9 +8862,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0378() throws Throwable {
+    public void test0377() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0378");
+            System.out.format("%n%s%n", "RegressionTest0.test0377");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8913,9 +8895,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0379() throws Throwable {
+    public void test0378() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0379");
+            System.out.format("%n%s%n", "RegressionTest0.test0378");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8941,9 +8923,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0380() throws Throwable {
+    public void test0379() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0380");
+            System.out.format("%n%s%n", "RegressionTest0.test0379");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8966,9 +8948,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0381() throws Throwable {
+    public void test0380() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0381");
+            System.out.format("%n%s%n", "RegressionTest0.test0380");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -8997,9 +8979,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0382() throws Throwable {
+    public void test0381() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0382");
+            System.out.format("%n%s%n", "RegressionTest0.test0381");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9022,9 +9004,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0383() throws Throwable {
+    public void test0382() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0383");
+            System.out.format("%n%s%n", "RegressionTest0.test0382");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9047,9 +9029,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0384() throws Throwable {
+    public void test0383() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0384");
+            System.out.format("%n%s%n", "RegressionTest0.test0383");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9070,9 +9052,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0385() throws Throwable {
+    public void test0384() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0385");
+            System.out.format("%n%s%n", "RegressionTest0.test0384");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -9092,9 +9074,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0386() throws Throwable {
+    public void test0385() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0386");
+            System.out.format("%n%s%n", "RegressionTest0.test0385");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9111,9 +9093,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0387() throws Throwable {
+    public void test0386() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0387");
+            System.out.format("%n%s%n", "RegressionTest0.test0386");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -9133,9 +9115,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0388() throws Throwable {
+    public void test0387() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0388");
+            System.out.format("%n%s%n", "RegressionTest0.test0387");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -9155,9 +9137,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0389() throws Throwable {
+    public void test0388() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0389");
+            System.out.format("%n%s%n", "RegressionTest0.test0388");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9181,9 +9163,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0390() throws Throwable {
+    public void test0389() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0390");
+            System.out.format("%n%s%n", "RegressionTest0.test0389");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9202,9 +9184,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0391() throws Throwable {
+    public void test0390() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0391");
+            System.out.format("%n%s%n", "RegressionTest0.test0390");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9225,9 +9207,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0392() throws Throwable {
+    public void test0391() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0392");
+            System.out.format("%n%s%n", "RegressionTest0.test0391");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9246,9 +9228,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0393() throws Throwable {
+    public void test0392() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0393");
+            System.out.format("%n%s%n", "RegressionTest0.test0392");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9272,9 +9254,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0394() throws Throwable {
+    public void test0393() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0394");
+            System.out.format("%n%s%n", "RegressionTest0.test0393");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9296,9 +9278,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0395() throws Throwable {
+    public void test0394() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0395");
+            System.out.format("%n%s%n", "RegressionTest0.test0394");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9315,9 +9297,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0396() throws Throwable {
+    public void test0395() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0396");
+            System.out.format("%n%s%n", "RegressionTest0.test0395");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9334,9 +9316,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0397() throws Throwable {
+    public void test0396() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0397");
+            System.out.format("%n%s%n", "RegressionTest0.test0396");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9355,9 +9337,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0398() throws Throwable {
+    public void test0397() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0398");
+            System.out.format("%n%s%n", "RegressionTest0.test0397");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9376,9 +9358,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0399() throws Throwable {
+    public void test0398() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0399");
+            System.out.format("%n%s%n", "RegressionTest0.test0398");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9408,9 +9390,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0400() throws Throwable {
+    public void test0399() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0400");
+            System.out.format("%n%s%n", "RegressionTest0.test0399");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9434,9 +9416,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0401() throws Throwable {
+    public void test0400() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0401");
+            System.out.format("%n%s%n", "RegressionTest0.test0400");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9458,9 +9440,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0402() throws Throwable {
+    public void test0401() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0402");
+            System.out.format("%n%s%n", "RegressionTest0.test0401");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9482,9 +9464,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0403() throws Throwable {
+    public void test0402() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0403");
+            System.out.format("%n%s%n", "RegressionTest0.test0402");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9507,9 +9489,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0404() throws Throwable {
+    public void test0403() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0404");
+            System.out.format("%n%s%n", "RegressionTest0.test0403");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9529,9 +9511,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0405() throws Throwable {
+    public void test0404() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0405");
+            System.out.format("%n%s%n", "RegressionTest0.test0404");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -9554,9 +9536,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0406() throws Throwable {
+    public void test0405() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0406");
+            System.out.format("%n%s%n", "RegressionTest0.test0405");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9580,9 +9562,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0407() throws Throwable {
+    public void test0406() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0407");
+            System.out.format("%n%s%n", "RegressionTest0.test0406");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9600,9 +9582,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0408() throws Throwable {
+    public void test0407() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0408");
+            System.out.format("%n%s%n", "RegressionTest0.test0407");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9619,9 +9601,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0409() throws Throwable {
+    public void test0408() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0409");
+            System.out.format("%n%s%n", "RegressionTest0.test0408");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9647,9 +9629,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0410() throws Throwable {
+    public void test0409() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0410");
+            System.out.format("%n%s%n", "RegressionTest0.test0409");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -9670,9 +9652,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0411() throws Throwable {
+    public void test0410() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0411");
+            System.out.format("%n%s%n", "RegressionTest0.test0410");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9700,9 +9682,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0412() throws Throwable {
+    public void test0411() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0412");
+            System.out.format("%n%s%n", "RegressionTest0.test0411");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9727,9 +9709,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0413() throws Throwable {
+    public void test0412() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0413");
+            System.out.format("%n%s%n", "RegressionTest0.test0412");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9752,9 +9734,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0414() throws Throwable {
+    public void test0413() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0414");
+            System.out.format("%n%s%n", "RegressionTest0.test0413");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9777,9 +9759,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0415() throws Throwable {
+    public void test0414() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0415");
+            System.out.format("%n%s%n", "RegressionTest0.test0414");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -9802,9 +9784,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0416() throws Throwable {
+    public void test0415() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0416");
+            System.out.format("%n%s%n", "RegressionTest0.test0415");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9825,9 +9807,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0417() throws Throwable {
+    public void test0416() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0417");
+            System.out.format("%n%s%n", "RegressionTest0.test0416");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9850,9 +9832,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0418() throws Throwable {
+    public void test0417() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0418");
+            System.out.format("%n%s%n", "RegressionTest0.test0417");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9875,9 +9857,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0419() throws Throwable {
+    public void test0418() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0419");
+            System.out.format("%n%s%n", "RegressionTest0.test0418");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9906,9 +9888,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0420() throws Throwable {
+    public void test0419() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0420");
+            System.out.format("%n%s%n", "RegressionTest0.test0419");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9924,9 +9906,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0421() throws Throwable {
+    public void test0420() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0421");
+            System.out.format("%n%s%n", "RegressionTest0.test0420");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -9949,9 +9931,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0422() throws Throwable {
+    public void test0421() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0422");
+            System.out.format("%n%s%n", "RegressionTest0.test0421");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -9975,9 +9957,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0423() throws Throwable {
+    public void test0422() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0423");
+            System.out.format("%n%s%n", "RegressionTest0.test0422");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10001,9 +9983,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0424() throws Throwable {
+    public void test0423() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0424");
+            System.out.format("%n%s%n", "RegressionTest0.test0423");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10024,9 +10006,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0425() throws Throwable {
+    public void test0424() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0425");
+            System.out.format("%n%s%n", "RegressionTest0.test0424");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10049,9 +10031,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0426() throws Throwable {
+    public void test0425() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0426");
+            System.out.format("%n%s%n", "RegressionTest0.test0425");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -10076,9 +10058,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0427() throws Throwable {
+    public void test0426() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0427");
+            System.out.format("%n%s%n", "RegressionTest0.test0426");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10106,9 +10088,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0428() throws Throwable {
+    public void test0427() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0428");
+            System.out.format("%n%s%n", "RegressionTest0.test0427");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10139,9 +10121,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0429() throws Throwable {
+    public void test0428() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0429");
+            System.out.format("%n%s%n", "RegressionTest0.test0428");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10177,9 +10159,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0430() throws Throwable {
+    public void test0429() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0430");
+            System.out.format("%n%s%n", "RegressionTest0.test0429");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10205,9 +10187,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0431() throws Throwable {
+    public void test0430() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0431");
+            System.out.format("%n%s%n", "RegressionTest0.test0430");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10235,9 +10217,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0432() throws Throwable {
+    public void test0431() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0432");
+            System.out.format("%n%s%n", "RegressionTest0.test0431");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10257,9 +10239,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0433() throws Throwable {
+    public void test0432() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0433");
+            System.out.format("%n%s%n", "RegressionTest0.test0432");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10287,9 +10269,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0434() throws Throwable {
+    public void test0433() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0434");
+            System.out.format("%n%s%n", "RegressionTest0.test0433");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10319,9 +10301,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0435() throws Throwable {
+    public void test0434() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0435");
+            System.out.format("%n%s%n", "RegressionTest0.test0434");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10343,9 +10325,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0436() throws Throwable {
+    public void test0435() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0436");
+            System.out.format("%n%s%n", "RegressionTest0.test0435");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10377,9 +10359,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0437() throws Throwable {
+    public void test0436() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0437");
+            System.out.format("%n%s%n", "RegressionTest0.test0436");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10401,9 +10383,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0438() throws Throwable {
+    public void test0437() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0438");
+            System.out.format("%n%s%n", "RegressionTest0.test0437");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -10428,9 +10410,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0439() throws Throwable {
+    public void test0438() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0439");
+            System.out.format("%n%s%n", "RegressionTest0.test0438");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -10446,9 +10428,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0440() throws Throwable {
+    public void test0439() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0440");
+            System.out.format("%n%s%n", "RegressionTest0.test0439");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10468,9 +10450,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0441() throws Throwable {
+    public void test0440() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0441");
+            System.out.format("%n%s%n", "RegressionTest0.test0440");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10487,9 +10469,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0442() throws Throwable {
+    public void test0441() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0442");
+            System.out.format("%n%s%n", "RegressionTest0.test0441");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10506,9 +10488,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0443() throws Throwable {
+    public void test0442() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0443");
+            System.out.format("%n%s%n", "RegressionTest0.test0442");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10534,9 +10516,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0444() throws Throwable {
+    public void test0443() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0444");
+            System.out.format("%n%s%n", "RegressionTest0.test0443");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10561,9 +10543,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0445() throws Throwable {
+    public void test0444() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0445");
+            System.out.format("%n%s%n", "RegressionTest0.test0444");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -10580,9 +10562,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0446() throws Throwable {
+    public void test0445() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0446");
+            System.out.format("%n%s%n", "RegressionTest0.test0445");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10597,9 +10579,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0447() throws Throwable {
+    public void test0446() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0447");
+            System.out.format("%n%s%n", "RegressionTest0.test0446");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10620,9 +10602,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0448() throws Throwable {
+    public void test0447() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0448");
+            System.out.format("%n%s%n", "RegressionTest0.test0447");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10645,9 +10627,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0449() throws Throwable {
+    public void test0448() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0449");
+            System.out.format("%n%s%n", "RegressionTest0.test0448");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10665,9 +10647,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0450() throws Throwable {
+    public void test0449() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0450");
+            System.out.format("%n%s%n", "RegressionTest0.test0449");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10698,9 +10680,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0451() throws Throwable {
+    public void test0450() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0451");
+            System.out.format("%n%s%n", "RegressionTest0.test0450");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10725,9 +10707,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0452() throws Throwable {
+    public void test0451() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0452");
+            System.out.format("%n%s%n", "RegressionTest0.test0451");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10748,9 +10730,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0453() throws Throwable {
+    public void test0452() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0453");
+            System.out.format("%n%s%n", "RegressionTest0.test0452");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10780,9 +10762,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0454() throws Throwable {
+    public void test0453() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0454");
+            System.out.format("%n%s%n", "RegressionTest0.test0453");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10813,9 +10795,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0455() throws Throwable {
+    public void test0454() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0455");
+            System.out.format("%n%s%n", "RegressionTest0.test0454");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10840,9 +10822,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0456() throws Throwable {
+    public void test0455() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0456");
+            System.out.format("%n%s%n", "RegressionTest0.test0455");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -10857,9 +10839,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0457() throws Throwable {
+    public void test0456() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0457");
+            System.out.format("%n%s%n", "RegressionTest0.test0456");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10891,9 +10873,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0458() throws Throwable {
+    public void test0457() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0458");
+            System.out.format("%n%s%n", "RegressionTest0.test0457");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10909,9 +10891,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0459() throws Throwable {
+    public void test0458() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0459");
+            System.out.format("%n%s%n", "RegressionTest0.test0458");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -10934,9 +10916,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0460() throws Throwable {
+    public void test0459() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0460");
+            System.out.format("%n%s%n", "RegressionTest0.test0459");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10964,9 +10946,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0461() throws Throwable {
+    public void test0460() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0461");
+            System.out.format("%n%s%n", "RegressionTest0.test0460");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -10988,9 +10970,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0462() throws Throwable {
+    public void test0461() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0462");
+            System.out.format("%n%s%n", "RegressionTest0.test0461");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11016,9 +10998,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0463() throws Throwable {
+    public void test0462() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0463");
+            System.out.format("%n%s%n", "RegressionTest0.test0462");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11043,9 +11025,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0464() throws Throwable {
+    public void test0463() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0464");
+            System.out.format("%n%s%n", "RegressionTest0.test0463");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11075,9 +11057,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0465() throws Throwable {
+    public void test0464() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0465");
+            System.out.format("%n%s%n", "RegressionTest0.test0464");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11103,9 +11085,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0466() throws Throwable {
+    public void test0465() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0466");
+            System.out.format("%n%s%n", "RegressionTest0.test0465");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11129,9 +11111,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0467() throws Throwable {
+    public void test0466() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0467");
+            System.out.format("%n%s%n", "RegressionTest0.test0466");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11155,9 +11137,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0468() throws Throwable {
+    public void test0467() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0468");
+            System.out.format("%n%s%n", "RegressionTest0.test0467");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11187,9 +11169,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0469() throws Throwable {
+    public void test0468() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0469");
+            System.out.format("%n%s%n", "RegressionTest0.test0468");
         business.BookService bookService0 = new business.BookService();
         data.Book book1 = null;
         bookService0.addBook(book1);
@@ -11207,9 +11189,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0470() throws Throwable {
+    public void test0469() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0470");
+            System.out.format("%n%s%n", "RegressionTest0.test0469");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11232,9 +11214,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0471() throws Throwable {
+    public void test0470() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0471");
+            System.out.format("%n%s%n", "RegressionTest0.test0470");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book3 = null;
@@ -11250,9 +11232,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0472() throws Throwable {
+    public void test0471() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0472");
+            System.out.format("%n%s%n", "RegressionTest0.test0471");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11280,9 +11262,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0473() throws Throwable {
+    public void test0472() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0473");
+            System.out.format("%n%s%n", "RegressionTest0.test0472");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11308,9 +11290,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0474() throws Throwable {
+    public void test0473() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0474");
+            System.out.format("%n%s%n", "RegressionTest0.test0473");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11330,9 +11312,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0475() throws Throwable {
+    public void test0474() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0475");
+            System.out.format("%n%s%n", "RegressionTest0.test0474");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11346,9 +11328,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0476() throws Throwable {
+    public void test0475() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0476");
+            System.out.format("%n%s%n", "RegressionTest0.test0475");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11362,9 +11344,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0477() throws Throwable {
+    public void test0476() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0477");
+            System.out.format("%n%s%n", "RegressionTest0.test0476");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11396,9 +11378,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0478() throws Throwable {
+    public void test0477() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0478");
+            System.out.format("%n%s%n", "RegressionTest0.test0477");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11416,9 +11398,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0479() throws Throwable {
+    public void test0478() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0479");
+            System.out.format("%n%s%n", "RegressionTest0.test0478");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11447,9 +11429,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0480() throws Throwable {
+    public void test0479() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0480");
+            System.out.format("%n%s%n", "RegressionTest0.test0479");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11475,9 +11457,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0481() throws Throwable {
+    public void test0480() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0481");
+            System.out.format("%n%s%n", "RegressionTest0.test0480");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11505,9 +11487,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0482() throws Throwable {
+    public void test0481() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0482");
+            System.out.format("%n%s%n", "RegressionTest0.test0481");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11535,9 +11517,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0483() throws Throwable {
+    public void test0482() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0483");
+            System.out.format("%n%s%n", "RegressionTest0.test0482");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11569,9 +11551,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0484() throws Throwable {
+    public void test0483() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0484");
+            System.out.format("%n%s%n", "RegressionTest0.test0483");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11604,9 +11586,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0485() throws Throwable {
+    public void test0484() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0485");
+            System.out.format("%n%s%n", "RegressionTest0.test0484");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11624,9 +11606,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0486() throws Throwable {
+    public void test0485() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0486");
+            System.out.format("%n%s%n", "RegressionTest0.test0485");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11648,9 +11630,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0487() throws Throwable {
+    public void test0486() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0487");
+            System.out.format("%n%s%n", "RegressionTest0.test0486");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11668,9 +11650,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0488() throws Throwable {
+    public void test0487() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0488");
+            System.out.format("%n%s%n", "RegressionTest0.test0487");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11696,9 +11678,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0489() throws Throwable {
+    public void test0488() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0489");
+            System.out.format("%n%s%n", "RegressionTest0.test0488");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11724,9 +11706,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0490() throws Throwable {
+    public void test0489() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0490");
+            System.out.format("%n%s%n", "RegressionTest0.test0489");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11749,9 +11731,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0491() throws Throwable {
+    public void test0490() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0491");
+            System.out.format("%n%s%n", "RegressionTest0.test0490");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book3 = null;
@@ -11766,9 +11748,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0492() throws Throwable {
+    public void test0491() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0492");
+            System.out.format("%n%s%n", "RegressionTest0.test0491");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11788,9 +11770,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0493() throws Throwable {
+    public void test0492() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0493");
+            System.out.format("%n%s%n", "RegressionTest0.test0492");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11809,9 +11791,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0494() throws Throwable {
+    public void test0493() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0494");
+            System.out.format("%n%s%n", "RegressionTest0.test0493");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         data.Book book4 = bookService0.findBookByTitle("");
@@ -11826,9 +11808,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0495() throws Throwable {
+    public void test0494() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0495");
+            System.out.format("%n%s%n", "RegressionTest0.test0494");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11858,9 +11840,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0496() throws Throwable {
+    public void test0495() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0496");
+            System.out.format("%n%s%n", "RegressionTest0.test0495");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11887,20 +11869,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0497() throws Throwable {
+    public void test0496() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0497");
-        business.BookService bookService0 = new business.BookService();
-        data.Book book2 = bookService0.findBookByTitle("");
-        data.Book book4 = bookService0.findBookByTitle("hi!");
-        org.junit.Assert.assertNull(book2);
-        org.junit.Assert.assertNull(book4);
-    }
-
-    @Test
-    public void test0498() throws Throwable {
-        if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0498");
+            System.out.format("%n%s%n", "RegressionTest0.test0496");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11931,9 +11902,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0499() throws Throwable {
+    public void test0497() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0499");
+            System.out.format("%n%s%n", "RegressionTest0.test0497");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11953,9 +11924,9 @@ public class RegressionTest0 {
     }
 
     @Test
-    public void test0500() throws Throwable {
+    public void test0498() throws Throwable {
         if (debug)
-            System.out.format("%n%s%n", "RegressionTest0.test0500");
+            System.out.format("%n%s%n", "RegressionTest0.test0498");
         business.BookService bookService0 = new business.BookService();
         data.Book book2 = bookService0.findBookByTitle("");
         bookService0.displayAllBooks();
@@ -11973,6 +11944,57 @@ public class RegressionTest0 {
         bookService0.addBook(book15);
         org.junit.Assert.assertNull(book2);
         org.junit.Assert.assertNull(book5);
+    }
+
+    @Test
+    public void test0499() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0499");
+        business.BookService bookService0 = new business.BookService();
+        data.Book book2 = bookService0.findBookByTitle("");
+        bookService0.displayAllBooks();
+        data.Book book4 = null;
+        bookService0.addBook(book4);
+        data.Book book6 = null;
+        bookService0.addBook(book6);
+        data.Book book8 = null;
+        bookService0.addBook(book8);
+        bookService0.displayAllBooks();
+        bookService0.displayAllBooks();
+        bookService0.displayAllBooks();
+        java.lang.Class<?> wildcardClass13 = bookService0.getClass();
+        org.junit.Assert.assertNull(book2);
+        org.junit.Assert.assertNotNull(wildcardClass13);
+    }
+
+    @Test
+    public void test0500() throws Throwable {
+        if (debug)
+            System.out.format("%n%s%n", "RegressionTest0.test0500");
+        business.BookService bookService0 = new business.BookService();
+        data.Book book2 = bookService0.findBookByTitle("");
+        data.Book book4 = bookService0.findBookByTitle("");
+        data.Book book6 = bookService0.findBookByTitle("");
+        data.Book book8 = bookService0.findBookByTitle("hi!");
+        bookService0.displayAllBooks();
+        data.Book book10 = null;
+        bookService0.addBook(book10);
+        data.Book book12 = null;
+        bookService0.addBook(book12);
+        bookService0.displayAllBooks();
+        data.Book book15 = null;
+        bookService0.addBook(book15);
+        // The following exception was thrown during execution in test generation
+        try {
+            data.Book book18 = bookService0.findBookByTitle("hi!");
+            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"data.Book.getTitle()\" because \"<local3>\" is null");
+        } catch (java.lang.NullPointerException e) {
+            // Expected exception.
+        }
+        org.junit.Assert.assertNull(book2);
+        org.junit.Assert.assertNull(book4);
+        org.junit.Assert.assertNull(book6);
+        org.junit.Assert.assertNull(book8);
     }
 }
 
