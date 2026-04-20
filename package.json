@@ -1,6 +1,3 @@
-"scripts": {
-  "test": "jest"
-} 
 {
   "name": "itse305-project",
   "version": "1.0.0",
