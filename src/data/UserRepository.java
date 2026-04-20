@@ -4,12 +4,10 @@ import model.user;
 
 /**
  * The UserRepository class represents the Data layer of the system.
- *
  * Its main responsibility is to manage access to user data.
  * In a real application, this class would communicate with a database.
  * However, in this simplified academic project, the class stores
  * one sample user in memory and uses that user for validation.
- *
  * This class provides a method to verify whether the username and password
  * entered by the user match the stored credentials.
  */
