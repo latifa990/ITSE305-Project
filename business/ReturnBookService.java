@@ -30,7 +30,7 @@ public class ReturnBookService {
        if(!isUpdated) {
         return "Failed to return the book with ID " + bookId + ". Please try again.";
     }
-    // Get the updated status of the book after returning 
+    // ==== Get the updated status of the book after returning 
     String status = bookRepository.findBookStatus(bookId);
     return "Book with ID " + bookId + " has been returned successfully.\n " + "Current status: " + status + ".";  // Return a success message to the user including the current status of the book 
 }
