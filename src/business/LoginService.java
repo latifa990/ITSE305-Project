@@ -8,7 +8,6 @@ import data.UserRepository;
  * Its role is to process login requests and apply business logic.
  * Instead of allowing the presentation layer to directly access the data layer,
  * this class acts as an intermediary between them.
- *
  * This separation improves maintainability and follows the layered architecture
  * required by the project.
  */
