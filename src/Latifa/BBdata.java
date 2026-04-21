@@ -7,7 +7,7 @@ package Latifa;
  * It provides methods to search, update, and retrieve data.
  */
 public class BBdata {
-
+//updated
     // book data arrays - each index represents one book
     private String[] bookIds     = {"B001", "B002", "B003", "B004"};
     private String[] bookTitles  = {"Clean Code", "Design Patterns", "Python Crash Course", "The Pragmatic Programmer"};
