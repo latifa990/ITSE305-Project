@@ -1,7 +1,7 @@
 package Latifa;
 
 /*
- * Data Layer - Borrow Book Use Case
+ * Data Layer - Borrow Book Use Case FOR EXAMPLE
  * This class is responsible for storing and managing all system data.
  * It simulates a database by storing books and members in arrays.
  * It provides methods to search, update, and retrieve data.
