@@ -1,13 +1,13 @@
 package Latifa;
 
 /*
- * Data Layer - Borrow Book Use Case
+ * Data Layer - Borrow Book Use Case FOR EXAMPLE
  * This class is responsible for storing and managing all system data.
  * It simulates a database by storing books and members in arrays.
  * It provides methods to search, update, and retrieve data.
  */
 public class BBdata {
-
+//updated
     // book data arrays - each index represents one book
     private String[] bookIds     = {"B001", "B002", "B003", "B004"};
     private String[] bookTitles  = {"Clean Code", "Design Patterns", "Python Crash Course", "The Pragmatic Programmer"};
