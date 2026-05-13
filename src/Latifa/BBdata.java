@@ -8,6 +8,7 @@ package Latifa;
  */
 public class BBdata {
 //updated
+// Data layer initialization
     // book data arrays - each index represents one book
     private String[] bookIds     = {"B001", "B002", "B003", "B004"};
     private String[] bookTitles  = {"Clean Code", "Design Patterns", "Python Crash Course", "The Pragmatic Programmer"};
