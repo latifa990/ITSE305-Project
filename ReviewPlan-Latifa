@@ -1,0 +1,30 @@
+# Review Plan - Latifa Yousif
+Borrow Book Use Case
+
+Who I will review:
+- Member: Rama
+- Use Case: Account Login
+- I will review her code and suggest improvements
+
+Who will review me:
+- Member: Rawan
+- She will review my Borrow Book code and suggest improvements
+
+What I will look for during review:
+1. Are the comments sufficient and descriptive?
+2. Are the method names clear and meaningful?
+3. Does the code follow the three-layer architecture?
+4. Are there any missing validations?
+5. Can the code be simplified or improved?
+
+Review Process:
+1. Rawan opens a pull request
+2. I review her code and add comments on GitHub
+3. She makes the required changes
+4. I approve the changes
+
+My Review Process:
+1. I open a pull request
+2. Rawan reviews my code and adds comments
+3. I make the required changes
+4. Rawan approves the changes
