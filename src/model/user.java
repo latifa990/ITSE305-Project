@@ -1,6 +1,6 @@
 package model;
 
-/**
+/***
  * The User class represents a user entity in the Account Login System.
  *
  * This class belongs to the Model layer of the application.

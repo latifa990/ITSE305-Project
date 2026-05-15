@@ -3,7 +3,7 @@ package presentation;
 import business.LoginService;
 import java.util.Scanner;
 
-/**
+/***
  * The LoginUI class represents the Presentation layer of the application.
  *
  * Its main responsibility is to interact with the user by:

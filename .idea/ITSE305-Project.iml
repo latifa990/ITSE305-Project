@@ -60,5 +60,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="randoop-4.3.4" level="project" />
+    <orderEntry type="library" name="junit" level="project" />
+    <orderEntry type="library" name="junit1" level="project" />
   </component>
 </module>
