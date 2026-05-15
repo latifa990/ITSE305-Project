@@ -1,0 +1,26 @@
+Code Review Plan
+Reviewer: Rama  
+Reviewee: Shaimaa  
+Project: ITSE305 Group Project  
+Repository: https://github.com/latifa990/ITSE305-Project  
+What I'm Going to Review
+I'll be looking at the code Shaimaa wrote in her branch. My plan is to go through her files carefully and check if everything looks good and makes sense.
+What I'll Be Looking At
+Does the code work?  
+I'll read through the logic and make sure there are no obvious bugs or mistakes. I'll check things like conditions, loops, and whether the output makes sense.
+Is it easy to read?  
+Good code should be easy for anyone on the team to understand. I'll check if the variable names and function names are clear, and if the code is neat and well-organized.
+Are there comments where needed?  
+If a part of the code is complicated, there should be a short comment explaining what it does. I'll check if that's been done.
+Is the style consistent?  
+I'll make sure the formatting and naming style is consistent throughout — no random changes in how things are written.
+Does it fit with the rest of the project?  
+I'll check that Shaimaa's code connects properly with what the rest of the team has done and doesn't break anything.
+How I'll Do the Review
+I'll open Shaimaa's branch on GitHub and read through her files
+I'll go line by line and look for anything that seems off
+I'll leave comments directly on the lines that need attention
+I'll submit my review on GitHub with specific suggestions
+Once she makes the changes, I'll go back and approve
+My Goal
+The point of this review isn't to criticize it's to help make the code better before it gets merged. I want to give Shaimaa clear and useful feedback that she can actually act on.
