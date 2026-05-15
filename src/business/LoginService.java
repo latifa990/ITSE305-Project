@@ -2,7 +2,7 @@ package business;
 
 import data.UserRepository;
 
-/***
+/*
  * The LoginService class represents the Business layer of the application.
  *
  * Its role is to process login requests and apply business logic.
@@ -13,7 +13,7 @@ import data.UserRepository;
  */
 public class LoginService {
 
-    /**
+    /*
      * Reference to the data layer object used to validate credentials.
      */
     private UserRepository userRepository;
