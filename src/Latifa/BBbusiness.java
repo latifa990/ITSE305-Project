@@ -9,7 +9,7 @@ package Latifa;
  */
 public class BBbusiness {
 
-    // reference to the data layer to access all stored data
+    // Reference to the data layer to access all stored data
     private BBdata dataLayer;
     /*
      * Constructor - receives the Data Layer object.

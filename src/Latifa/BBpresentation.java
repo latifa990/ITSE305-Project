@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class BBpresentation {
 
-    // scanner used to read all user input throughout the program
+    // Scanner used to read all user input throughout the program
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
