@@ -1,5 +1,5 @@
 package randooptests;
-
+// Regression test suite for Return Book use case
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;

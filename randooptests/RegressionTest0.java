@@ -3,6 +3,7 @@ import org.junit.FixMethodOrder;
 import org.junit.Test;
 import org.junit.runners.MethodSorters;
 
+// Regression test suite for Return Book use case
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class RegressionTest0 {
 
