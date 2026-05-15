@@ -2,7 +2,7 @@ package data;
 
 // Import all classes from java.util (e.g., Scanner, HashMap, Map)
 import java.util.*;
-// This class represents the Data Layer (Repository).
+// This class represents the Data Layer Repository.
 public class BookRepository {
     // Implementation for book repository
     private  Map<String, String> book; // Map to store book ID and its status

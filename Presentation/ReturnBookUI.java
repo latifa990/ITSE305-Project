@@ -7,7 +7,7 @@ import java.util.Scanner; // Import Scanner class to read user input from the us
  // This class represents the Presentation Layer (User Interface).
  // It interacts with the user and collects input needed to return a book.
  
-// This is the ReturnBookUI class
+// This is the ReturnBookUI class that serves as the user interface for returning a book.
 public class ReturnBookUI {
     // Implementation for return book UI
     public static void main(String[] args) {

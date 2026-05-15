@@ -5,7 +5,7 @@ import data.BookRepository; // Import the data layer class to access book data
 // This class represents the Business Layer (Service).
 // It contains the business logic for processing the return of a book, such as updating the book status in the database 
 
-//This is ReturnBookService class 
+//This is ReturnBookService class which contains the business logic for processing the return of a book. 
 public class ReturnBookService {
     public String returnBook(String bookId) {
 
