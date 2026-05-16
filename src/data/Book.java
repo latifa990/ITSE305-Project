@@ -7,10 +7,17 @@ public class Book {
     private String category;
 
     public Book(int id, String title, String author, String category) {
-    this.title = title;
-    this.author = author;
-    this.id = id;
-    this.category = category;
+        if (id <= 0) {
+            throw new IllegalArgumentException("ID must be positive.");
+        }
+        if (title == null || title.trim().isEmpty()) {
+            throw new IllegalArgumentException("Title cannot be empty.");
+        }
+        this.title = title;
+        this.author = author;
+        this.id = id;
+        this.category = category;
+
 } 
 
     public String getTitle() {
