@@ -30,7 +30,7 @@ public class LoginService {
     /**
      * Processes a login request by forwarding the provided credentials
      * to the data layer for validation.
-     ****
+     *
      * If the credentials are valid, the method returns true.
      * Otherwise, it returns false.
      *
@@ -39,6 +39,10 @@ public class LoginService {
      * @return true if login is successful; otherwise false
      */
     public boolean login(String username, String password) {
+        if (username == null || username.isEmpty() ||
+                password == null || password.isEmpty()) {
+            return false;
+        }
         return userRepository.validateUser(username, password);
     }
 }
