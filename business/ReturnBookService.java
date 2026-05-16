@@ -1,5 +1,6 @@
 package business;
 import data.BookRepository; // Import the data layer class to access book data
+// This class represents the Business Layer (Service).
 
 
 // This class represents the Business Layer (Service).

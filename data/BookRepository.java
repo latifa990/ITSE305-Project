@@ -1,4 +1,5 @@
 package data;
+// Import all classes from java.util (e.g., Scanner, HashMap, Map)
 
 // Import all classes from java.util (e.g., Scanner, HashMap, Map)
 import java.util.*;
