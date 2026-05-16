@@ -1,6 +1,6 @@
 package model;
 
-/**
+/*
  * The User class represents a user entity in the Account Login System.
  *
  * This class belongs to the Model layer of the application.
@@ -32,7 +32,7 @@ public class User {
      * @param username the username assigned to the user
      * @param password the password assigned to the user
      */
-    public user(String username, String password) {
+    public User(String username, String password) {
         this.username = username;
         this.password = password;
     }

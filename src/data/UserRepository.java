@@ -13,7 +13,7 @@ import model.User;
  */
 public class UserRepository {
 
-    /*
+    /**
      * Represents the stored user record used for login validation.
      * This object acts as a simulated database record.
      */
