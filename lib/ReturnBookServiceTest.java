@@ -2,6 +2,7 @@ package lib;
 import business.ReturnBookService; // import the service class to test its methods
 import org.junit.jupiter.api.Test; // used to mark this method as a test
 import static org.junit.jupiter.api.Assertions.*; // contains assertion methods like assertTrue
+// This class is used to test the ReturnBookService functionality
 
 public class ReturnBookServiceTest {
 

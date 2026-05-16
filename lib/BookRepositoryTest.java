@@ -3,7 +3,7 @@ import data.BookRepository; // import the repository class to test its methods
 import org.junit.jupiter.api.Test; // used to define test methods
 import static org.junit.jupiter.api.Assertions.*; // contains assertion methods
 
-
+// This class is used to test the BookRepository functionality
 // This class is used to test the BookRepository functionality
 // It checks getting book status and updating it
 public class BookRepositoryTest {
