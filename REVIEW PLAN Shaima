@@ -1,0 +1,28 @@
+Reviewer: Shaima  
+Reviewee: Rawan  
+Project: ITSE305 Group Project  
+Repository: https://github.com/latifa990/ITSE305-Project  
+What I’m Going to Review
+I will review the code that Rama wrote in her branch. My goal is to carefully go through her files and make sure the code is correct, clear, and works properly with the rest of the project.
+
+What I’ll Be Looking At
+Does the code work?
+I will check the logic and make sure there are no obvious bugs or mistakes. I will verify that the output is correct and the program behaves as expected.
+Is it easy to read?
+I will make sure the variable names, method names, and class names are meaningful and easy to understand.
+Are comments included where needed?
+If there are complex parts of the code, I will check whether they are explained with short and useful comments.
+Is the style consistent?
+I will verify that the formatting and naming conventions are consistent with the rest of the project.
+ Does it fit with the rest of the project?
+I will ensure that Rama’s code integrates properly with the other classes and does not break any existing functionality.
+
+How I Will Do the Review
+1. Open Rama’s branch on GitHub.
+2. Read through the changed files line by line.
+3. Check the logic, readability, and formatting.
+4. Leave comments on any lines that need improvement.
+5. Submit the review with clear and constructive suggestions.
+6. After the changes are made, review the updates and approve the pull request.
+
+The purpose of this review is to help improve the code before it is merged into the main branch. I want to provide useful and respectful feedback that helps make the project better.
