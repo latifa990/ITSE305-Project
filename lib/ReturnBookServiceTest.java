@@ -15,7 +15,7 @@ public class ReturnBookServiceTest {
         String result = service.returnBook("B001");
 
         // check if the result contains success message
-        assertTrue(result.contains("has been returned successfully"));
+        assertEquals("Book with ID B001 has been returned successfully.\n Current status: available.", result);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class ReturnBookServiceTest {
         String result = service.returnBook("B002");
 
         // check if the system says it's already available
-        assertTrue(result.contains("is already available"));
+        assertEquals("Book with ID B002 is already available in the system.", result);
     }
 
     @Test
@@ -39,6 +39,6 @@ public class ReturnBookServiceTest {
         String result = service.returnBook("B999");
 
         // check if the system says the book does not exist
-        assertTrue(result.contains("does not exist"));
+        assertEquals("Book with ID B999 does not exist in the system.", result);
     }
 }
