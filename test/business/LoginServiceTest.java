@@ -3,7 +3,7 @@ package business;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
+/*
  * The LoginServiceTest class is a JUnit test class used to verify
  * the correctness of the login functionality in the Account Login System.
  *
