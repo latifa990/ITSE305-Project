@@ -26,7 +26,7 @@ public class User {
      */
     private String password;
 
-    /**
+    /*
      * Constructs a User object with the provided username and password.
      *
      * @param username the username assigned to the user
