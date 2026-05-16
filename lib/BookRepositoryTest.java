@@ -2,22 +2,16 @@ package lib;
 import data.BookRepository; // import the repository class to test its methods
 import org.junit.jupiter.api.Test; // used to define test methods
 import static org.junit.jupiter.api.Assertions.*; // contains assertion methods
-import org.junit.jupiter.api.BeforeEach; // used to set up test data before each test method runs
+
 
 // This class is used to test the BookRepository functionality
 // It checks getting book status and updating it
 public class BookRepositoryTest {
 
-    BookRepository repo;
-
-  @BeforeEach
-  void setup() {
-    repo = new BookRepository();
-}
 
     @Test
     public void testFindBookStatus() {
-        
+        BookRepository repo = new BookRepository();
 
         // check the status of an existing book
         String status = repo.findBookStatus("B001");
@@ -28,7 +22,7 @@ public class BookRepositoryTest {
 
     @Test
     public void testUpdateBookStatus() {
-       
+       BookRepository repo = new BookRepository();
 
         // update book status from borrowed to available
         boolean updated = repo.updateBookStatus("B001", "available");
@@ -42,7 +36,7 @@ public class BookRepositoryTest {
 
     @Test
     public void testUpdateBook_NotExist() {
-       
+       BookRepository repo = new BookRepository();
 
         // try updating a book that does not exist
         boolean updated = repo.updateBookStatus("B999", "available");

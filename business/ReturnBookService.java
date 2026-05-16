@@ -17,7 +17,7 @@ public class ReturnBookService {
         String bookStatus = bookRepository.findBookStatus(bookId);
         if (bookStatus == null) { //Check if the book ID exists in the system
             return "Book with ID " + bookId + " does not exist in the system.";
-        } else if (bookStatus.equalsIgnoreCase("available")) { // Check if the book is already available (not borrowed)
+        } else if (bookStatus.equals("available")) { // Check if the book is already available (not borrowed)
             return "Book with ID " + bookId + " is already available in the system.";
         }
 
