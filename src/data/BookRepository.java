@@ -17,6 +17,10 @@ public class BookRepository {
 
     // Adds a new book to the repository
     public void addBook(Book book) {
+        if (book == null) {
+            System.out.println("Cannot add a null book.");
+            return;
+        }
         books.add(book);
     }
 
