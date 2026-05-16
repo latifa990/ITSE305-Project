@@ -4,7 +4,16 @@ import data.Book;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.BeforeEach;
+
 public class BookServiceTest {
+    private BookService bookService;
+    @BeforeEach
+    public void setUp() {
+        bookService = new BookService();
+        bookService.addBook(new Book(1, "Java", "Author A", "Programming"));
+        
+    }   
 
     @Test
     public void testFindBookExists() {
