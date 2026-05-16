@@ -22,7 +22,6 @@ public class BBpresentation {
         BBbusiness businessLayer = new BBbusiness(dataLayer);
 
         System.out.println("Welcome to the Library Borrow System");
-
         System.out.println();
 
         // keep showing the menu until the user chooses to exit
