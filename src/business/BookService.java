@@ -13,6 +13,10 @@ public class BookService {
 
     // Adds a new book using the repository
     public void addBook(Book book) {
+        if (book == null) {
+            System.out.println("Cannot add a null book.");
+            return;
+        }
         bookRepository.addBook(book);
     }
 
@@ -25,6 +29,15 @@ public class BookService {
 
     // Searches for a book by its title
     public Book findBookByTitle(String title) {
-        return bookRepository.findBookByTitle(title);
+      if (title == null || title.trim().isEmpty()) {
+            System.out.println("Please provide a valid title to search.");
+            return null;
+        }
+        Book book = bookRepository.findBookByTitle(title);
+        if (book == null) {
+            System.out.println("Book not found: " + title);
+        }
+        return book;
     }
 }
+
