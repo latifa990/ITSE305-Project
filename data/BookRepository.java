@@ -34,7 +34,7 @@ public class BookRepository {
     public boolean updateBookStatus(String bookId, String status) {
         if (book.containsKey(bookId)) {
             book.put(bookId, status); // Update the book's status in the map
-            //System.out.println("Updated book ID " + bookId + " to status: " + status);
+            
             return true; // Return true if the update was successful
         }
         else {
