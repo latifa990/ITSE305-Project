@@ -1,0 +1,21 @@
+Code Review Plan
+Reviewer: Rawan
+Reviewee: Latifa
+Project: ITSE305 Group Project
+Repository: https://github.com/latifa990/ITSE305-Project
+
+  What I'm Going to Review:
+I'll go through Latifa's code in her branch and make sure everything is correct and makes sense.
+
+   What I'll Be Looking At:
+- Whether the code works correctly with no bugs
+- Whether the code is easy to read and names are clear
+- Whether there are sufficient comments on complex parts
+- Whether the style and formatting are consistent
+- Whether it connects properly with the rest of the project
+
+  How I'll Do the Review:
+I'll open Latifa's branch on GitHub, go through the code line by line, and leave comments directly on the lines that need attention. Once she makes the changes, I'll go back and approve.
+
+  My Goal:
+The point isn't to criticize — it's to help make the code better before it gets merged and to give Latifa useful feedback she can actually act on.
