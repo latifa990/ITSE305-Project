@@ -2,7 +2,7 @@ package business;
 
 import data.UserRepository;
 
-/*
+/**
  * The LoginService class represents the Business layer of the application.
  *
  * Its role is to process login requests and apply business logic.
@@ -13,7 +13,7 @@ import data.UserRepository;
  */
 public class LoginService {
 
-    /*
+    /**
      * Reference to the data layer object used to validate credentials.
      */
     private UserRepository userRepository;
@@ -30,7 +30,7 @@ public class LoginService {
     /**
      * Processes a login request by forwarding the provided credentials
      * to the data layer for validation.
-     *
+     ****
      * If the credentials are valid, the method returns true.
      * Otherwise, it returns false.
      *
@@ -39,10 +39,6 @@ public class LoginService {
      * @return true if login is successful; otherwise false
      */
     public boolean login(String username, String password) {
-        if (username == null || username.isEmpty() ||
-                password == null || password.isEmpty()) {
-            return false;
-        }
         return userRepository.validateUser(username, password);
     }
 }
