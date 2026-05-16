@@ -3,7 +3,7 @@ package presentation;
 import business.LoginService;
 import java.util.Scanner;
 
-/*
+/**
  * The LoginUI class represents the Presentation layer of the application.
  *
  * Its main responsibility is to interact with the user by:
@@ -39,29 +39,25 @@ public class LoginUI {
         // Display the system title to the user.
         System.out.println("===== Account Login System =====");
 
-        boolean loggedIn = false;
-        while (!loggedIn) {
+        // Ask the user to enter a username.
+        System.out.print("Enter Username: ");
+        String username = scanner.nextLine();
 
-            // Ask the user to enter a username.
-            System.out.print("Enter Username: ");
-            String username = scanner.nextLine();
+        // Ask the user to enter a password.
+        System.out.print("Enter Password: ");
+        String password = scanner.nextLine();
 
-            // Ask the user to enter a password.
-            System.out.print("Enter Password: ");
-            String password = scanner.nextLine();
+        // Call the business layer to validate the entered credentials.
+        boolean loginResult = loginService.login(username, password);
 
-            // Call the business layer to validate the entered credentials.
-            boolean loginResult = loginService.login(username, password);
-
-            // Display a message based on the returned login result.
-            if (loginResult) {
-                System.out.println("Login Successful!");
-                loggedIn = true;
-            } else {
-                System.out.println("Invalid Username or Password! Please try again.");
-            }
+        // Display a message based on the returned login result.
+        if (loginResult) {
+            System.out.println("Login Successful!");
+        } else {
+            System.out.println("Invalid Username or Password!");
         }
 
         // Close the scanner to release system resources.
         scanner.close();
     }
+}
