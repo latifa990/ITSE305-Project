@@ -57,6 +57,10 @@ public class BBbusiness {
             return name + " has reached the borrow limit of " + borrowLimit + " books.";
         }
 
+        // all checks passed so update the data
+        dataLayer.decreaseCopy(bookId);
+        dataLayer.increaseBorrowCount(memberId);
+
         // retrieve details inline and return success message
         return "The book " + dataLayer.getBookTitle(bookId) +
                 " by " + dataLayer.getBookAuthor(bookId) +
