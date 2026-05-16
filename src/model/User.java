@@ -14,7 +14,7 @@ package model;
  * This class follows encapsulation by keeping fields private
  * and exposing them through getter methods.
  */
-public class user {
+public class User {
 
     /**
      * Stores the username of the user.
