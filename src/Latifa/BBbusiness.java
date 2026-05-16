@@ -9,7 +9,7 @@ package Latifa;
  */
 public class BBbusiness {
 
-    // reference to the data layer to access all stored data
+    // Reference to the data layer to access all stored data
     private BBdata dataLayer;
     /*
      * Constructor - receives the Data Layer object.
@@ -57,17 +57,10 @@ public class BBbusiness {
             return name + " has reached the borrow limit of " + borrowLimit + " books.";
         }
 
-        // all checks passed so update the data
-        dataLayer.decreaseCopy(bookId);
-        dataLayer.increaseBorrowCount(memberId);
-
-        // get details to show in the success message
-        String memberName = dataLayer.getMemberName(memberId);
-        String bookTitle  = dataLayer.getBookTitle(bookId);
-        String bookAuthor = dataLayer.getBookAuthor(bookId);
-
-        return "The book " + bookTitle + " by " + bookAuthor +
-                " is now borrowed by " + memberName +
+        // retrieve details inline and return success message
+        return "The book " + dataLayer.getBookTitle(bookId) +
+                " by " + dataLayer.getBookAuthor(bookId) +
+                " is now borrowed by " + dataLayer.getMemberName(memberId) +
                 ". Copies left: " + (copies - 1);
     }
 

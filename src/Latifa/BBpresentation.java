@@ -12,7 +12,7 @@ import java.util.Scanner;
  */
 public class BBpresentation {
 
-    // scanner used to read all user input throughout the program
+    // Scanner used to read all user input throughout the program
     static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class BBpresentation {
         BBdata     dataLayer     = new BBdata();
         BBbusiness businessLayer = new BBbusiness(dataLayer);
 
-        System.out.println("Hi! Library Borrow System");
+        System.out.println("Welcome to the Library Borrow System");
         System.out.println();
 
         // keep showing the menu until the user chooses to exit

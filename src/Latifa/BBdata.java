@@ -7,7 +7,8 @@ package Latifa;
  * It provides methods to search, update, and retrieve data.
  */
 public class BBdata {
-
+//updated
+    //Data
     // book data arrays - each index represents one book
     private String[] bookIds     = {"B001", "B002", "B003", "B004"};
     private String[] bookTitles  = {"Clean Code", "Design Patterns", "Python Crash Course", "The Pragmatic Programmer"};
@@ -51,7 +52,7 @@ public class BBdata {
 
     /*
      * Returns the number of available copies for a specific book.
-     * Returns -1 if the book ID is not found.
+     * Throw an exception if the book is not founded.
      */
     public int getAvailableCopies(String id) {
         for (int i = 0; i < bookIds.length; i++) {
@@ -59,7 +60,8 @@ public class BBdata {
                 return bookCopies[i];
             }
         }
-        return -1;
+        throw new IllegalArgumentException("Book ID not found: " + id);
+
     }
 
     /*
